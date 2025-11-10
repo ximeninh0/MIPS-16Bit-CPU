@@ -1,0 +1,16 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY NOT_COMPONENT IS 
+port(
+	X,Y :IN std_logic_vector(3 DOWNTO 0);
+	Z : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+	);
+END NOT_COMPONENT
+
+ARCHITECTURE Behavior OF NOT_COMPONENT IS
+
+BEGIN
+	Z <= NOT Y;
+
+END Behavior;

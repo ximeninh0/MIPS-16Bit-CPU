@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY OR_COMPONENT IS 
+port(
+	X,Y :IN std_logic_vector(3 DOWNTO 0);
+	Z : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+	);
+END OR_COMPONENT
+
+ARCHITECTURE Behavior OF OR_COMPONENT IS
+
+Z <= X OR Y;
+
+END Behavior

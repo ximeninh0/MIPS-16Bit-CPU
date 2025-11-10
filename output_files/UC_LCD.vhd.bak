@@ -1,0 +1,247 @@
+library ieee;
+use ieee.std_logic_1164.all;
+USE ieee.STD_LOGIC_unsigned.ALL;
+
+entity main is
+  port(
+    SW: in std_logic_vector(17 downto 0);
+	 KEY : IN STD_LOGIC_VECTOR (3 DOWNTO 0);
+	 Clock_50 : in std_logic;
+	 Hex0 : out std_logic_vector(0 to 6);	 
+	 Hex1 : out std_logic_vector(0 to 6);
+	 Hex2 : out std_logic_vector(0 to 6);
+	 LEDR : OUT STD_LOGIC_vector(17 downto 0); 
+	 LEDG : OUT STD_LOGIC_VECTOR (8 DOWNTO 0);
+	 LCD_DATA : out STD_LOGIC_VECTOR(7 DOWNTO 0);
+	 LCD_RW : OUT STD_LOGIC;
+	 LCD_EN : OUT STD_LOGIC;
+	 LCD_RS: OUT STD_LOGIC
+  );
+end entity main;
+
+architecture bhv of main is
+
+TYPE state_type IS (IDLE_CLEAR1,IDLE_CLEAR2,IDLE,MSG1,MSG1_EN,MSG2_END,MSG2_END_EN,MSG2,MSG2_EN); --Todos estados utilizados
+SIGNAL ESTADO : State_type := IDLE_CLEAR1; -- Sinal estado (começa em IDLE_CLEAR1)
+SIGNAL PASSAR,PASSAR2, RESET : STD_LOGIC;	-- Sinais de travamento de estado
+
+
+CONSTANT max: INTEGER := 5000000;			-- Ciclo do clock (é ajustável)
+CONSTANT half: INTEGER := max/2;				-- Meio Ciclo
+SIGNAL clockticks: INTEGER RANGE 0 TO max;-- Conta cada ciclo do clock de entrada
+SIGNAL clock: STD_LOGIC;						-- Clock instanciado
+
+
+SUBTYPE ascii IS STD_LOGIC_VECTOR(7 DOWNTO 0);	-- Este subtipo representa cada código inserido num array que será varrido pelo contador
+TYPE CadeiaCaract IS array (1 TO 16) OF ascii;	-- Sequencia para impressao de uma linha do Display
+TYPE init IS ARRAY (1 TO 4) OF ascii;				-- Códigos de iniciação no display
+CONSTANT CDG_iniciacao : init:= (x"06",x"0F",x"38",x"01");		-- Códigos de instruções iniciais da placa (CONSULTAR TABELA 6)
+CONSTANT Linha_1 : CadeiaCaract := (x"4D",x"49",x"4E",x"45",x"43",x"52",x"41",x"46",x"54",x"20",x"45",x"20",x"54",x"4F",x"50",x"21"); --Inserção de caracteres na primeira linha (array que contém o caractere de cada espaço da primeira linha)
+CONSTANT Linha_2 : CadeiaCaract := (x"58",x"49",x"4D",x"45",x"4E",x"45",x"53",x"20",x"3A",x"29",x"20",x"20",x"20",x"20",x"20",x"20");	--Inserção de caracteres na segunda linha (array que contém o caractere de cada espaço da segunda linha)
+SIGNAL conteiro: INTEGER:=1;							-- Contador que varre as instruções que vâo para o LCD_DATA
+
+
+BEGIN
+	-- INSERIR SINAIS NOS ELEMENTOS DA PLACA DE PREFERÊNCIA
+		RESET <= KEY(1);
+		
+		PASSAR <= SW(13);
+		
+		PASSAR2 <= SW(14);
+
+PROCESS (clock,RESET)
+BEGIN
+	IF RESET = '0' THEN
+	ESTADO <= IDLE_CLEAR1;
+
+	ELSIF (clock'EVENT AND clock = '1') THEN
+	CASE ESTADO IS
+	
+		-- ESTADOS IDLE CLEAR RODAM OS COMANDOS DE INICIALIZAÇÃO DO DISPLAY
+		WHEN IDLE_CLEAR1 =>
+		ESTADO <= IDLE_CLEAR2;
+		
+		WHEN IDLE_CLEAR2 =>
+		conteiro <= conteiro + 1;
+		IF conteiro < 4 THEN ESTADO <= IDLE_CLEAR1;
+		ELSE ESTADO <= IDLE;
+		END IF;
+		
+		-- ESTADO IDLE É UMA REFERÊNCIA DE "MENU"
+		WHEN IDLE =>
+		conteiro <= 1;
+		IF PASSAR = '1' THEN ESTADO <= MSG1;
+		ELSE ESTADO <= IDLE;
+		END IF;
+		
+		--	MSG 1 É O ESTADO NO QUAL É INSERIDO UM CARACTERE DO ARRAY DA PRIMEIRA LINHA
+		WHEN MSG1 =>
+		ESTADO <= MSG1_EN;
+		
+		-- MSG1_EN É REPONSÁVEL POR: DESCER SINAL LCD_EN PARA IMPRIMIR CARACTERE, E AUMENTAR CONTADOR PARA PASSAR PARA O PRÓXIMO CARACTERE DO ARRAY
+		WHEN MSG1_EN =>
+		conteiro <= conteiro + 1;
+		IF conteiro < 16 THEN ESTADO <= MSG1;
+		ELSE ESTADO <= MSG2_END;
+		END IF;
+		
+		-- MSG2_END ATRIBUI O ENDEREÇO DO PRIMEIRO DIGITO DA SEGUNDA LINHA NO CURSOR
+		WHEN MSG2_END =>
+		ESTADO <= MSG2_END_EN;
+		
+		-- DÁ ENABLE NA INSTRUÇÃO ANTERIOR
+		WHEN MSG2_END_EN =>
+		conteiro <= 1;
+		ESTADO <= MSG2;
+		
+		--IGUAL AO MSG1, PORÉM PARA A SEGUNDA LINHA
+		WHEN MSG2 =>
+		ESTADO <= MSG2_EN;
+		
+		WHEN MSG2_EN =>
+		conteiro <= conteiro + 1;
+		IF conteiro < 16 THEN ESTADO <= MSG2;
+		ELSIF passar2 = '1' THEN ESTADO <= IDLE;
+		END IF;
+		
+		
+		END CASE;
+	END IF;
+END PROCESS;
+
+PROCESS (ESTADO)
+BEGIN
+	CASE ESTADO IS
+		WHEN IDLE_CLEAR1 =>
+				LCD_DATA <= CDG_iniciacao(conteiro);
+				LCD_EN <= '1';
+				LCD_RW <= '0';
+				LCD_RS <= '0';
+				
+		WHEN IDLE_CLEAR2 =>
+				LCD_EN <= '0';
+				LCD_RW <= '0';
+				LCD_RS <= '0';
+			
+		WHEN IDLE =>
+				LCD_EN <= '0';
+				LCD_RW <= '0';
+				LCD_RS <= '0';
+			
+			
+		WHEN MSG1 =>
+				LCD_DATA <= Linha_1(conteiro);
+				LCD_EN <= '1';
+				LCD_RW <= '0';
+				LCD_RS <= '1';
+				
+		WHEN MSG1_EN =>
+				LCD_EN <= '0'; 
+				LCD_RW <= '0';
+				LCD_RS <= '1';
+				
+				
+		WHEN MSG2_END =>
+				LCD_DATA <= "11000000";
+				LCD_EN <= '1';
+				LCD_RW <= '0';
+				LCD_RS <= '0';
+				
+		WHEN MSG2_END_EN =>
+				LCD_EN <= '0';
+				LCD_RW <= '0';
+				LCD_RS <= '0';
+				
+				
+		WHEN MSG2 =>
+				LCD_DATA <= Linha_2(conteiro);
+				LCD_EN <= '1';
+				LCD_RW <= '0';
+				LCD_RS <= '1';
+				
+		WHEN MSG2_EN =>
+				LCD_EN <= '0'; 
+				LCD_RW <= '0';
+				LCD_RS <= '1';
+
+				
+		WHEN OTHERS =>
+			NULL;
+
+			END CASE;
+END PROCESS;
+				-- sim, poderiam estar num componente hehe
+  			  	with LCD_DATA(3 DOWNTO 0) select
+					HEX0 <= "0000001" when "0000",
+					"1001111" when "0001",
+					"0010010" when "0010",
+					"0000110" when "0011",
+					"1001100" when "0100",
+					"0100100" when "0101",
+					"0100000" when "0110",
+					"0001111" when "0111",
+					"0000000" when "1000",
+					"0000100" when "1001",
+					"0001000" when "1010",
+					"1100000" when "1011",
+					"0110001" when "1100",
+					"1000010" when "1101",
+					"0110000" when "1110",
+					"0111000" when "1111",
+					"1111111" when others;
+					
+  			  	with LCD_DATA(7 DOWNTO 4) select
+					HEX1 <= "0000001" when "0000",
+					"1001111" when "0001",
+					"0010010" when "0010",
+					"0000110" when "0011",
+					"1001100" when "0100",
+					"0100100" when "0101",
+					"0100000" when "0110",
+					"0001111" when "0111",
+					"0000000" when "1000",
+					"0000100" when "1001",
+					"0001000" when "1010",
+					"1100000" when "1011",
+					"0110001" when "1100",
+					"1000010" when "1101",
+					"0110000" when "1110",
+					"0111000" when "1111",
+					"1111111" when others;
+					
+				with conteiro select
+					HEX2 <= "0000001" when 0,
+					"1001111" when 1,
+					"0010010" when 2,
+					"0000110" when 3,
+					"1001100" when 4,
+					"0100100" when 5,
+					"0100000" when 6,
+					"0001111" when 7,
+					"0000000" when 8,
+					"0000100" when 9,
+					"0001000" when 10,
+					"1100000" when 11,
+					"0110001" when 12,
+					"1000010" when 13,
+					"0110000" when 14,
+					"0111000" when 15,
+					"1111111" when others;
+					
+
+			-- PROCESSOS PARA O DIVISOR DE CLOCK
+    ClockDivide: PROCESS
+            BEGIN
+            WAIT UNTIL CLOCK_50'EVENT and CLOCK_50 = '1';
+            IF clockticks < max THEN
+                clockticks <= clockticks + 1;
+            ELSE
+                clockticks <= 0;
+            END IF;
+            IF clockticks < half THEN
+                clock <= '0';
+            ELSE
+                clock <= '1';
+            END IF;
+        END PROCESS;
+end bhv;
