@@ -3,9 +3,9 @@ USE ieee.std_logic_1164.all;
 
 ENTITY REG IS 
 	port(
-		D : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		D : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 		R_in,Reset,Clock : IN STD_LOGIC;
-		D_out: OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+		D_out: OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
 END REG;
 

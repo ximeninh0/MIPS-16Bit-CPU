@@ -3,9 +3,9 @@ USE ieee.std_logic_1164.all;
 
 ENTITY BUFFER_TRI IS 
 	port(
-			ENTRADA : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+			ENTRADA : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 			GATE : IN STD_LOGIC;
-			SAIDA: OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+			SAIDA: OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
 END BUFFER_TRI;
 -- O buffer apenas permite a passagem de dados mediante a liberação do GATE
