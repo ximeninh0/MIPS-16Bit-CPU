@@ -1,0 +1,16 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY HAZARD_DETECTION_UNIT IS 
+    port(
+        
+    );
+END HAZARD_DETECTION_UNIT;
+
+
+ARCHITECTURE Behavior OF HAZARD_DETECTION_UNIT IS
+
+    
+
+BEGIN
+END Behavior;

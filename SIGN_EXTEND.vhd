@@ -3,7 +3,7 @@ USE ieee.std_logic_1164.all;
 
 ENTITY SIGN_EXTEND IS 
     PORT (
-        IN_SIGNAL : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
+        IN_SIGNAL : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
         OUT_SIGNAL : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
     );
 END SIGN_EXTEND;
@@ -13,7 +13,7 @@ ARCHITECTURE Behavior OF SIGN_EXTEND IS
 SIGNAL AUX1 : STD_LOGIC; 
 
 BEGIN
-    AUX1 <= IN_SIGNAL(5) AND 1;
+    AUX1 <= IN_SIGNAL(4) AND '1';
 
     -- OUT_SIGNAL(15) <= AUX1;
     -- OUT_SIGNAL(14) <= AUX1;
@@ -25,8 +25,9 @@ BEGIN
     -- OUT_SIGNAL(8) <= AUX1;
     -- OUT_SIGNAL(7) <= AUX1;
     -- OUT_SIGNAL(6) <= AUX1;
-    OUT_SIGNAL(15 downto 6) <= AUX1;
-    OUT_SIGNAL(5 downto 0) <= IN_SIGNAL(5 downto 0);
+    -- OUT_SIGNAL(5) <= AUX1;
+    OUT_SIGNAL(15 downto 5) <= (OTHERS => AUX1);
+    OUT_SIGNAL(4 downto 0) <= IN_SIGNAL(4 downto 0);
 
 
 
