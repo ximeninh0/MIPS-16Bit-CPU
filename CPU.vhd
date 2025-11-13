@@ -34,15 +34,22 @@ SIGNAL RESET: STD_LOGIC := '0';				-- Sinal de reset geral
 -- Sinais do Estagio IF
 SIGNAL IF_PC_SOURCE : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL IF_PC_NEXT,IF_PC_CURRENT, IF_PC_MUX,IF_INSTRUCTION : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL IF_PC_ADD_OVERFLOW, IF_PC_ADD_COUT : STD_LOGIC;
+SIGNAL IF_NEXT_PC : STD_LOGIC_VECTOR(15 DOWNTO 0);
+
+-- Sinais do Estagio IF/ID
+SIGNAL IF_ID_WRITE, ID_PC_WRITE : STD_LOGIC;
+
 
 BEGIN
 
 	-- Estágio IF
 		WITH IF_PC_SOURCE SELECT
 			-- Lógica para seleção do próximo PC
-			IF_PC_MUX <= IF_PC_CURRENT WHEN "00", -- PC + 2
+			IF_PC_MUX <= 	IF_PC_CURRENT WHEN "00", -- PC + 2
 							"0000000000000000" WHEN "01", -- Tratamento de erro
-							"0000000000000000" WHEN "10", -- Branch (a implementar)
+							"0000000000000000" WHEN "10", -- Branch (a implementar) ---
+							"0000000000000000" WHEN "11", -- Jump (a implementar) ---
 							"0000000000000000" WHEN OTHERS; -- Default
 
 		IF_PC_INSTANCE: REG PORT MAP(
@@ -52,6 +59,7 @@ BEGIN
 			Clock => CLOCK,
 			D_out => IF_PC
 		); --OK
+		
 		IF_PC_ADD_INSTANCE: RIPPLE_CARRY PORT MAP(
 			A => IF_PC,
 			B => "0000000000000010",
@@ -65,7 +73,7 @@ BEGIN
 		INSTRUCTION_MEMORY_INSTANCE: MEMORY PORT MAP( --NOK
 			ADDRESS=>IF_PC
 			DATA_IN=> , -- Saida de EX/MEM ---
-			DATA_OUT=>IF_INSTRUCTION_DATA
+			DATA_OUT=>IF_INSTRUCTION
 			READ_MEM=>'1', -- Sempre lê
 			WRITE_MEM=>'0', -- Nunca escreve
 			CLOCK=>CLOCK
@@ -73,9 +81,9 @@ BEGIN
 
 		PIPE_IF_ID_INSTANCE: PIPE_IF_ID PORT MAP( --NOK
 			-- Inputs
-			NEXT_PC_IN => ,
-			INSTRUCTION_DATA_IN => ,
-			IF_ID_WRITE => ,
+			NEXT_PC_IN => IF_NEXT_PC,
+			INSTRUCTION_DATA_IN => IF_INSTRUCTION,
+			IF_ID_WRITE => IF_ID_WRITE, --- Vem do controle de hazard
 
 			-- Outputs
 			NEXT_PC_OUT => ,
@@ -87,7 +95,18 @@ BEGIN
 			RESET => RESET
 		);
 
+--===============================================================================
 	-- Estagio IF/ID
+		IF_ID_HAZARD_DETECTION_UNIT_INSTANCE : HAZARD_DETECTION_UNIT PORT MAP( --NOK
+			-- ID_EX_MEM_READ => , -- EX/MEM ---
+			-- ID_EX_RT => , -- EX/MEM ---
+			-- IF_ID_RS => , -- IF/ID ---
+			-- IF_ID_RT => , -- IF/ID ---
+			PC_WRITE => ID_PC_WRITE,
+			IF_ID_WRITE => IF_ID_WRITE,
+			-- IF_FLUSH => 
+		);
+
 		IF_ID_REG_BANK_INSTANCE: REG_BANK PORT MAP( --NOK
 			REG_READ1 => , -- RS
 			REG_READ2 => , -- RT
@@ -105,7 +124,7 @@ BEGIN
 			OUT_SIGNAL => ,
 		);
 
-		IF_ID_SHIFT_LEFT_INSTANCE: SHIFT_LEFT PORT MAP( --OK
+		IF_ID_SHIFT_LEFT_INSTANCE: SHIFT_LEFT2 PORT MAP( --OK
 			IN_SIGNAL => ,
 			OUT_SIGNAL => ,
 		);
@@ -123,6 +142,11 @@ BEGIN
 			OVERFLOW => ,
 			COUT => ,
 			SUM => 
+		);
+
+		IF_ID_SHIFT_LEFT1_JUMP_INSTANCE: SHIFT_LEFT2 PORT MAP( --OK
+			IN_SIGNAL => ,
+			OUT_SIGNAL => ,
 		);
 
 		PIPE_ID_EX_INSTANCE: PIPE_ID_EX PORT MAP(
@@ -171,7 +195,9 @@ BEGIN
 			CLOCK=> CLOCK
 			RESET=> RESET
 		);
-
+		
+--===============================================================================
+--===============================================================================
 	-- Estágio ID/EX
 
 		ALU_CONTROL_INSTANCE : ALU_CONTROL PORT MAP(
@@ -255,7 +281,9 @@ BEGIN
 			CLOCK=> CLOCK,;
 			RESET=> RESET,
 		)
-
+		
+--===============================================================================
+--===============================================================================
 	-- Estagio EX/MEM
 
 		DATA_MEMORY_INSTANCE: MEMORY PORT MAP( --NOK
