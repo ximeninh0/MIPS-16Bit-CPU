@@ -3,7 +3,8 @@ USE ieee.std_logic_1164.all;
 
 ENTITY HAZARD_DETECTION_UNIT IS 
     port(
-        
+        PC_WRITE : OUT STD_LOGIC;
+        IF_ID_WRITE : OUT STD_LOGIC;
     );
 END HAZARD_DETECTION_UNIT;
 
