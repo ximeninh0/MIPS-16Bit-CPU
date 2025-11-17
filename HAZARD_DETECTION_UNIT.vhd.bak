@@ -1,19 +1,18 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-use work.CPU_PACKAGE.all;
 
 ENTITY HAZARD_DETECTION_UNIT IS 
     port(
         PC_WRITE : OUT STD_LOGIC;
-        IF_ID_WRITE : OUT STD_LOGIC
+        IF_ID_WRITE : OUT STD_LOGIC;
     );
 END HAZARD_DETECTION_UNIT;
 
 
 ARCHITECTURE Behavior OF HAZARD_DETECTION_UNIT IS
-BEGIN
+
     PC_WRITE <= '1';    
     IF_ID_WRITE <= '1';
 
-
+BEGIN
 END Behavior;

@@ -7,7 +7,7 @@ ENTITY ULA IS
 			A,B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);		-- Entradas A e B de 8 bits
 			RESULT: out STD_LOGIC_VECTOR(15 DOWNTO 0);	-- Resultado de 4 bits
 			OPERATION: IN STD_LOGIC;					-- Entrada que indica a operação que será realizada pela ULA
-			ZERO, OVERFLOW,Cout : OUT STD_LOGIC;		-- ZERO: 1 em caso do resultado ser 0, OV: 1 no caso da operação resultar em Overflow, Cout: 1 em caso de carry-out
+			ZERO, OVERFLOW,Cout : OUT STD_LOGIC		-- ZERO: 1 em caso do resultado ser 0, OV: 1 no caso da operação resultar em Overflow, Cout: 1 em caso de carry-out
 		);
 END ULA;
 

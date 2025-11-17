@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ULA
-Tue Sep 30 18:29:23 2025
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Mon Nov 17 19:43:02 2025
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -10,14 +10,63 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
+ 10. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
+ 11. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE"
+ 12. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE"
+ 13. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:ALU_RESULT_INSTANCE"
+ 14. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:MEM_OUT_INSTANCE"
+ 15. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE"
+ 16. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
+ 17. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
+ 18. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE"
+ 19. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE"
+ 20. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE"
+ 21. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE"
+ 22. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:RT_DATA_INSTANCE"
+ 23. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:ALU_OUT_INSTANCE"
+ 24. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE"
+ 25. Port Connectivity Checks: "ULA:ALU_INSTANCE"
+ 26. Port Connectivity Checks: "FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE"
+ 27. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
+ 28. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
+ 29. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE"
+ 30. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE"
+ 31. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE"
+ 32. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE"
+ 33. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE"
+ 34. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:NEXT_PC_INSTANCE"
+ 35. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE"
+ 36. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE"
+ 37. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE"
+ 38. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_B_INSTANCE"
+ 39. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_A_INSTANCE"
+ 40. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE"
+ 41. Port Connectivity Checks: "RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE"
+ 42. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE"
+ 43. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE"
+ 44. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG15_INSTANCE"
+ 45. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG0_INSTANCE"
+ 46. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE"
+ 47. Port Connectivity Checks: "CONTROL_UNIT:CONTROL_UNIT_INSTANCE"
+ 48. Port Connectivity Checks: "PIPE_IF_ID:PIPE_IF_ID_INSTANCE"
+ 49. Port Connectivity Checks: "MEMORY:INSTRUCTION_MEMORY_INSTANCE"
+ 50. Port Connectivity Checks: "RIPPLE_CARRY:IF_PC_ADD_INSTANCE"
+ 51. Port Connectivity Checks: "REG:IF_PC_INSTANCE"
+ 52. Post-Synthesis Netlist Statistics for Top Partition
+ 53. Elapsed Time Per Partition
+ 54. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,20 +86,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Sep 30 18:29:23 2025           ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 17 19:43:02 2025       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
 ; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 96                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -146,8 +195,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -157,76 +206,1206 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
+; TWO_BIT_REG.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/TWO_BIT_REG.vhd           ;         ;
+; SIGN_EXTEND.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/SIGN_EXTEND.vhd           ;         ;
+; SHIFT_LEFT2.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT2.vhd           ;         ;
+; SHIFT_LEFT1.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT1.vhd           ;         ;
+; REG.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/REG.vhd                   ;         ;
+; PIPE_MEM_WB.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_MEM_WB.vhd           ;         ;
+; PIPE_IF_ID.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_IF_ID.vhd            ;         ;
+; PIPE_ID_EX.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd            ;         ;
+; PIPE_EX_MEM.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_EX_MEM.vhd           ;         ;
+; ONE_BIT_REG.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/ONE_BIT_REG.vhd           ;         ;
+; MEMORY.vhd                       ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/MEMORY.vhd                ;         ;
+; HAZARD_DETECTION_UNIT.vhd        ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/HAZARD_DETECTION_UNIT.vhd ;         ;
+; FOUR_BIT_REG.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/FOUR_BIT_REG.vhd          ;         ;
+; FORWARDING_UNIT.vhd              ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/FORWARDING_UNIT.vhd       ;         ;
+; CONSTANTS_PACKAGE.vhd            ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/CONSTANTS_PACKAGE.vhd     ;         ;
+; BUFFER_TRI.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/BUFFER_TRI.vhd            ;         ;
+; ALU_CONTROL.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/ALU_CONTROL.vhd           ;         ;
+; RIPPLE_CARRY.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/RIPPLE_CARRY.vhd          ;         ;
+; COMPARATOR.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/COMPARATOR.vhd            ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/ULA.vhd                   ;         ;
+; FULLADDER.vhd                    ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/FULLADDER.vhd             ;         ;
+; CPU.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd                   ;         ;
+; CPU_PACKAGE.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU_PACKAGE.vhd           ;         ;
+; REG_BANK.vhd                     ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/REG_BANK.vhd              ;         ;
+; CONTROL_UNIT.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd          ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 96    ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; SW[0] ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 96    ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |CPU                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 96   ; 0            ; |CPU                ; CPU         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE" ;
++------+-------+----------+-----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                               ;
++------+-------+----------+-----------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                          ;
++------+-------+----------+-----------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE" ;
++------+-------+----------+------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                              ;
++------+-------+----------+------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                         ;
++------+-------+----------+------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE" ;
++------+-------+----------+------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                          ;
++------+-------+----------+------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                     ;
++------+-------+----------+------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:ALU_RESULT_INSTANCE" ;
++------+-------+----------+------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                    ;
++------+-------+----------+------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                               ;
++------+-------+----------+------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:MEM_OUT_INSTANCE" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE" ;
++------+-------+----------+-----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                               ;
++------+-------+----------+-----------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                          ;
++------+-------+----------+-----------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE" ;
++------+-------+----------+------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                          ;
++------+-------+----------+------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                     ;
++------+-------+----------+------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE" ;
++------+-------+----------+-------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                           ;
++------+-------+----------+-------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                      ;
++------+-------+----------+-------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE" ;
++------+-------+----------+------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                          ;
++------+-------+----------+------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                     ;
++------+-------+----------+------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE" ;
++------+-------+----------+------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                              ;
++------+-------+----------+------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                         ;
++------+-------+----------+------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:RT_DATA_INSTANCE" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:ALU_OUT_INSTANCE" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ALU_INSTANCE"                                                                       ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; zero     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE"                                               ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; foward_a ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; foward_b ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE" ;
++------+-------+----------+--------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                            ;
++------+-------+----------+--------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                       ;
++------+-------+----------+--------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE" ;
++------+-------+----------+----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                        ;
++------+-------+----------+----------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                   ;
++------+-------+----------+----------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE" ;
++------+-------+----------+-----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                         ;
++------+-------+----------+-----------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                    ;
++------+-------+----------+-----------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE" ;
++------+-------+----------+-----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                         ;
++------+-------+----------+-----------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                    ;
++------+-------+----------+-----------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE" ;
++------+-------+----------+------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                          ;
++------+-------+----------+------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                     ;
++------+-------+----------+------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE" ;
++------+-------+----------+------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                          ;
++------+-------+----------+------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                     ;
++------+-------+----------+------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:NEXT_PC_INSTANCE" ;
++------+-------+----------+-------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                               ;
++------+-------+----------+-------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                          ;
++------+-------+----------+-------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE" ;
++------+-------+----------+----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                  ;
++------+-------+----------+----------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                             ;
++------+-------+----------+----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_B_INSTANCE" ;
++------+-------+----------+-----------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                             ;
++------+-------+----------+-----------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                        ;
++------+-------+----------+-----------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_A_INSTANCE" ;
++------+-------+----------+-----------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                             ;
++------+-------+----------+-----------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                        ;
++------+-------+----------+-----------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE"                                                              ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; next_pc_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ex_alu_op_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; reset         ; Input  ; Info     ; Stuck at GND                                                                        ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE"                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; cin      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; add_sub  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE" ;
++------+-------+----------+----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                        ;
++------+-------+----------+----------------------------------------------------------------+
+; gate ; Input ; Info     ; Stuck at VCC                                                   ;
++------+-------+----------+----------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE" ;
++------+-------+----------+----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                        ;
++------+-------+----------+----------------------------------------------------------------+
+; gate ; Input ; Info     ; Stuck at VCC                                                   ;
++------+-------+----------+----------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG15_INSTANCE" ;
++------+-------+----------+-------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                               ;
++------+-------+----------+-------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at GND                                          ;
++------+-------+----------+-------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG0_INSTANCE" ;
++-------+-------+----------+-----------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                             ;
++-------+-------+----------+-----------------------------------------------------+
+; d     ; Input ; Info     ; Stuck at GND                                        ;
+; r_in  ; Input ; Info     ; Stuck at GND                                        ;
+; reset ; Input ; Info     ; Stuck at GND                                        ;
++-------+-------+----------+-----------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CONTROL_UNIT:CONTROL_UNIT_INSTANCE"                                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; id_flush ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ex_flush ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; wb_flush ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_IF_ID:PIPE_IF_ID_INSTANCE" ;
++-------+-------+----------+---------------------------------+
+; Port  ; Type  ; Severity ; Details                         ;
++-------+-------+----------+---------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                    ;
++-------+-------+----------+---------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "MEMORY:INSTRUCTION_MEMORY_INSTANCE" ;
++-----------+-------+----------+---------------------------------+
+; Port      ; Type  ; Severity ; Details                         ;
++-----------+-------+----------+---------------------------------+
+; data_in   ; Input ; Info     ; Stuck at GND                    ;
+; read_mem  ; Input ; Info     ; Stuck at VCC                    ;
+; write_mem ; Input ; Info     ; Stuck at GND                    ;
++-----------+-------+----------+---------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RIPPLE_CARRY:IF_PC_ADD_INSTANCE"                                                        ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; b[15..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[1]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; b[0]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cin      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; add_sub  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "REG:IF_PC_INSTANCE" ;
++-------+-------+----------+---------------------+
+; Port  ; Type  ; Severity ; Details             ;
++-------+-------+----------+---------------------+
+; reset ; Input ; Info     ; Stuck at GND        ;
++-------+-------+----------+---------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 96                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Sep 30 18:28:59 2025
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Mon Nov 17 19:41:15 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file and_component.vhd
-    Info (12022): Found design unit 1: AND_COMPONENT-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/AND_COMPONENT.vhd Line: 11
-    Info (12023): Found entity 1: AND_COMPONENT File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/AND_COMPONENT.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file or_component.vhd
-    Info (12022): Found design unit 1: OR_COMPONENT-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/OR_COMPONENT.vhd Line: 11
-    Info (12023): Found entity 1: OR_COMPONENT File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/OR_COMPONENT.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file two_bit_reg.vhd
+    Info (12022): Found design unit 1: TWO_BIT_REG-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/TWO_BIT_REG.vhd Line: 12
+    Info (12023): Found entity 1: TWO_BIT_REG File: C:/Users/guixi/repositories/4-BitCPU-VHDL/TWO_BIT_REG.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sign_extend.vhd
+    Info (12022): Found design unit 1: SIGN_EXTEND-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SIGN_EXTEND.vhd Line: 11
+    Info (12023): Found entity 1: SIGN_EXTEND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SIGN_EXTEND.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file shift_left2.vhd
+    Info (12022): Found design unit 1: SHIFT_LEFT2-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT2.vhd Line: 11
+    Info (12023): Found entity 1: SHIFT_LEFT2 File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file shift_left1.vhd
+    Info (12022): Found design unit 1: SHIFT_LEFT1-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT1.vhd Line: 11
+    Info (12023): Found entity 1: SHIFT_LEFT1 File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
+    Info (12022): Found design unit 1: REG-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/REG.vhd Line: 12
+    Info (12023): Found entity 1: REG File: C:/Users/guixi/repositories/4-BitCPU-VHDL/REG.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file pipe_mem_wb.vhd
+    Info (12022): Found design unit 1: PIPE_MEM_WB-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_MEM_WB.vhd Line: 33
+    Info (12023): Found entity 1: PIPE_MEM_WB File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_MEM_WB.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file pipe_if_id.vhd
+    Info (12022): Found design unit 1: PIPE_IF_ID-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_IF_ID.vhd Line: 26
+    Info (12023): Found entity 1: PIPE_IF_ID File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_IF_ID.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file pipe_id_ex.vhd
+    Info (12022): Found design unit 1: PIPE_ID_EX-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 61
+    Info (12023): Found entity 1: PIPE_ID_EX File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file pipe_ex_mem.vhd
+    Info (12022): Found design unit 1: PIPE_EX_MEM-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_EX_MEM.vhd Line: 45
+    Info (12023): Found entity 1: PIPE_EX_MEM File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_EX_MEM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file one_bit_reg.vhd
+    Info (12022): Found design unit 1: ONE_BIT_REG-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ONE_BIT_REG.vhd Line: 15
+    Info (12023): Found entity 1: ONE_BIT_REG File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ONE_BIT_REG.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
+    Info (12022): Found design unit 1: MEMORY-Behavioral File: C:/Users/guixi/repositories/4-BitCPU-VHDL/MEMORY.vhd Line: 18
+    Info (12023): Found entity 1: MEMORY File: C:/Users/guixi/repositories/4-BitCPU-VHDL/MEMORY.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file hazard_detection_unit.vhd
+    Info (12022): Found design unit 1: HAZARD_DETECTION_UNIT-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/HAZARD_DETECTION_UNIT.vhd Line: 13
+    Info (12023): Found entity 1: HAZARD_DETECTION_UNIT File: C:/Users/guixi/repositories/4-BitCPU-VHDL/HAZARD_DETECTION_UNIT.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file four_bit_reg.vhd
+    Info (12022): Found design unit 1: FOUR_BIT_REG-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FOUR_BIT_REG.vhd Line: 13
+    Info (12023): Found entity 1: FOUR_BIT_REG File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FOUR_BIT_REG.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file forwarding_unit.vhd
+    Info (12022): Found design unit 1: FORWARDING_UNIT-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FORWARDING_UNIT.vhd Line: 21
+    Info (12023): Found entity 1: FORWARDING_UNIT File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FORWARDING_UNIT.vhd Line: 5
+Info (12021): Found 1 design units, including 0 entities, in source file constants_package.vhd
+    Info (12022): Found design unit 1: CONSTANTS_PACKAGE File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONSTANTS_PACKAGE.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file buffer_tri.vhd
+    Info (12022): Found design unit 1: BUFFER_TRI-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/BUFFER_TRI.vhd Line: 12
+    Info (12023): Found entity 1: BUFFER_TRI File: C:/Users/guixi/repositories/4-BitCPU-VHDL/BUFFER_TRI.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file alu_control.vhd
+    Info (12022): Found design unit 1: ALU_CONTROL-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ALU_CONTROL.vhd Line: 13
+    Info (12023): Found entity 1: ALU_CONTROL File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ALU_CONTROL.vhd Line: 5
+Warning (12019): Can't analyze file -- file AND_COMPONENT.vhd is missing
+Warning (12019): Can't analyze file -- file OR_COMPONENT.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file ripple_carry.vhd
-    Info (12022): Found design unit 1: RIPPLE_CARRY-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/RIPPLE_CARRY.vhd Line: 16
-    Info (12023): Found entity 1: RIPPLE_CARRY File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/RIPPLE_CARRY.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file multi_component.vhd
-    Info (12022): Found design unit 1: MULTI_COMPONENT-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/MULTI_COMPONENT.vhd Line: 12
-    Info (12023): Found entity 1: MULTI_COMPONENT File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/MULTI_COMPONENT.vhd Line: 5
+    Info (12022): Found design unit 1: RIPPLE_CARRY-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/RIPPLE_CARRY.vhd Line: 16
+    Info (12023): Found entity 1: RIPPLE_CARRY File: C:/Users/guixi/repositories/4-BitCPU-VHDL/RIPPLE_CARRY.vhd Line: 5
+Warning (12019): Can't analyze file -- file MULTI_COMPONENT.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file comparator.vhd
-    Info (12022): Found design unit 1: COMPARATOR-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/COMPARATOR.vhd Line: 11
-    Info (12023): Found entity 1: COMPARATOR File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/COMPARATOR.vhd Line: 4
+    Info (12022): Found design unit 1: COMPARATOR16-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/COMPARATOR.vhd Line: 11
+    Info (12023): Found entity 1: COMPARATOR16 File: C:/Users/guixi/repositories/4-BitCPU-VHDL/COMPARATOR.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/ULA.vhd Line: 15
-    Info (12023): Found entity 1: ULA File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/ULA.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file not_component.vhd
-    Info (12022): Found design unit 1: NOT_COMPONENT-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/NOT_COMPONENT.vhd Line: 11
-    Info (12023): Found entity 1: NOT_COMPONENT File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/NOT_COMPONENT.vhd Line: 4
+    Info (12022): Found design unit 1: ULA-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ULA.vhd Line: 14
+    Info (12023): Found entity 1: ULA File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ULA.vhd Line: 5
+Warning (12019): Can't analyze file -- file NOT_COMPONENT.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
-    Info (12022): Found design unit 1: FULLADDER-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/FULLADDER.vhd Line: 12
-    Info (12023): Found entity 1: FULLADDER File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/FULLADDER.vhd Line: 4
+    Info (12022): Found design unit 1: FULLADDER-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FULLADDER.vhd Line: 12
+    Info (12023): Found entity 1: FULLADDER File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FULLADDER.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/segs_3_translator.vhd
-    Info (12022): Found design unit 1: SEGS_3_TRANSLATOR-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/SEGS_3_TRANSLATOR.vhd Line: 12
-    Info (12023): Found entity 1: SEGS_3_TRANSLATOR File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/SEGS_3_TRANSLATOR.vhd Line: 5
+    Info (12022): Found design unit 1: SEGS_3_TRANSLATOR-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/SEGS_3_TRANSLATOR.vhd Line: 12
+    Info (12023): Found entity 1: SEGS_3_TRANSLATOR File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/SEGS_3_TRANSLATOR.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/segs_4_translator.vhd
-    Info (12022): Found design unit 1: SEGS_4_TRANSLATOR-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/SEGS_4_TRANSLATOR.vhd Line: 12
-    Info (12023): Found entity 1: SEGS_4_TRANSLATOR File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/SEGS_4_TRANSLATOR.vhd Line: 5
+    Info (12022): Found design unit 1: SEGS_4_TRANSLATOR-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/SEGS_4_TRANSLATOR.vhd Line: 12
+    Info (12023): Found entity 1: SEGS_4_TRANSLATOR File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/SEGS_4_TRANSLATOR.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/uc_cpu.vhd
-    Info (12022): Found design unit 1: UC_CPU-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/UC_CPU.vhd Line: 19
-    Info (12023): Found entity 1: UC_CPU File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/UC_CPU.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file output_files/buffer_tri.vhd
-    Info (12022): Found design unit 1: BUFFER_TRI-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/BUFFER_TRI.vhd Line: 12
-    Info (12023): Found entity 1: BUFFER_TRI File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/BUFFER_TRI.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file output_files/reg.vhd
-    Info (12022): Found design unit 1: REG-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/REG.vhd Line: 12
-    Info (12023): Found entity 1: REG File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/REG.vhd Line: 4
+    Info (12022): Found design unit 1: UC_CPU-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/UC_CPU.vhd Line: 19
+    Info (12023): Found entity 1: UC_CPU File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/UC_CPU.vhd Line: 5
+Warning (12019): Can't analyze file -- file output_files/BUFFER_TRI.vhd is missing
+Warning (12019): Can't analyze file -- file output_files/REG.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/uc_lcd.vhd
-    Info (12022): Found design unit 1: UC_LCD-bhv File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/UC_LCD.vhd Line: 20
-    Info (12023): Found entity 1: UC_LCD File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/output_files/UC_LCD.vhd Line: 5
+    Info (12022): Found design unit 1: UC_LCD-bhv File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/UC_LCD.vhd Line: 20
+    Info (12023): Found entity 1: UC_LCD File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/UC_LCD.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
-    Info (12022): Found design unit 1: CPU-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/CPU.vhd Line: 25
-    Info (12023): Found entity 1: CPU File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/CPU.vhd Line: 5
+    Info (12022): Found design unit 1: CPU-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 25
+    Info (12023): Found entity 1: CPU File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file cpu_package.vhd
-    Info (12022): Found design unit 1: CPU_PACKAGE File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/CPU_PACKAGE.vhd Line: 5
+    Info (12022): Found design unit 1: CPU_PACKAGE File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU_PACKAGE.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file reg_bank.vhd
-    Info (12022): Found design unit 1: REG_BANK-Behavior File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/REG_BANK.vhd Line: 16
-    Info (12023): Found entity 1: REG_BANK File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/REG_BANK.vhd Line: 5
-Error (10476): VHDL error at CPU.vhd(112): type of identifier "REG_READ" does not agree with its usage as "std_logic_vector" type File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/CPU.vhd Line: 112
-Error (10558): VHDL error at CPU.vhd(112): cannot associate formal port "R_in" of mode "out" with an expression File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/CPU.vhd Line: 112
-Error (10476): VHDL error at CPU.vhd(113): type of identifier "REG_WRITE" does not agree with its usage as "std_logic_vector" type File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/CPU.vhd Line: 113
-Error (10558): VHDL error at CPU.vhd(113): cannot associate formal port "R_out" of mode "out" with an expression File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/CPU.vhd Line: 113
-Error (10476): VHDL error at CPU.vhd(116): type of identifier "Extern" does not agree with its usage as "std_logic" type File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/CPU.vhd Line: 116
-Error (10558): VHDL error at CPU.vhd(116): cannot associate formal port "A_in" of mode "out" with an expression File: C:/Users/23012419/Desktop/Projeto_CPU_modelo_Ximenes/CPU.vhd Line: 116
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 1 warning
-    Error: Peak virtual memory: 4787 megabytes
-    Error: Processing ended: Tue Sep 30 18:29:23 2025
-    Error: Elapsed time: 00:00:24
-    Error: Total CPU time (on all processors): 00:00:39
+    Info (12022): Found design unit 1: REG_BANK-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/REG_BANK.vhd Line: 19
+    Info (12023): Found entity 1: REG_BANK File: C:/Users/guixi/repositories/4-BitCPU-VHDL/REG_BANK.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file control_unit.vhd
+    Info (12022): Found design unit 1: CONTROL_UNIT-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 29
+    Info (12023): Found entity 1: CONTROL_UNIT File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 4
+Info (12127): Elaborating entity "CPU" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(11): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(11): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(11): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(12): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(13): used implicit default value for signal "HEX7" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(15): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(16): used implicit default value for signal "LEDG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(18): used implicit default value for signal "LCD_DATA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(19): used implicit default value for signal "LCD_RW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 19
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(20): used implicit default value for signal "LCD_EN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 20
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(21): used implicit default value for signal "LCD_RS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 21
+Warning (10540): VHDL Signal Declaration warning at CPU.vhd(32): used explicit default value for signal "RESET" because signal was never assigned a value File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 32
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(36): object "IF_PC_ADD_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 36
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(36): object "IF_PC_ADD_COUT" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 36
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(49): object "ID_RIPPLE_BRANCH_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 49
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(49): object "ID_RIPPLE_BRANCH_COUT" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 49
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(56): object "ID_ID_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 56
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(56): object "ID_EX_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 56
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(56): object "ID_WB_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 56
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(62): object "EX_NEXT_PC" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 62
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(64): object "EX_ALU_OP" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 64
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(73): object "EX_ALU_ZERO" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 73
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(73): object "EX_ALU_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 73
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(73): object "EX_ALU_COUT" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 73
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(77): used implicit default value for signal "MEM_DATA_FOWARD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 77
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(79): used implicit default value for signal "MEM_WRITE_REG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 79
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(90): used implicit default value for signal "WB_DATA_FOWARD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 90
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(92): used implicit default value for signal "WB_WRITE_REG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 92
+Info (12128): Elaborating entity "REG" for hierarchy "REG:IF_PC_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 113
+Info (12128): Elaborating entity "RIPPLE_CARRY" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 121
+Info (12128): Elaborating entity "FULLADDER" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD1" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/RIPPLE_CARRY.vhd Line: 40
+Info (12128): Elaborating entity "MEMORY" for hierarchy "MEMORY:INSTRUCTION_MEMORY_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 131
+Info (12128): Elaborating entity "PIPE_IF_ID" for hierarchy "PIPE_IF_ID:PIPE_IF_ID_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 140
+Info (12128): Elaborating entity "CONTROL_UNIT" for hierarchy "CONTROL_UNIT:CONTROL_UNIT_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 165
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(9): used implicit default value for signal "IF_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 9
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(10): used implicit default value for signal "ID_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 10
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(11): used implicit default value for signal "EX_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(12): used implicit default value for signal "WB_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 12
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(14): used implicit default value for signal "PC_SOURCE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 14
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(15): used implicit default value for signal "ALU_SRC" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 15
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(16): used implicit default value for signal "REG_DST" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 16
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(17): used implicit default value for signal "ALU_OP" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 17
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(20): used implicit default value for signal "MEM_WRITE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 20
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(21): used implicit default value for signal "MEM_READ" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 21
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(24): used implicit default value for signal "MEM_TO_REG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 24
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(25): used implicit default value for signal "REG_WRITE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 25
+Info (12128): Elaborating entity "HAZARD_DETECTION_UNIT" for hierarchy "HAZARD_DETECTION_UNIT:IF_ID_HAZARD_DETECTION_UNIT_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 188
+Info (12128): Elaborating entity "REG_BANK" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 198
+Info (12128): Elaborating entity "BUFFER_TRI" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/REG_BANK.vhd Line: 121
+Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:IF_ID_SIGN_EXTEND_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 210
+Info (12128): Elaborating entity "SHIFT_LEFT2" for hierarchy "SHIFT_LEFT2:IF_ID_SHIFT_LEFT_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 215
+Info (12128): Elaborating entity "COMPARATOR16" for hierarchy "COMPARATOR16:IF_ID_COMPARATOR_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 220
+Info (12128): Elaborating entity "SHIFT_LEFT1" for hierarchy "SHIFT_LEFT1:IF_ID_SHIFT_LEFT1_JUMP_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 236
+Info (12128): Elaborating entity "PIPE_ID_EX" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 244
+Warning (10541): VHDL Signal Declaration warning at PIPE_ID_EX.vhd(22): used implicit default value for signal "IF_ID_REG_RD_OUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 22
+Info (12128): Elaborating entity "FOUR_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 68
+Info (12128): Elaborating entity "ONE_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 75
+Info (12128): Elaborating entity "TWO_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 77
+Info (12128): Elaborating entity "ALU_CONTROL" for hierarchy "ALU_CONTROL:ALU_CONTROL_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 291
+Info (12128): Elaborating entity "FORWARDING_UNIT" for hierarchy "FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 297
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ALU_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 330
+Info (12128): Elaborating entity "PIPE_EX_MEM" for hierarchy "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 340
+Info (12128): Elaborating entity "PIPE_MEM_WB" for hierarchy "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 390
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX7[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[10]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[11]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[12]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[13]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[14]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[15]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[16]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[17]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[7]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LCD_DATA[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[7]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_RW" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 19
+    Warning (13410): Pin "LCD_EN" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 20
+    Warning (13410): Pin "LCD_RS" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 21
+Warning (20013): Ignored 407 assignments for entity "DE2_115" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCDAT -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCLRCK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_BCLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_DACDAT -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_DACLRCK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_XCK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50 -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK3_50 -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50 -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[10] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[11] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[12] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[8] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[9] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_BA[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_BA[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CAS_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CKE -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CS_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQM[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQM[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQM[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQM[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[10] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[11] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[12] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[13] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[14] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[15] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[16] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[17] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[18] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[19] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[20] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[21] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[22] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[23] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[24] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[25] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[26] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[27] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[28] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[29] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[30] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[31] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[8] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[9] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_RAS_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_WE_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EEP_I2C_SCLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EEP_I2C_SDAT -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_GTX_CLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_INT_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ENET0_LINK100 -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_MDC -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_MDIO -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_RST_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_RX_CLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_RX_COL -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_RX_CRS -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_RX_DATA[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_RX_DATA[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_RX_DATA[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_RX_DATA[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_RX_DV -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_RX_ER -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_TX_CLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_TX_DATA[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_TX_DATA[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_TX_DATA[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_TX_DATA[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_TX_EN -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET0_TX_ER -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_GTX_CLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_INT_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ENET1_LINK100 -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_MDC -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_MDIO -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_RST_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_RX_CLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_RX_COL -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_RX_CRS -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_RX_DATA[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_RX_DATA[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_RX_DATA[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_RX_DATA[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_RX_DV -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_RX_ER -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_TX_CLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_TX_DATA[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_TX_DATA[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_TX_DATA[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_TX_DATA[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_TX_EN -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to ENET1_TX_ER -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ENETCLK_25 -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EX_IO[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[10] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[11] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[12] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[13] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[14] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[15] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[16] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[17] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[18] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[19] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[20] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[21] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[22] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[8] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_ADDR[9] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_CE_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_DQ[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_DQ[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_DQ[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_DQ[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_DQ[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_DQ[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_DQ[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_DQ[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_OE_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_RST_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_RY -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_WE_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_WP_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to HEX0[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to HEX0[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to HEX0[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX6[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX6[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX6[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX6[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX6[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX6[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX6[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX7[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX7[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX7[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX7[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX7[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX7[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX7[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to I2C_SCLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to I2C_SDAT -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IRDA_RXD -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_BLON -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DATA[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DATA[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DATA[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DATA[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DATA[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DATA[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DATA[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DATA[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_EN -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_ON -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_RS -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_RW -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[8] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[10] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[11] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[12] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[13] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[14] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[15] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[16] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[17] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[8] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[9] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_ADDR[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_ADDR[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_CS_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DACK_N[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DACK_N[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[10] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[11] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[12] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[13] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[14] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[15] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[8] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DATA[9] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DREQ[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DREQ[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_FSPEED -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_INT[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_INT[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_LSPEED -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_RD_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_RST_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_WE_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PS2_CLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PS2_CLK2 -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PS2_DAT -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PS2_DAT2 -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_CLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_CMD -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_DAT[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_DAT[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_DAT[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_DAT[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_WP_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SMA_CLKIN -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SMA_CLKOUT -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[10] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[11] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[12] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[13] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[14] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[15] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[16] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[17] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[18] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[19] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[8] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_ADDR[9] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_CE_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[10] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[11] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[12] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[13] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[14] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[15] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[8] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_DQ[9] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_LB_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_OE_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_UB_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_WE_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[10] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[11] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[12] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[13] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[14] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[15] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[16] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[17] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[8] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[9] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_CLK27 -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_HS -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_RESET_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_VS -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_CTS -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RTS -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RXD -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_TXD -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_BLANK_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_CLK -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_HS -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[0] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[1] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[2] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[3] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[4] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[5] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[6] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[7] -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_SYNC_N -entity DE2_115 was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_VS -entity DE2_115 was ignored
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 23 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 8
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 8
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 8
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 8
+    Warning (15610): No output dependent on input pin "Clock_50" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 9
+Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 23 input pins
+    Info (21059): Implemented 73 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 554 warnings
+    Info: Peak virtual memory: 7282 megabytes
+    Info: Processing ended: Mon Nov 17 19:43:02 2025
+    Info: Elapsed time: 00:01:47
+    Info: Total CPU time (on all processors): 00:01:56
 
 

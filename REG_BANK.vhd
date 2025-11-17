@@ -8,8 +8,8 @@ ENTITY REG_BANK IS
 			WRITE_REG :IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 			WRITE_DATA :IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 			REG_WRITE: IN STD_LOGIC;
-			DATA_READ1 :OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-			DATA_READ2 :OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+			DATA_READ1 :OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+			DATA_READ2 :OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 
 			CLOCK : IN STD_LOGIC;
 			RESET : IN STD_LOGIC 
@@ -18,7 +18,9 @@ END REG_BANK;
 
 ARCHITECTURE Behavior OF REG_BANK IS
 SIGNAL R_IN,WRITE_AUX: STD_LOGIC_VECTOR(0 TO 15);
-SIGNAL R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15 : STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15 : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL MUX1,MUX2: STD_LOGIC_VECTOR(15 DOWNTO 0);
+
 BEGIN
 
 	-- Decoder 4 to 16
@@ -76,50 +78,46 @@ BEGIN
 	REG15_INSTANCE: REG PORT MAP(WRITE_DATA,R_in(15),RESET,CLOCK,R15);
 
 
-	PROCESS(CLOCK)
-		IF(CLOCK'EVENT AND CLOCK = '0') THEN
-			-- MUX 16 to 1
-			WITH REG_READ1 SELECT
-			MUX1 <= R0 when "0000",
-					R1 when "0001",
-					R2 when "0010",
-					R3 when "0011",
-					R4 when "0100",
-					R5 when "0101",
-					R6 when "0110",
-					R7 when "0111",
-					R8 when "1000",
-					R9 when "1001",
-					R10 when "1010",
-					R11 when "1011",
-					R12 when "1100",
-					R13 when "1101",
-					R14 when "1110",
-					R15 when "1111",
-					"0000" when others;
+	-- MUX 16 to 1
+	WITH REG_READ1 SELECT
+	MUX1 <= R0 when "0000",
+			R1 when "0001",
+			R2 when "0010",
+			R3 when "0011",
+			R4 when "0100",
+			R5 when "0101",
+			R6 when "0110",
+			R7 when "0111",
+			R8 when "1000",
+			R9 when "1001",
+			R10 when "1010",
+			R11 when "1011",
+			R12 when "1100",
+			R13 when "1101",
+			R14 when "1110",
+			R15 when "1111",
+			"0000000000000000" when others;
 
-			WITH REG_READ2 SELECT
-			MUX2 <= R0 when "0000",
-					R1 when "0001",
-					R2 when "0010",
-					R3 when "0011",
-					R4 when "0100",
-					R5 when "0101",
-					R6 when "0110",
-					R7 when "0111",
-					R8 when "1000",
-					R9 when "1001",
-					R10 when "1010",
-					R11 when "1011",
-					R12 when "1100",
-					R13 when "1101",
-					R14 when "1110",
-					R15 when "1111",
-					"0000" when others;
-									
-			-- Como o pipeline sempre realiza a leitura de registradores, removi o sinal RegRead e coloquei 1 direto
-			BUFFER1_INSTANCE: BUFFER_TRI PORT MAP(MUX1,'1',DATA_READ1);
-			BUFFER2_INSTANCE: BUFFER_TRI PORT MAP(MUX2,'1',DATA_READ2);
-		END IF;
-	END PROCESS;
+	WITH REG_READ2 SELECT
+	MUX2 <= R0 when "0000",
+			R1 when "0001",
+			R2 when "0010",
+			R3 when "0011",
+			R4 when "0100",
+			R5 when "0101",
+			R6 when "0110",
+			R7 when "0111",
+			R8 when "1000",
+			R9 when "1001",
+			R10 when "1010",
+			R11 when "1011",
+			R12 when "1100",
+			R13 when "1101",
+			R14 when "1110",
+			R15 when "1111",
+			"0000000000000000" when others;
+							
+	-- Como o pipeline sempre realiza a leitura de registradores, removi o sinal RegRead e coloquei 1 direto
+	BUFFER1_INSTANCE: BUFFER_TRI PORT MAP(MUX1,'1',DATA_READ1);
+	BUFFER2_INSTANCE: BUFFER_TRI PORT MAP(MUX2,'1',DATA_READ2);
 END Behavior;

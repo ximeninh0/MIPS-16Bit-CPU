@@ -1,0 +1,32 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE work.CPU_PACKAGE.all;
+ENTITY CONTROL_UNIT IS 
+    PORT(
+        OPCODE : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        REG_EQUAL : IN STD_LOGIC;
+
+        IF_FLUSH : OUT STD_LOGIC;
+        ID_FLUSH : OUT STD_LOGIC;
+        EX_FLUSH : OUT STD_LOGIC;
+        WB_FLUSH : OUT STD_LOGIC;
+
+        PC_SOURCE : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+        ALU_SRC : OUT STD_LOGIC;
+        REG_DST : OUT STD_LOGIC;
+        ALU_OP : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+
+        -- Sinais de controle MEM
+        MEM_WRITE : OUT STD_LOGIC;
+        MEM_READ : OUT STD_LOGIC;
+
+        -- Sinais de controle WB
+        MEM_TO_REG : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+        REG_WRITE : OUT STD_LOGIC
+    );
+END CONTROL_UNIT;
+
+ARCHITECTURE Behavior OF CONTROL_UNIT IS
+BEGIN
+
+END Behavior;

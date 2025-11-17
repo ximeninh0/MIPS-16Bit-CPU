@@ -1,6 +1,5 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-use work.CPU_PACKAGE.all;
 
 ENTITY ONE_BIT_REG IS 
     PORT(

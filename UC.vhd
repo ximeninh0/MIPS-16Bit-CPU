@@ -1,6 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-use work.ULA_PACKAGE.all;
+use work.CPU_PACKAGE.all;
 
 ENTITY UC IS 
 port(
