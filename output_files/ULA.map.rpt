@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Mon Nov 17 19:43:02 2025
+Tue Nov 18 14:38:59 2025
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -13,53 +13,56 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
- 10. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
- 11. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE"
- 12. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE"
- 13. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:ALU_RESULT_INSTANCE"
- 14. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:MEM_OUT_INSTANCE"
- 15. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE"
- 16. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
- 17. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
- 18. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE"
- 19. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE"
- 20. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE"
- 21. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE"
- 22. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:RT_DATA_INSTANCE"
- 23. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:ALU_OUT_INSTANCE"
- 24. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE"
- 25. Port Connectivity Checks: "ULA:ALU_INSTANCE"
- 26. Port Connectivity Checks: "FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE"
- 27. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
- 28. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
- 29. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE"
- 30. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE"
- 31. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE"
- 32. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE"
- 33. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE"
- 34. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:NEXT_PC_INSTANCE"
- 35. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE"
- 36. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE"
- 37. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE"
- 38. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_B_INSTANCE"
- 39. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_A_INSTANCE"
- 40. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE"
- 41. Port Connectivity Checks: "RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE"
- 42. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE"
- 43. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE"
- 44. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG15_INSTANCE"
- 45. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG0_INSTANCE"
- 46. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE"
- 47. Port Connectivity Checks: "CONTROL_UNIT:CONTROL_UNIT_INSTANCE"
- 48. Port Connectivity Checks: "PIPE_IF_ID:PIPE_IF_ID_INSTANCE"
- 49. Port Connectivity Checks: "MEMORY:INSTRUCTION_MEMORY_INSTANCE"
- 50. Port Connectivity Checks: "RIPPLE_CARRY:IF_PC_ADD_INSTANCE"
- 51. Port Connectivity Checks: "REG:IF_PC_INSTANCE"
- 52. Post-Synthesis Netlist Statistics for Top Partition
- 53. Elapsed Time Per Partition
- 54. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
+ 13. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
+ 14. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE"
+ 15. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE"
+ 16. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:ALU_RESULT_INSTANCE"
+ 17. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:MEM_OUT_INSTANCE"
+ 18. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE"
+ 19. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
+ 20. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
+ 21. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE"
+ 22. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE"
+ 23. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE"
+ 24. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE"
+ 25. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:RT_DATA_INSTANCE"
+ 26. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:ALU_OUT_INSTANCE"
+ 27. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE"
+ 28. Port Connectivity Checks: "ULA:ALU_INSTANCE"
+ 29. Port Connectivity Checks: "FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE"
+ 30. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
+ 31. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
+ 32. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE"
+ 33. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE"
+ 34. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE"
+ 35. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE"
+ 36. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE"
+ 37. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:NEXT_PC_INSTANCE"
+ 38. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE"
+ 39. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE"
+ 40. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE"
+ 41. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_B_INSTANCE"
+ 42. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_A_INSTANCE"
+ 43. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE"
+ 44. Port Connectivity Checks: "RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE"
+ 45. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE"
+ 46. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE"
+ 47. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG15_INSTANCE"
+ 48. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG0_INSTANCE"
+ 49. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE"
+ 50. Port Connectivity Checks: "CONTROL_UNIT:CONTROL_UNIT_INSTANCE"
+ 51. Port Connectivity Checks: "PIPE_IF_ID:PIPE_IF_ID_INSTANCE"
+ 52. Port Connectivity Checks: "MEMORY:INSTRUCTION_MEMORY_INSTANCE"
+ 53. Port Connectivity Checks: "RIPPLE_CARRY:IF_PC_ADD_INSTANCE"
+ 54. Port Connectivity Checks: "REG:IF_PC_INSTANCE"
+ 55. Post-Synthesis Netlist Statistics for Top Partition
+ 56. Elapsed Time Per Partition
+ 57. Analysis & Synthesis Messages
 
 
 
@@ -86,15 +89,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 17 19:43:02 2025       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 18 14:38:59 2025       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
 ; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
+; Total logic elements               ; 33                                          ;
+;     Total combinational functions  ; 26                                          ;
+;     Dedicated logic registers      ; 20                                          ;
+; Total registers                    ; 20                                          ;
 ; Total pins                         ; 96                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -199,85 +202,219 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
-; TWO_BIT_REG.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/TWO_BIT_REG.vhd           ;         ;
-; SIGN_EXTEND.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/SIGN_EXTEND.vhd           ;         ;
-; SHIFT_LEFT2.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT2.vhd           ;         ;
-; SHIFT_LEFT1.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT1.vhd           ;         ;
-; REG.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/REG.vhd                   ;         ;
-; PIPE_MEM_WB.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_MEM_WB.vhd           ;         ;
-; PIPE_IF_ID.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_IF_ID.vhd            ;         ;
-; PIPE_ID_EX.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd            ;         ;
-; PIPE_EX_MEM.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_EX_MEM.vhd           ;         ;
-; ONE_BIT_REG.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/ONE_BIT_REG.vhd           ;         ;
-; MEMORY.vhd                       ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/MEMORY.vhd                ;         ;
-; HAZARD_DETECTION_UNIT.vhd        ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/HAZARD_DETECTION_UNIT.vhd ;         ;
-; FOUR_BIT_REG.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/FOUR_BIT_REG.vhd          ;         ;
-; FORWARDING_UNIT.vhd              ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/FORWARDING_UNIT.vhd       ;         ;
-; CONSTANTS_PACKAGE.vhd            ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/CONSTANTS_PACKAGE.vhd     ;         ;
-; BUFFER_TRI.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/BUFFER_TRI.vhd            ;         ;
-; ALU_CONTROL.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/ALU_CONTROL.vhd           ;         ;
-; RIPPLE_CARRY.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/RIPPLE_CARRY.vhd          ;         ;
-; COMPARATOR.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/COMPARATOR.vhd            ;         ;
-; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/ULA.vhd                   ;         ;
-; FULLADDER.vhd                    ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/FULLADDER.vhd             ;         ;
-; CPU.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd                   ;         ;
-; CPU_PACKAGE.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU_PACKAGE.vhd           ;         ;
-; REG_BANK.vhd                     ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/REG_BANK.vhd              ;         ;
-; CONTROL_UNIT.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd          ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; TWO_BIT_REG.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/TWO_BIT_REG.vhd           ;         ;
+; SIGN_EXTEND.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/SIGN_EXTEND.vhd           ;         ;
+; SHIFT_LEFT2.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/SHIFT_LEFT2.vhd           ;         ;
+; SHIFT_LEFT1.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/SHIFT_LEFT1.vhd           ;         ;
+; REG.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/REG.vhd                   ;         ;
+; PIPE_MEM_WB.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_MEM_WB.vhd           ;         ;
+; PIPE_IF_ID.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_IF_ID.vhd            ;         ;
+; PIPE_ID_EX.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_ID_EX.vhd            ;         ;
+; PIPE_EX_MEM.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_EX_MEM.vhd           ;         ;
+; ONE_BIT_REG.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/ONE_BIT_REG.vhd           ;         ;
+; MEMORY.vhd                       ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/MEMORY.vhd                ;         ;
+; HAZARD_DETECTION_UNIT.vhd        ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/HAZARD_DETECTION_UNIT.vhd ;         ;
+; FOUR_BIT_REG.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/FOUR_BIT_REG.vhd          ;         ;
+; FORWARDING_UNIT.vhd              ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/FORWARDING_UNIT.vhd       ;         ;
+; CONSTANTS_PACKAGE.vhd            ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/CONSTANTS_PACKAGE.vhd     ;         ;
+; BUFFER_TRI.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/BUFFER_TRI.vhd            ;         ;
+; ALU_CONTROL.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/ALU_CONTROL.vhd           ;         ;
+; RIPPLE_CARRY.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/RIPPLE_CARRY.vhd          ;         ;
+; COMPARATOR.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/COMPARATOR.vhd            ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/ULA.vhd                   ;         ;
+; FULLADDER.vhd                    ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/FULLADDER.vhd             ;         ;
+; CPU.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd                   ;         ;
+; CPU_PACKAGE.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU_PACKAGE.vhd           ;         ;
+; REG_BANK.vhd                     ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/REG_BANK.vhd              ;         ;
+; CONTROL_UNIT.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/16-BitCPU-VHDL/CONTROL_UNIT.vhd          ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 96    ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; SW[0] ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 96    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 33           ;
+;                                             ;              ;
+; Total combinational functions               ; 26           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 10           ;
+;     -- 3 input functions                    ; 13           ;
+;     -- <=2 input functions                  ; 3            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 26           ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 20           ;
+;     -- Dedicated logic registers            ; 20           ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 96           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 20           ;
+; Total fan-out                               ; 231          ;
+; Average fan-out                             ; 0.97         ;
++---------------------------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |CPU                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 96   ; 0            ; |CPU                ; CPU         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                      ;
++------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Entity Name  ; Library Name ;
++------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+--------------+
+; |CPU                                           ; 26 (7)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 96   ; 0            ; |CPU                                                           ; CPU          ; work         ;
+;    |CONTROL_UNIT:CONTROL_UNIT_INSTANCE|        ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|CONTROL_UNIT:CONTROL_UNIT_INSTANCE                        ; CONTROL_UNIT ; work         ;
+;    |MEMORY:INSTRUCTION_MEMORY_INSTANCE|        ; 6 (6)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|MEMORY:INSTRUCTION_MEMORY_INSTANCE                        ; MEMORY       ; work         ;
+;    |PIPE_IF_ID:PIPE_IF_ID_INSTANCE|            ; 1 (0)               ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE                            ; PIPE_IF_ID   ; work         ;
+;       |REG:INSTRUCTION_DATA|                   ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA       ; REG          ; work         ;
+;       |REG:PC_INSTANCE|                        ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE            ; REG          ; work         ;
+;    |REG:IF_PC_INSTANCE|                        ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG:IF_PC_INSTANCE                                        ; REG          ; work         ;
+;    |RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE| ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE                 ; RIPPLE_CARRY ; work         ;
+;       |FULLADDER:FADD4|                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD4 ; FULLADDER    ; work         ;
+;    |RIPPLE_CARRY:IF_PC_ADD_INSTANCE|           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE                           ; RIPPLE_CARRY ; work         ;
+;       |FULLADDER:FADD3|                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD3           ; FULLADDER    ; work         ;
+;       |FULLADDER:FADD4|                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD4           ; FULLADDER    ; work         ;
++------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                             ;
++------------------------------------------------------------------+---------------------------------------------+
+; Register name                                                    ; Reason for Removal                          ;
++------------------------------------------------------------------+---------------------------------------------+
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][0]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][1]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][2]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][3]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][4]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][5]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][6]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][7]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][0]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][1]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][2]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][3]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][4]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][5]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][6]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][7]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][0]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][1]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][2]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][3]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][4]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][5]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][6]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][7]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][0]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][1]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][2]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][3]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][4]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][5]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][6]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][7]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][0]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][1]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][2]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][3]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][4]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][5]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][6]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][7]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][0]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][1]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][2]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][3]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][4]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][5]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][6]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][7]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][0]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][1]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][2]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][3]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][4]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][5]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][6]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][7]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][0]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][1]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][2]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][3]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][4]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][5]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][6]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][7]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][0]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][1]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][2]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][3]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][4]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][5]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][6]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][7]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][0]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][1]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][2]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][3]                     ; Stuck at VCC due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][4]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][5]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][6]                     ; Stuck at GND due to stuck port clock_enable ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][7]                     ; Stuck at GND due to stuck port clock_enable ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[3..12] ; Lost fanout                                 ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[4..15]      ; Lost fanout                                 ;
+; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[3..12]               ; Lost fanout                                 ;
+; REG:IF_PC_INSTANCE|D_out[4..15]                                  ; Lost fanout                                 ;
+; Total Number of Removed Registers = 124                          ;                                             ;
++------------------------------------------------------------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                      ;
++---------------------------------------------------------------+--------------------+-------------------------------------------------------------+
+; Register name                                                 ; Reason for Removal ; Registers Removed due to This Register                      ;
++---------------------------------------------------------------+--------------------+-------------------------------------------------------------+
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[15]      ; Lost Fanouts       ; REG:IF_PC_INSTANCE|D_out[15], REG:IF_PC_INSTANCE|D_out[14], ;
+;                                                               ;                    ; REG:IF_PC_INSTANCE|D_out[13], REG:IF_PC_INSTANCE|D_out[12], ;
+;                                                               ;                    ; REG:IF_PC_INSTANCE|D_out[11]                                ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[12] ; Lost Fanouts       ; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[12]             ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[11] ; Lost Fanouts       ; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[11]             ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[10] ; Lost Fanouts       ; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[10]             ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[9]  ; Lost Fanouts       ; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[9]              ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[8]  ; Lost Fanouts       ; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[8]              ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[7]  ; Lost Fanouts       ; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[7]              ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[6]  ; Lost Fanouts       ; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[6]              ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[5]  ; Lost Fanouts       ; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[5]              ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[4]  ; Lost Fanouts       ; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[4]              ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[3]  ; Lost Fanouts       ; MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[3]              ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[14]      ; Lost Fanouts       ; REG:IF_PC_INSTANCE|D_out[10]                                ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[13]      ; Lost Fanouts       ; REG:IF_PC_INSTANCE|D_out[9]                                 ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[12]      ; Lost Fanouts       ; REG:IF_PC_INSTANCE|D_out[8]                                 ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[11]      ; Lost Fanouts       ; REG:IF_PC_INSTANCE|D_out[7]                                 ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[10]      ; Lost Fanouts       ; REG:IF_PC_INSTANCE|D_out[6]                                 ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[9]       ; Lost Fanouts       ; REG:IF_PC_INSTANCE|D_out[5]                                 ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[8]       ; Lost Fanouts       ; REG:IF_PC_INSTANCE|D_out[4]                                 ;
++---------------------------------------------------------------+--------------------+-------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -285,7 +422,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 20    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -293,6 +430,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |CPU|REG:IF_PC_INSTANCE|D_out[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 
 
 +------------------------------------------------------------------------------------------------+
@@ -708,12 +854,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 96                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
+; cycloneiii_ff         ; 20                          ;
+;     plain             ; 20                          ;
+; cycloneiii_lcell_comb ; 27                          ;
+;     normal            ; 27                          ;
 ;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 10                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.71                        ;
 +-----------------------+-----------------------------+
 
 
@@ -732,239 +884,230 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Nov 17 19:41:15 2025
+    Info: Processing started: Tue Nov 18 14:38:46 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file two_bit_reg.vhd
-    Info (12022): Found design unit 1: TWO_BIT_REG-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/TWO_BIT_REG.vhd Line: 12
-    Info (12023): Found entity 1: TWO_BIT_REG File: C:/Users/guixi/repositories/4-BitCPU-VHDL/TWO_BIT_REG.vhd Line: 4
+    Info (12022): Found design unit 1: TWO_BIT_REG-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/TWO_BIT_REG.vhd Line: 12
+    Info (12023): Found entity 1: TWO_BIT_REG File: C:/Users/guixi/repositories/16-BitCPU-VHDL/TWO_BIT_REG.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sign_extend.vhd
-    Info (12022): Found design unit 1: SIGN_EXTEND-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SIGN_EXTEND.vhd Line: 11
-    Info (12023): Found entity 1: SIGN_EXTEND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SIGN_EXTEND.vhd Line: 4
+    Info (12022): Found design unit 1: SIGN_EXTEND-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/SIGN_EXTEND.vhd Line: 11
+    Info (12023): Found entity 1: SIGN_EXTEND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/SIGN_EXTEND.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file shift_left2.vhd
-    Info (12022): Found design unit 1: SHIFT_LEFT2-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT2.vhd Line: 11
-    Info (12023): Found entity 1: SHIFT_LEFT2 File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT2.vhd Line: 4
+    Info (12022): Found design unit 1: SHIFT_LEFT2-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/SHIFT_LEFT2.vhd Line: 11
+    Info (12023): Found entity 1: SHIFT_LEFT2 File: C:/Users/guixi/repositories/16-BitCPU-VHDL/SHIFT_LEFT2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file shift_left1.vhd
-    Info (12022): Found design unit 1: SHIFT_LEFT1-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT1.vhd Line: 11
-    Info (12023): Found entity 1: SHIFT_LEFT1 File: C:/Users/guixi/repositories/4-BitCPU-VHDL/SHIFT_LEFT1.vhd Line: 4
+    Info (12022): Found design unit 1: SHIFT_LEFT1-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/SHIFT_LEFT1.vhd Line: 11
+    Info (12023): Found entity 1: SHIFT_LEFT1 File: C:/Users/guixi/repositories/16-BitCPU-VHDL/SHIFT_LEFT1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
-    Info (12022): Found design unit 1: REG-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/REG.vhd Line: 12
-    Info (12023): Found entity 1: REG File: C:/Users/guixi/repositories/4-BitCPU-VHDL/REG.vhd Line: 4
+    Info (12022): Found design unit 1: REG-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/REG.vhd Line: 12
+    Info (12023): Found entity 1: REG File: C:/Users/guixi/repositories/16-BitCPU-VHDL/REG.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file pipe_mem_wb.vhd
-    Info (12022): Found design unit 1: PIPE_MEM_WB-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_MEM_WB.vhd Line: 33
-    Info (12023): Found entity 1: PIPE_MEM_WB File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_MEM_WB.vhd Line: 4
+    Info (12022): Found design unit 1: PIPE_MEM_WB-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_MEM_WB.vhd Line: 33
+    Info (12023): Found entity 1: PIPE_MEM_WB File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_MEM_WB.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file pipe_if_id.vhd
-    Info (12022): Found design unit 1: PIPE_IF_ID-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_IF_ID.vhd Line: 26
-    Info (12023): Found entity 1: PIPE_IF_ID File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_IF_ID.vhd Line: 5
+    Info (12022): Found design unit 1: PIPE_IF_ID-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_IF_ID.vhd Line: 26
+    Info (12023): Found entity 1: PIPE_IF_ID File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_IF_ID.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pipe_id_ex.vhd
-    Info (12022): Found design unit 1: PIPE_ID_EX-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 61
-    Info (12023): Found entity 1: PIPE_ID_EX File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 5
+    Info (12022): Found design unit 1: PIPE_ID_EX-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 61
+    Info (12023): Found entity 1: PIPE_ID_EX File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pipe_ex_mem.vhd
-    Info (12022): Found design unit 1: PIPE_EX_MEM-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_EX_MEM.vhd Line: 45
-    Info (12023): Found entity 1: PIPE_EX_MEM File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_EX_MEM.vhd Line: 5
+    Info (12022): Found design unit 1: PIPE_EX_MEM-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_EX_MEM.vhd Line: 45
+    Info (12023): Found entity 1: PIPE_EX_MEM File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_EX_MEM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file one_bit_reg.vhd
-    Info (12022): Found design unit 1: ONE_BIT_REG-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ONE_BIT_REG.vhd Line: 15
-    Info (12023): Found entity 1: ONE_BIT_REG File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ONE_BIT_REG.vhd Line: 5
+    Info (12022): Found design unit 1: ONE_BIT_REG-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/ONE_BIT_REG.vhd Line: 15
+    Info (12023): Found entity 1: ONE_BIT_REG File: C:/Users/guixi/repositories/16-BitCPU-VHDL/ONE_BIT_REG.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
-    Info (12022): Found design unit 1: MEMORY-Behavioral File: C:/Users/guixi/repositories/4-BitCPU-VHDL/MEMORY.vhd Line: 18
-    Info (12023): Found entity 1: MEMORY File: C:/Users/guixi/repositories/4-BitCPU-VHDL/MEMORY.vhd Line: 7
+    Info (12022): Found design unit 1: MEMORY-Behavioral File: C:/Users/guixi/repositories/16-BitCPU-VHDL/MEMORY.vhd Line: 18
+    Info (12023): Found entity 1: MEMORY File: C:/Users/guixi/repositories/16-BitCPU-VHDL/MEMORY.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file hazard_detection_unit.vhd
-    Info (12022): Found design unit 1: HAZARD_DETECTION_UNIT-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/HAZARD_DETECTION_UNIT.vhd Line: 13
-    Info (12023): Found entity 1: HAZARD_DETECTION_UNIT File: C:/Users/guixi/repositories/4-BitCPU-VHDL/HAZARD_DETECTION_UNIT.vhd Line: 5
+    Info (12022): Found design unit 1: HAZARD_DETECTION_UNIT-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/HAZARD_DETECTION_UNIT.vhd Line: 13
+    Info (12023): Found entity 1: HAZARD_DETECTION_UNIT File: C:/Users/guixi/repositories/16-BitCPU-VHDL/HAZARD_DETECTION_UNIT.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file four_bit_reg.vhd
-    Info (12022): Found design unit 1: FOUR_BIT_REG-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FOUR_BIT_REG.vhd Line: 13
-    Info (12023): Found entity 1: FOUR_BIT_REG File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FOUR_BIT_REG.vhd Line: 5
+    Info (12022): Found design unit 1: FOUR_BIT_REG-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/FOUR_BIT_REG.vhd Line: 13
+    Info (12023): Found entity 1: FOUR_BIT_REG File: C:/Users/guixi/repositories/16-BitCPU-VHDL/FOUR_BIT_REG.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file forwarding_unit.vhd
-    Info (12022): Found design unit 1: FORWARDING_UNIT-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FORWARDING_UNIT.vhd Line: 21
-    Info (12023): Found entity 1: FORWARDING_UNIT File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FORWARDING_UNIT.vhd Line: 5
+    Info (12022): Found design unit 1: FORWARDING_UNIT-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/FORWARDING_UNIT.vhd Line: 21
+    Info (12023): Found entity 1: FORWARDING_UNIT File: C:/Users/guixi/repositories/16-BitCPU-VHDL/FORWARDING_UNIT.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file constants_package.vhd
-    Info (12022): Found design unit 1: CONSTANTS_PACKAGE File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONSTANTS_PACKAGE.vhd Line: 4
+    Info (12022): Found design unit 1: CONSTANTS_PACKAGE File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CONSTANTS_PACKAGE.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffer_tri.vhd
-    Info (12022): Found design unit 1: BUFFER_TRI-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/BUFFER_TRI.vhd Line: 12
-    Info (12023): Found entity 1: BUFFER_TRI File: C:/Users/guixi/repositories/4-BitCPU-VHDL/BUFFER_TRI.vhd Line: 4
+    Info (12022): Found design unit 1: BUFFER_TRI-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/BUFFER_TRI.vhd Line: 12
+    Info (12023): Found entity 1: BUFFER_TRI File: C:/Users/guixi/repositories/16-BitCPU-VHDL/BUFFER_TRI.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file alu_control.vhd
-    Info (12022): Found design unit 1: ALU_CONTROL-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ALU_CONTROL.vhd Line: 13
-    Info (12023): Found entity 1: ALU_CONTROL File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ALU_CONTROL.vhd Line: 5
+    Info (12022): Found design unit 1: ALU_CONTROL-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/ALU_CONTROL.vhd Line: 13
+    Info (12023): Found entity 1: ALU_CONTROL File: C:/Users/guixi/repositories/16-BitCPU-VHDL/ALU_CONTROL.vhd Line: 5
 Warning (12019): Can't analyze file -- file AND_COMPONENT.vhd is missing
 Warning (12019): Can't analyze file -- file OR_COMPONENT.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file ripple_carry.vhd
-    Info (12022): Found design unit 1: RIPPLE_CARRY-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/RIPPLE_CARRY.vhd Line: 16
-    Info (12023): Found entity 1: RIPPLE_CARRY File: C:/Users/guixi/repositories/4-BitCPU-VHDL/RIPPLE_CARRY.vhd Line: 5
+    Info (12022): Found design unit 1: RIPPLE_CARRY-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/RIPPLE_CARRY.vhd Line: 16
+    Info (12023): Found entity 1: RIPPLE_CARRY File: C:/Users/guixi/repositories/16-BitCPU-VHDL/RIPPLE_CARRY.vhd Line: 5
 Warning (12019): Can't analyze file -- file MULTI_COMPONENT.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file comparator.vhd
-    Info (12022): Found design unit 1: COMPARATOR16-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/COMPARATOR.vhd Line: 11
-    Info (12023): Found entity 1: COMPARATOR16 File: C:/Users/guixi/repositories/4-BitCPU-VHDL/COMPARATOR.vhd Line: 4
+    Info (12022): Found design unit 1: COMPARATOR16-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/COMPARATOR.vhd Line: 11
+    Info (12023): Found entity 1: COMPARATOR16 File: C:/Users/guixi/repositories/16-BitCPU-VHDL/COMPARATOR.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ULA.vhd Line: 14
-    Info (12023): Found entity 1: ULA File: C:/Users/guixi/repositories/4-BitCPU-VHDL/ULA.vhd Line: 5
+    Info (12022): Found design unit 1: ULA-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/ULA.vhd Line: 14
+    Info (12023): Found entity 1: ULA File: C:/Users/guixi/repositories/16-BitCPU-VHDL/ULA.vhd Line: 5
 Warning (12019): Can't analyze file -- file NOT_COMPONENT.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
-    Info (12022): Found design unit 1: FULLADDER-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FULLADDER.vhd Line: 12
-    Info (12023): Found entity 1: FULLADDER File: C:/Users/guixi/repositories/4-BitCPU-VHDL/FULLADDER.vhd Line: 4
+    Info (12022): Found design unit 1: FULLADDER-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/FULLADDER.vhd Line: 12
+    Info (12023): Found entity 1: FULLADDER File: C:/Users/guixi/repositories/16-BitCPU-VHDL/FULLADDER.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/segs_3_translator.vhd
-    Info (12022): Found design unit 1: SEGS_3_TRANSLATOR-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/SEGS_3_TRANSLATOR.vhd Line: 12
-    Info (12023): Found entity 1: SEGS_3_TRANSLATOR File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/SEGS_3_TRANSLATOR.vhd Line: 5
+    Info (12022): Found design unit 1: SEGS_3_TRANSLATOR-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/output_files/SEGS_3_TRANSLATOR.vhd Line: 12
+    Info (12023): Found entity 1: SEGS_3_TRANSLATOR File: C:/Users/guixi/repositories/16-BitCPU-VHDL/output_files/SEGS_3_TRANSLATOR.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/segs_4_translator.vhd
-    Info (12022): Found design unit 1: SEGS_4_TRANSLATOR-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/SEGS_4_TRANSLATOR.vhd Line: 12
-    Info (12023): Found entity 1: SEGS_4_TRANSLATOR File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/SEGS_4_TRANSLATOR.vhd Line: 5
+    Info (12022): Found design unit 1: SEGS_4_TRANSLATOR-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/output_files/SEGS_4_TRANSLATOR.vhd Line: 12
+    Info (12023): Found entity 1: SEGS_4_TRANSLATOR File: C:/Users/guixi/repositories/16-BitCPU-VHDL/output_files/SEGS_4_TRANSLATOR.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/uc_cpu.vhd
-    Info (12022): Found design unit 1: UC_CPU-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/UC_CPU.vhd Line: 19
-    Info (12023): Found entity 1: UC_CPU File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/UC_CPU.vhd Line: 5
+    Info (12022): Found design unit 1: UC_CPU-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/output_files/UC_CPU.vhd Line: 19
+    Info (12023): Found entity 1: UC_CPU File: C:/Users/guixi/repositories/16-BitCPU-VHDL/output_files/UC_CPU.vhd Line: 5
 Warning (12019): Can't analyze file -- file output_files/BUFFER_TRI.vhd is missing
 Warning (12019): Can't analyze file -- file output_files/REG.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/uc_lcd.vhd
-    Info (12022): Found design unit 1: UC_LCD-bhv File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/UC_LCD.vhd Line: 20
-    Info (12023): Found entity 1: UC_LCD File: C:/Users/guixi/repositories/4-BitCPU-VHDL/output_files/UC_LCD.vhd Line: 5
+    Info (12022): Found design unit 1: UC_LCD-bhv File: C:/Users/guixi/repositories/16-BitCPU-VHDL/output_files/UC_LCD.vhd Line: 20
+    Info (12023): Found entity 1: UC_LCD File: C:/Users/guixi/repositories/16-BitCPU-VHDL/output_files/UC_LCD.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
-    Info (12022): Found design unit 1: CPU-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 25
-    Info (12023): Found entity 1: CPU File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 5
+    Info (12022): Found design unit 1: CPU-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 25
+    Info (12023): Found entity 1: CPU File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file cpu_package.vhd
-    Info (12022): Found design unit 1: CPU_PACKAGE File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU_PACKAGE.vhd Line: 6
+    Info (12022): Found design unit 1: CPU_PACKAGE File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU_PACKAGE.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file reg_bank.vhd
-    Info (12022): Found design unit 1: REG_BANK-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/REG_BANK.vhd Line: 19
-    Info (12023): Found entity 1: REG_BANK File: C:/Users/guixi/repositories/4-BitCPU-VHDL/REG_BANK.vhd Line: 5
+    Info (12022): Found design unit 1: REG_BANK-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/REG_BANK.vhd Line: 19
+    Info (12023): Found entity 1: REG_BANK File: C:/Users/guixi/repositories/16-BitCPU-VHDL/REG_BANK.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file control_unit.vhd
-    Info (12022): Found design unit 1: CONTROL_UNIT-Behavior File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 29
-    Info (12023): Found entity 1: CONTROL_UNIT File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 4
+    Info (12022): Found design unit 1: CONTROL_UNIT-Behavior File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 31
+    Info (12023): Found entity 1: CONTROL_UNIT File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 4
 Info (12127): Elaborating entity "CPU" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(11): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(11): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(11): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(12): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(13): used implicit default value for signal "HEX7" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(15): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(16): used implicit default value for signal "LEDG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(18): used implicit default value for signal "LCD_DATA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(19): used implicit default value for signal "LCD_RW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 19
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(20): used implicit default value for signal "LCD_EN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 20
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(21): used implicit default value for signal "LCD_RS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 21
-Warning (10540): VHDL Signal Declaration warning at CPU.vhd(32): used explicit default value for signal "RESET" because signal was never assigned a value File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 32
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(36): object "IF_PC_ADD_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 36
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(36): object "IF_PC_ADD_COUT" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 36
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(49): object "ID_RIPPLE_BRANCH_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 49
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(49): object "ID_RIPPLE_BRANCH_COUT" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 49
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(56): object "ID_ID_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 56
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(56): object "ID_EX_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 56
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(56): object "ID_WB_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 56
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(62): object "EX_NEXT_PC" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 62
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(64): object "EX_ALU_OP" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 64
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(73): object "EX_ALU_ZERO" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 73
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(73): object "EX_ALU_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 73
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(73): object "EX_ALU_COUT" assigned a value but never read File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 73
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(77): used implicit default value for signal "MEM_DATA_FOWARD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 77
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(79): used implicit default value for signal "MEM_WRITE_REG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 79
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(90): used implicit default value for signal "WB_DATA_FOWARD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 90
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(92): used implicit default value for signal "WB_WRITE_REG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 92
-Info (12128): Elaborating entity "REG" for hierarchy "REG:IF_PC_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 113
-Info (12128): Elaborating entity "RIPPLE_CARRY" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 121
-Info (12128): Elaborating entity "FULLADDER" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD1" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/RIPPLE_CARRY.vhd Line: 40
-Info (12128): Elaborating entity "MEMORY" for hierarchy "MEMORY:INSTRUCTION_MEMORY_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 131
-Info (12128): Elaborating entity "PIPE_IF_ID" for hierarchy "PIPE_IF_ID:PIPE_IF_ID_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 140
-Info (12128): Elaborating entity "CONTROL_UNIT" for hierarchy "CONTROL_UNIT:CONTROL_UNIT_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 165
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(9): used implicit default value for signal "IF_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 9
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(10): used implicit default value for signal "ID_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(11): used implicit default value for signal "EX_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 11
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(12): used implicit default value for signal "WB_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 12
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(14): used implicit default value for signal "PC_SOURCE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 14
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(15): used implicit default value for signal "ALU_SRC" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 15
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(16): used implicit default value for signal "REG_DST" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 16
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(17): used implicit default value for signal "ALU_OP" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 17
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(20): used implicit default value for signal "MEM_WRITE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 20
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(21): used implicit default value for signal "MEM_READ" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 21
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(24): used implicit default value for signal "MEM_TO_REG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 24
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(25): used implicit default value for signal "REG_WRITE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 25
-Info (12128): Elaborating entity "HAZARD_DETECTION_UNIT" for hierarchy "HAZARD_DETECTION_UNIT:IF_ID_HAZARD_DETECTION_UNIT_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 188
-Info (12128): Elaborating entity "REG_BANK" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 198
-Info (12128): Elaborating entity "BUFFER_TRI" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/REG_BANK.vhd Line: 121
-Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:IF_ID_SIGN_EXTEND_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 210
-Info (12128): Elaborating entity "SHIFT_LEFT2" for hierarchy "SHIFT_LEFT2:IF_ID_SHIFT_LEFT_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 215
-Info (12128): Elaborating entity "COMPARATOR16" for hierarchy "COMPARATOR16:IF_ID_COMPARATOR_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 220
-Info (12128): Elaborating entity "SHIFT_LEFT1" for hierarchy "SHIFT_LEFT1:IF_ID_SHIFT_LEFT1_JUMP_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 236
-Info (12128): Elaborating entity "PIPE_ID_EX" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 244
-Warning (10541): VHDL Signal Declaration warning at PIPE_ID_EX.vhd(22): used implicit default value for signal "IF_ID_REG_RD_OUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 22
-Info (12128): Elaborating entity "FOUR_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 68
-Info (12128): Elaborating entity "ONE_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 75
-Info (12128): Elaborating entity "TWO_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 77
-Info (12128): Elaborating entity "ALU_CONTROL" for hierarchy "ALU_CONTROL:ALU_CONTROL_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 291
-Info (12128): Elaborating entity "FORWARDING_UNIT" for hierarchy "FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 297
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ALU_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 330
-Info (12128): Elaborating entity "PIPE_EX_MEM" for hierarchy "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 340
-Info (12128): Elaborating entity "PIPE_MEM_WB" for hierarchy "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 390
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(11): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(11): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(11): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(12): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 12
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(13): used implicit default value for signal "HEX7" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 13
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(16): used implicit default value for signal "LEDG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 16
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(18): used implicit default value for signal "LCD_DATA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 18
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(19): used implicit default value for signal "LCD_RW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 19
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(20): used implicit default value for signal "LCD_EN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 20
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(21): used implicit default value for signal "LCD_RS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 21
+Warning (10540): VHDL Signal Declaration warning at CPU.vhd(32): used explicit default value for signal "RESET" because signal was never assigned a value File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 32
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(36): object "IF_PC_ADD_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 36
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(36): object "IF_PC_ADD_COUT" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 36
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(49): object "ID_RIPPLE_BRANCH_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 49
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(49): object "ID_RIPPLE_BRANCH_COUT" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 49
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(56): object "ID_ID_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 56
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(56): object "ID_EX_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 56
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(56): object "ID_WB_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 56
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(62): object "EX_NEXT_PC" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 62
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(64): object "EX_ALU_OP" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 64
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(73): object "EX_ALU_ZERO" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 73
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(73): object "EX_ALU_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 73
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(73): object "EX_ALU_COUT" assigned a value but never read File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 73
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(77): used implicit default value for signal "MEM_DATA_FOWARD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 77
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(79): used implicit default value for signal "MEM_WRITE_REG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 79
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(90): used implicit default value for signal "WB_DATA_FOWARD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 90
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(92): used implicit default value for signal "WB_WRITE_REG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 92
+Warning (10873): Using initial value X (don't care) for net "LEDR[15]" at CPU.vhd(15) File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "LEDR[13]" at CPU.vhd(15) File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "LEDR[11]" at CPU.vhd(15) File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "LEDR[8]" at CPU.vhd(15) File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "LEDR[6]" at CPU.vhd(15) File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "LEDR[4]" at CPU.vhd(15) File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "LEDR[1]" at CPU.vhd(15) File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+Info (12128): Elaborating entity "REG" for hierarchy "REG:IF_PC_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 124
+Info (12128): Elaborating entity "RIPPLE_CARRY" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 132
+Info (12128): Elaborating entity "FULLADDER" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD1" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/RIPPLE_CARRY.vhd Line: 40
+Info (12128): Elaborating entity "MEMORY" for hierarchy "MEMORY:INSTRUCTION_MEMORY_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 142
+Info (12128): Elaborating entity "PIPE_IF_ID" for hierarchy "PIPE_IF_ID:PIPE_IF_ID_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 151
+Info (12128): Elaborating entity "CONTROL_UNIT" for hierarchy "CONTROL_UNIT:CONTROL_UNIT_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 176
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(9): used implicit default value for signal "IF_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 9
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(10): used implicit default value for signal "ID_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 10
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(11): used implicit default value for signal "EX_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(12): used implicit default value for signal "WB_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CONTROL_UNIT.vhd Line: 12
+Info (12128): Elaborating entity "HAZARD_DETECTION_UNIT" for hierarchy "HAZARD_DETECTION_UNIT:IF_ID_HAZARD_DETECTION_UNIT_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 201
+Info (12128): Elaborating entity "REG_BANK" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 211
+Info (12128): Elaborating entity "BUFFER_TRI" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/REG_BANK.vhd Line: 121
+Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:IF_ID_SIGN_EXTEND_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 223
+Info (12128): Elaborating entity "SHIFT_LEFT2" for hierarchy "SHIFT_LEFT2:IF_ID_SHIFT_LEFT_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 228
+Info (12128): Elaborating entity "COMPARATOR16" for hierarchy "COMPARATOR16:IF_ID_COMPARATOR_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 233
+Info (12128): Elaborating entity "SHIFT_LEFT1" for hierarchy "SHIFT_LEFT1:IF_ID_SHIFT_LEFT1_JUMP_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 249
+Info (12128): Elaborating entity "PIPE_ID_EX" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 257
+Warning (10541): VHDL Signal Declaration warning at PIPE_ID_EX.vhd(22): used implicit default value for signal "IF_ID_REG_RD_OUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 22
+Info (12128): Elaborating entity "FOUR_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 68
+Info (12128): Elaborating entity "ONE_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 75
+Info (12128): Elaborating entity "TWO_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/PIPE_ID_EX.vhd Line: 77
+Info (12128): Elaborating entity "ALU_CONTROL" for hierarchy "ALU_CONTROL:ALU_CONTROL_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 304
+Warning (10325): VHDL Choice warning at ALU_CONTROL.vhd(22): ignored choice containing meta-value ""00X"" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/ALU_CONTROL.vhd Line: 22
+Warning (10325): VHDL Choice warning at ALU_CONTROL.vhd(23): ignored choice containing meta-value ""01X"" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/ALU_CONTROL.vhd Line: 23
+Info (12128): Elaborating entity "FORWARDING_UNIT" for hierarchy "FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 310
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ALU_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 343
+Info (12128): Elaborating entity "PIPE_EX_MEM" for hierarchy "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 353
+Info (12128): Elaborating entity "PIPE_MEM_WB" for hierarchy "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 403
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 11
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 12
-    Warning (13410): Pin "HEX7[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
-    Warning (13410): Pin "HEX7[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
-    Warning (13410): Pin "HEX7[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
-    Warning (13410): Pin "HEX7[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
-    Warning (13410): Pin "HEX7[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
-    Warning (13410): Pin "HEX7[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
-    Warning (13410): Pin "HEX7[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 13
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[10]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[11]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[12]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[13]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[14]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[15]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[16]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDR[17]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDG[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
-    Warning (13410): Pin "LEDG[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
-    Warning (13410): Pin "LEDG[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
-    Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
-    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
-    Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
-    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
-    Warning (13410): Pin "LEDG[7]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
-    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 16
-    Warning (13410): Pin "LCD_DATA[0]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
-    Warning (13410): Pin "LCD_DATA[1]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
-    Warning (13410): Pin "LCD_DATA[2]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
-    Warning (13410): Pin "LCD_DATA[3]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
-    Warning (13410): Pin "LCD_DATA[4]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
-    Warning (13410): Pin "LCD_DATA[5]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
-    Warning (13410): Pin "LCD_DATA[6]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
-    Warning (13410): Pin "LCD_DATA[7]" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 18
-    Warning (13410): Pin "LCD_RW" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 19
-    Warning (13410): Pin "LCD_EN" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 20
-    Warning (13410): Pin "LCD_RS" is stuck at GND File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 21
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 11
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 12
+    Warning (13410): Pin "HEX7[6]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[5]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[4]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[3]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[2]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[1]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "HEX7[0]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 13
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[11]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[13]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDR[15]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[0]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[1]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[2]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[7]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 16
+    Warning (13410): Pin "LCD_DATA[0]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[1]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[2]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[3]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[4]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[5]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[6]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_DATA[7]" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 18
+    Warning (13410): Pin "LCD_RW" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 19
+    Warning (13410): Pin "LCD_EN" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 20
+    Warning (13410): Pin "LCD_RS" is stuck at GND File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 21
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 44 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 407 assignments for entity "DE2_115" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCDAT -entity DE2_115 was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCLRCK -entity DE2_115 was ignored
@@ -1375,37 +1518,37 @@ Warning (20013): Ignored 407 assignments for entity "DE2_115" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_VS -entity DE2_115 was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 23 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 8
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 8
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 8
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 8
-    Warning (15610): No output dependent on input pin "Clock_50" File: C:/Users/guixi/repositories/4-BitCPU-VHDL/CPU.vhd Line: 9
-Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 22 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 8
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 8
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 8
+    Warning (15610): No output dependent on input pin "Clock_50" File: C:/Users/guixi/repositories/16-BitCPU-VHDL/CPU.vhd Line: 9
+Info (21057): Implemented 131 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 73 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 554 warnings
-    Info: Peak virtual memory: 7282 megabytes
-    Info: Processing ended: Mon Nov 17 19:43:02 2025
-    Info: Elapsed time: 00:01:47
-    Info: Total CPU time (on all processors): 00:01:56
+    Info (21061): Implemented 35 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 542 warnings
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Tue Nov 18 14:38:59 2025
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:26
 
 

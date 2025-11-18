@@ -101,6 +101,17 @@ SIGNAL WB_ALU_OUT : STD_LOGIC_VECTOR(15 DOWNTO 0);
 
 BEGIN
 
+	LEDR(17 downto 16) <= ID_PC_SOURCE;
+	LEDR(14) <= ID_ALU_SRC;
+	LEDR(12) <= ID_REG_DST;
+	LEDR(10 downto 9) <= ID_ALU_OP;
+	LEDR(7) <= ID_MEM_WRITE;
+	LEDR(5) <= ID_MEM_READ;
+	LEDR(3 downto 2) <= ID_MEM_TO_REG;
+	LEDR(0) <= ID_REG_WRITE;
+
+	CLOCK <= KEY(0);
+
 	-- Estágio IF
 		WITH ID_PC_SOURCE SELECT
 			-- Lógica para seleção do próximo PC
@@ -163,7 +174,7 @@ BEGIN
 
 
 		CONTROL_UNIT_INSTANCE : CONTROL_UNIT PORT MAP( --NOK
-			OPCODE => ID_INSTRUCTION_DATA(15 DOWNTO 0),
+			INSTRUCTION => ID_INSTRUCTION_DATA(15 DOWNTO 0),
 			REG_EQUAL => ID_REG_EQUAL,
 
 			IF_FLUSH => ID_IF_FLUSH,
@@ -181,7 +192,9 @@ BEGIN
 			MEM_READ=> ID_MEM_READ,
 			-- Sinais de controle WB
 			MEM_TO_REG=> ID_MEM_TO_REG,
-			REG_WRITE=> ID_REG_WRITE
+			REG_WRITE=> ID_REG_WRITE,
+			
+			CLOCK => CLOCK
 
 		);
 
@@ -420,21 +433,21 @@ BEGIN
 								WB_ALU_OUT WHEN "10",
 								WB_ALU_OUT WHEN OTHERS; -- Default
 
-	-- PROCESSOS PARA O DIVISOR DE CLOCK
-    ClockDivide: PROCESS
-            BEGIN
-            WAIT UNTIL CLOCK_50'EVENT and CLOCK_50 = '1'; -- Na subida do clock,
-            IF clockticks < max THEN
-                clockticks <= clockticks + 1; -- Soma o contador clockticks até o máximo estipulado pelo usuário
-            ELSE
-                clockticks <= 0;					-- Quando chega no máximo zera
-            END IF;
-            IF clockticks < half THEN			-- Half representa a metade do ciclo, quando chega liga o clock
-                CLOCK <= '0';
-            ELSE
-                CLOCK <= '1';
-            END IF;
-        END PROCESS;
+	-- -- PROCESSOS PARA O DIVISOR DE CLOCK
+    -- ClockDivide: PROCESS
+    --         BEGIN
+    --         WAIT UNTIL CLOCK_50'EVENT and CLOCK_50 = '1'; -- Na subida do clock,
+    --         IF clockticks < max THEN
+    --             clockticks <= clockticks + 1; -- Soma o contador clockticks até o máximo estipulado pelo usuário
+    --         ELSE
+    --             clockticks <= 0;					-- Quando chega no máximo zera
+    --         END IF;
+    --         IF clockticks < half THEN			-- Half representa a metade do ciclo, quando chega liga o clock
+    --             CLOCK <= '0';
+    --         ELSE
+    --             CLOCK <= '1';
+    --         END IF;
+    --     END PROCESS;
 		  
 -- Basicamente, o ClockDivide é um processo que conta até um certo número e altera o valor do clock com base na
 -- metade desse número, criando um efeito parecido com isso:
