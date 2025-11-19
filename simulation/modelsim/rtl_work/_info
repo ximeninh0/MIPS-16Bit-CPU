@@ -1,42 +1,45 @@
 m255
 K4
 z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/simulation/modelsim
-Eand_component
-Z1 w1756741014
+Z0 dC:/Users/23012419/MIPS-16Bit-CPU/simulation/modelsim
+Ebuffer_tri
+Z1 w1763486748
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
 R0
-Z4 8C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/AND_COMPONENT.vhd
-Z5 FC:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/AND_COMPONENT.vhd
+Z4 8C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd
+Z5 FC:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd
 l0
-L4
-VQiIj8;ZX9I`LBI]aYjgM@3
-!s100 2LYCX;GM4?n`c`mT?W6WC1
-Z6 OV;C;10.5b;63
+L4 1
+V0?L0m5<?V9cKgEoYo7E7B0
+!s100 G84oU@B5HbgCj?XiRd?2Z3
+Z6 OV;C;2020.1;71
 33
-Z7 !s110 1757383757
+Z7 !s110 1763494573
 !i10b 1
-Z8 !s108 1757383757.000000
-Z9 !s90 -reportprogress|300|-2008|-work|work|C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/AND_COMPONENT.vhd|
-Z10 !s107 C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/AND_COMPONENT.vhd|
+Z8 !s108 1763494573.000000
+Z9 !s90 -reportprogress|300|-2008|-work|work|C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd|
+Z10 !s107 C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd|
 !i113 1
 Z11 o-2008 -work work
 Z12 tExplicit 1 CvgOpt 0
 Abehavior
 R2
 R3
-DEx4 work 13 and_component 0 22 QiIj8;ZX9I`LBI]aYjgM@3
+DEx4 work 10 buffer_tri 0 22 0?L0m5<?V9cKgEoYo7E7B0
+!i122 2
 l13
-L11
-VXdzMG1<gPl2`8b]CaddoR0
-!s100 =:h2@DKKii1ffSS<P[m<M3
+L12 5
+VPMN@9aQI1a2J9dD=Z2^oS2
+!s100 OP0D^B@Q<o>U_TaEaTa4h3
 R6
 33
 R7
@@ -47,303 +50,134 @@ R10
 !i113 1
 R11
 R12
-Ecomparator
-Z13 w1756742740
+Pconstants_package
 R2
 R3
+!i122 1
+R1
 R0
-Z14 8C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/COMPARATOR.vhd
-Z15 FC:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/COMPARATOR.vhd
+8C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd
+FC:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd
 l0
-L4
-VbRa7U3Aa?<4@Nbl582?Kz0
-!s100 cMk`IaIZb]GFNomlf:FBh2
+L4 1
+VnSWlYnH8a?lAC7I9?]<UR0
+!s100 8fSJ<WTGniJz^PA]>6fUU1
 R6
 33
-Z16 !s110 1757383758
+R7
 !i10b 1
-Z17 !s108 1757383758.000000
-Z18 !s90 -reportprogress|300|-2008|-work|work|C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/COMPARATOR.vhd|
-Z19 !s107 C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/COMPARATOR.vhd|
-!i113 1
-R11
-R12
-Abehavior
-R2
-R3
-DEx4 work 10 comparator 0 22 bRa7U3Aa?<4@Nbl582?Kz0
-l14
-L11
-VkEQZ5kVP9TWRfMKj`X07^1
-!s100 hGio1B31enk>>U3=3f^aT0
-R6
-33
-R16
-!i10b 1
-R17
-R18
-R19
+R8
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd|
+!s107 C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd|
 !i113 1
 R11
 R12
 Pcpu_package
+Z13 DPx4 work 17 constants_package 0 22 nSWlYnH8a?lAC7I9?]<UR0
 R2
 R3
-w1757379373
+!i122 3
+w1763488632
 R0
-8C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/CPU_PACKAGE.vhd
-FC:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/CPU_PACKAGE.vhd
+8C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd
+FC:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd
 l0
-L5
-VGOd5`UXeXAo[?7iE;:]z13
-!s100 KLfh]MNN`]Joa_Hd_E;J?3
+L6 1
+V?09EO<fIdEW2=a[hLbJzQ0
+!s100 E:5QEafQW?SU=TNS;:z@c3
 R6
 33
-R16
-!i10b 1
-R17
-!s90 -reportprogress|300|-2008|-work|work|C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/CPU_PACKAGE.vhd|
-!s107 C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/CPU_PACKAGE.vhd|
-!i113 1
-R11
-R12
-Efulladder
-Z20 w1756742804
-R2
-R3
-R0
-Z21 8C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/FULLADDER.vhd
-Z22 FC:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/FULLADDER.vhd
-l0
-L4
-V=zja9DPQM]ijI<UaHdUY_3
-!s100 FbZe2n7X>mW9<j_Bf8UZe0
-R6
-33
-R16
-!i10b 1
-R17
-Z23 !s90 -reportprogress|300|-2008|-work|work|C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/FULLADDER.vhd|
-Z24 !s107 C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/FULLADDER.vhd|
-!i113 1
-R11
-R12
-Abehavior
-R2
-R3
-DEx4 work 9 fulladder 0 22 =zja9DPQM]ijI<UaHdUY_3
-l14
-L12
-VPekU:Y<YQcX?6G1D4L]no1
-!s100 k9R0zBQR>c^H3z<5KjdgX2
-R6
-33
-R16
-!i10b 1
-R17
-R23
-R24
-!i113 1
-R11
-R12
-Emulti_component
-Z25 w1757379453
-Z26 DPx4 work 11 cpu_package 0 22 GOd5`UXeXAo[?7iE;:]z13
-R2
-R3
-R0
-Z27 8C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/MULTI_COMPONENT.vhd
-Z28 FC:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/MULTI_COMPONENT.vhd
-l0
-L5
-VlfdzhX^S^O:lOzUDS6LQ`1
-!s100 DI?Fac;8J?V`;VXTL3Voj1
-R6
-33
-R16
-!i10b 1
-R17
-Z29 !s90 -reportprogress|300|-2008|-work|work|C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/MULTI_COMPONENT.vhd|
-Z30 !s107 C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/MULTI_COMPONENT.vhd|
-!i113 1
-R11
-R12
-Abehavior
-R26
-R2
-R3
-DEx4 work 15 multi_component 0 22 lfdzhX^S^O:lOzUDS6LQ`1
-l15
-L12
-VBG:];EREdf7NeX6;dOK[A0
-!s100 mclUF9C2=A:Tn?SSOALgO1
-R6
-33
-R16
-!i10b 1
-R17
-R29
-R30
-!i113 1
-R11
-R12
-Enot_component
-Z31 w1756743090
-R2
-R3
-R0
-Z32 8C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/NOT_COMPONENT.vhd
-Z33 FC:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/NOT_COMPONENT.vhd
-l0
-L4
-V5U<`bbDWfgB@U77mV`D8d1
-!s100 IWbgDQgC2B3e?9>ZQC2CB2
-R6
-33
-R16
-!i10b 1
-R17
-Z34 !s90 -reportprogress|300|-2008|-work|work|C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/NOT_COMPONENT.vhd|
-Z35 !s107 C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/NOT_COMPONENT.vhd|
-!i113 1
-R11
-R12
-Abehavior
-R2
-R3
-DEx4 work 13 not_component 0 22 5U<`bbDWfgB@U77mV`D8d1
-l13
-L11
-VDmR8DfWhAlb;AEGDgGNk=2
-!s100 3GcoTFDI^ah^4[Ic9OGLf0
-R6
-33
-R16
-!i10b 1
-R17
-R34
-R35
-!i113 1
-R11
-R12
-Eor_component
-Z36 w1756742738
-R2
-R3
-R0
-Z37 8C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/OR_COMPONENT.vhd
-Z38 FC:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/OR_COMPONENT.vhd
-l0
-L4
-Vn@@JOEWlHQ=bdSWBc1YQQ3
-!s100 ?Mnmd7L=D5Ha_llQASH7?0
-R6
-33
-R16
+Z14 !s110 1763494574
 !i10b 1
 R8
-Z39 !s90 -reportprogress|300|-2008|-work|work|C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/OR_COMPONENT.vhd|
-Z40 !s107 C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/OR_COMPONENT.vhd|
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd|
+!s107 C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd|
+!i113 1
+R11
+R12
+Ereg
+R1
+R2
+R3
+!i122 0
+R0
+Z15 8C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd
+Z16 FC:/Users/23012419/MIPS-16Bit-CPU/REG.vhd
+l0
+L4 1
+Vl:nO;e4V9B5119SoWj[J60
+!s100 z2gaWI1hgXiYdGMO]>oRV0
+R6
+33
+Z17 !s110 1763494572
+!i10b 1
+Z18 !s108 1763494572.000000
+Z19 !s90 -reportprogress|300|-2008|-work|work|C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd|
+Z20 !s107 C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd|
 !i113 1
 R11
 R12
 Abehavior
 R2
 R3
-DEx4 work 12 or_component 0 22 n@@JOEWlHQ=bdSWBc1YQQ3
+DEx4 work 3 reg 0 22 l:nO;e4V9B5119SoWj[J60
+!i122 0
 l13
-L11
-V`19GX@I3g1Dihk[io_MO]2
-!s100 <dJO?5<z39z?XdP_m]NFm2
+L12 16
+V]R4[>=I`XBm]jm39;GZj]0
+!s100 2W<d[mI@<WmEM]k3d1;hj2
 R6
 33
-R16
+R17
 !i10b 1
-R8
-R39
-R40
+R18
+R19
+R20
 !i113 1
 R11
 R12
-Eripple_carry
+Ereg_bank
+Z21 w1763494494
+R13
+Z22 DPx4 work 11 cpu_package 0 22 ?09EO<fIdEW2=a[hLbJzQ0
+R2
+R3
+!i122 4
+R0
+Z23 8C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd
+Z24 FC:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd
+l0
+L5 1
+Vk81o29zIG<:1MKW<62@gH2
+!s100 [ZRMYlMHKdPVJEZKCSIUT0
+R6
+33
+R14
+!i10b 1
+Z25 !s108 1763494574.000000
+Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd|
+!s107 C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R13
+R22
+R2
+R3
+DEx4 work 8 reg_bank 0 22 k81o29zIG<:1MKW<62@gH2
+!i122 4
+l30
+L25 112
+VezhTWeN_I:US<j2_05BWL3
+!s100 kU`BR0=USXP2EgGPj4@k>0
+R6
+33
+R14
+!i10b 1
 R25
 R26
-R2
-R3
-R0
-Z41 8C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/RIPPLE_CARRY.vhd
-Z42 FC:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/RIPPLE_CARRY.vhd
-l0
-L5
-VE5F]d1l7P@D]zd?J<zJXn0
-!s100 IgfzF[;5l7]o0[gD<J8PP1
-R6
-33
-R16
-!i10b 1
-R17
-Z43 !s90 -reportprogress|300|-2008|-work|work|C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/RIPPLE_CARRY.vhd|
-Z44 !s107 C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/RIPPLE_CARRY.vhd|
-!i113 1
-R11
-R12
-Abehavior
-R26
-R2
-R3
-DEx4 work 12 ripple_carry 0 22 E5F]d1l7P@D]zd?J<zJXn0
-l20
-L16
-VK@W=:0lH0@YIdJMQ07gZ^0
-!s100 <_[`WU``:?WA6GJ2HZoFX1
-R6
-33
-R16
-!i10b 1
-R17
-R43
-R44
-!i113 1
-R11
-R12
-Eula
-Z45 w1757379452
-R26
-R2
-R3
-R0
-Z46 8C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/ULA.vhd
-Z47 FC:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/ULA.vhd
-l0
-L5
-VYn>d78iebAa1kc;GoXF=52
-!s100 `_a6;?QLRgG:79_L6m?Iz2
-R6
-33
-R16
-!i10b 1
-R17
-Z48 !s90 -reportprogress|300|-2008|-work|work|C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/ULA.vhd|
-Z49 !s107 C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/ULA.vhd|
-!i113 1
-R11
-R12
-Abehavior
-R26
-R2
-R3
-DEx4 work 3 ula 0 22 Yn>d78iebAa1kc;GoXF=52
-l20
-L15
-VCDQ=^V:HV=2TUUECK>ZYU3
-!s100 ^ZZHI^fkD>A9f55i47l]=2
-R6
-33
-R16
-!i10b 1
-R17
-R48
-R49
+Z27 !s107 C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd|
 !i113 1
 R11
 R12

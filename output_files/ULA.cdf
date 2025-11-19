@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/23012419/Desktop/CPUv3_3/Projeto_ULA/output_files/") File("ULA.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/23012419/MIPS-16Bit-CPU/output_files/") File("ULA.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

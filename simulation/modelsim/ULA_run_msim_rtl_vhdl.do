@@ -5,13 +5,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/AND_COMPONENT.vhd}
-vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/OR_COMPONENT.vhd}
-vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/COMPARATOR.vhd}
-vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/NOT_COMPONENT.vhd}
-vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/FULLADDER.vhd}
-vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/CPU_PACKAGE.vhd}
-vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/RIPPLE_CARRY.vhd}
-vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/MULTI_COMPONENT.vhd}
-vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/ULA.vhd}
+vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd}
+vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd}
+vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd}
+vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd}
+vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd}
 

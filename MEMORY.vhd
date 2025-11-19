@@ -6,7 +6,7 @@ use work.CPU_PACKAGE.all;
 
 entity MEMORY is
     port (
-        ADDRESS  : in  std_logic_vector(ADDR_SIZE-1 downto 0);
+        ADDRESS  : in  std_logic_vector(15 downto 0);
         DATA_IN  : in  std_logic_vector(WORD_SIZE-1 downto 0);
         DATA_OUT : out std_logic_vector(WORD_SIZE-1 downto 0) := (others => '0');
         READ_MEM : in  std_logic;
@@ -17,18 +17,8 @@ end MEMORY;
 
 architecture Behavioral of MEMORY is
 
-    --type mem_array is array((2**ADDR_SIZE)-1 downto 0) of std_logic_vector(BYTE_SIZE-1 downto 0);;
-    type mem_array is array(9 downto 0) of std_logic_vector(BYTE_SIZE-1 downto 0);
-    signal mem : mem_array := ("00001010",
-                                "11000000", 
-                                "00101100",
-                                "11000000", 
-                                "00100100",
-                                "01100000",
-                                "01100100",
-                                "11000000", 
-                                "00101001",
-                                "01100110");
+    type mem_array is array((2**ADDR_SIZE)-1 downto 0) of std_logic_vector(BYTE_SIZE-1 downto 0);
+    signal mem : mem_array :=  (OTHERS=>(OTHERS => '0'));
 
 begin
 

@@ -1,145 +1,82 @@
-# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# Reading pref.tcl
 # do ULA_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/AND_COMPONENT.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:09:17 on Sep 08,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/AND_COMPONENT.vhd 
+# vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:12 on Nov 18,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity AND_COMPONENT
-# -- Compiling architecture Behavior of AND_COMPONENT
-# End time: 23:09:17 on Sep 08,2025, Elapsed time: 0:00:00
+# -- Compiling entity REG
+# -- Compiling architecture Behavior of REG
+# End time: 16:36:12 on Nov 18,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/OR_COMPONENT.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:09:17 on Sep 08,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/OR_COMPONENT.vhd 
+# vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:13 on Nov 18,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity OR_COMPONENT
-# -- Compiling architecture Behavior of OR_COMPONENT
-# End time: 23:09:18 on Sep 08,2025, Elapsed time: 0:00:01
+# -- Compiling package CONSTANTS_PACKAGE
+# End time: 16:36:13 on Nov 18,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/COMPARATOR.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:09:18 on Sep 08,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/COMPARATOR.vhd 
+# vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:13 on Nov 18,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity COMPARATOR
-# -- Compiling architecture Behavior of COMPARATOR
-# End time: 23:09:18 on Sep 08,2025, Elapsed time: 0:00:00
+# -- Compiling entity BUFFER_TRI
+# -- Compiling architecture Behavior of BUFFER_TRI
+# End time: 16:36:13 on Nov 18,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/NOT_COMPONENT.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:09:18 on Sep 08,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/NOT_COMPONENT.vhd 
+# vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:13 on Nov 18,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity NOT_COMPONENT
-# -- Compiling architecture Behavior of NOT_COMPONENT
-# End time: 23:09:18 on Sep 08,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/FULLADDER.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:09:18 on Sep 08,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/FULLADDER.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity FULLADDER
-# -- Compiling architecture Behavior of FULLADDER
-# End time: 23:09:18 on Sep 08,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/CPU_PACKAGE.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:09:18 on Sep 08,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/CPU_PACKAGE.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
+# -- Loading package CONSTANTS_PACKAGE
 # -- Compiling package CPU_PACKAGE
-# End time: 23:09:18 on Sep 08,2025, Elapsed time: 0:00:00
+# End time: 16:36:14 on Nov 18,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/RIPPLE_CARRY.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:09:18 on Sep 08,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/RIPPLE_CARRY.vhd 
+# vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:14 on Nov 18,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+# -- Loading package CONSTANTS_PACKAGE
 # -- Loading package CPU_PACKAGE
-# -- Compiling entity RIPPLE_CARRY
-# -- Compiling architecture Behavior of RIPPLE_CARRY
-# End time: 23:09:18 on Sep 08,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/MULTI_COMPONENT.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:09:18 on Sep 08,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/MULTI_COMPONENT.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package CPU_PACKAGE
-# -- Compiling entity MULTI_COMPONENT
-# -- Compiling architecture Behavior of MULTI_COMPONENT
-# End time: 23:09:18 on Sep 08,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/ULA.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:09:18 on Sep 08,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/guixi/Desktop/CPUv3_6/Projeto_CPU/ULA.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package CPU_PACKAGE
-# -- Compiling entity ULA
-# -- Compiling architecture Behavior of ULA
-# End time: 23:09:18 on Sep 08,2025, Elapsed time: 0:00:00
+# -- Compiling entity REG_BANK
+# -- Compiling architecture Behavior of REG_BANK
+# End time: 16:36:14 on Nov 18,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.ula
-# vsim work.ula 
-# Start time: 23:10:29 on Sep 08,2025
+vsim work.reg_bank
+# vsim work.reg_bank 
+# Start time: 16:36:20 on Nov 18,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
+# Loading work.constants_package
 # Loading work.cpu_package
-# Loading work.ula(behavior)
-# Loading work.ripple_carry(behavior)
-# Loading work.fulladder(behavior)
-# Loading work.and_component(behavior)
-# Loading work.or_component(behavior)
-# Loading work.not_component(behavior)
-# Loading work.multi_component(behavior)
-# Loading work.comparator(behavior)
-wave create -driver freeze -pattern constant -value 0110 -range 3 0 -starttime 0ps -endtime 1000ps sim:/ula/A
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-wave create -driver freeze -pattern constant -value 0011 -range 3 0 -starttime 0ps -endtime 1000ps sim:/ula/B
-wave create -driver freeze -pattern counter -startvalue 0000 -endvalue 1111 -type Range -direction Up -period 50ps -step 1 -repeat forever -range 3 0 -starttime 0ps -endtime 1000ps sim:/ula/OPERATION
-add wave -position end  sim:/ula/RESULT
-add wave -position end  sim:/ula/ZERO
-add wave -position end  sim:/ula/OVERFLOW
-add wave -position end  sim:/ula/Lst
-add wave -position end  sim:/ula/Grt
-add wave -position end  sim:/ula/Equ
-add wave -position 6  sim:/ula/Cout
-run
-restart
-run
-# End time: 23:43:46 on Sep 08,2025, Elapsed time: 0:33:17
+# Loading work.reg_bank(behavior)
+# Loading work.reg(behavior)
+# Loading work.buffer_tri(behavior)
+# End time: 16:36:55 on Nov 18,2025, Elapsed time: 0:00:35
 # Errors: 0, Warnings: 0

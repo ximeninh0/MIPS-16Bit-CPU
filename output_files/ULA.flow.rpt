@@ -1,6 +1,6 @@
 Flow report for ULA
-Tue Nov 18 14:38:59 2025
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Tue Nov 18 19:03:03 2025
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2019  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -41,22 +41,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 18 14:38:59 2025       ;
-; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Flow Status                        ; Successful - Tue Nov 18 19:03:03 2025       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
 ; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 33                                          ;
-;     Total combinational functions  ; 26                                          ;
-;     Dedicated logic registers      ; 20                                          ;
-; Total registers                    ; 20                                          ;
-; Total pins                         ; 96                                          ;
+; Total logic elements               ; 1,168 / 114,480 ( 1 % )                     ;
+;     Total combinational functions  ; 1,024 / 114,480 ( < 1 % )                   ;
+;     Dedicated logic registers      ; 586 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 586                                         ;
+; Total pins                         ; 117 / 529 ( 22 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/18/2025 14:38:47 ;
+; Start date & time ; 11/18/2025 19:02:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ULA                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 38917505025.176348752733040            ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 35490522660283.176350332618484         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -104,8 +104,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4847 MB             ; 00:00:26                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:26                           ;
+; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 4820 MB             ; 00:00:44                           ;
+; Fitter               ; 00:00:20     ; 1.0                     ; 5749 MB             ; 00:00:31                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4702 MB             ; 00:00:04                           ;
+; Total                ; 00:00:53     ; --                      ; --                  ; 00:01:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,7 +116,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; BOOK-94FKQQ8HB7  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; p167298          ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; p167298          ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; p167298          ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -122,6 +126,8 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off CPU -c ULA
+quartus_fit --read_settings_files=off --write_settings_files=off CPU -c ULA
+quartus_asm --read_settings_files=off --write_settings_files=off CPU -c ULA
 
 
 

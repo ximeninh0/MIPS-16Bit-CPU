@@ -106,7 +106,7 @@ PACKAGE CPU_PACKAGE IS
 	
 	COMPONENT SEGS_4_TRANSLATOR IS 
 		port(
-			NUMBER : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+			NUMBER : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 			TRANSLATED : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
 		);
 	END COMPONENT;
@@ -151,6 +151,13 @@ PACKAGE CPU_PACKAGE IS
 				REG_WRITE: IN STD_LOGIC;
 				DATA_READ1 :OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 				DATA_READ2 :OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+				
+				R0_OUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+				R1_OUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+				R2_OUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+				R3_OUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+				R4_OUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+				R5_OUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 
 				CLOCK : IN STD_LOGIC;
 				RESET : IN STD_LOGIC 
@@ -159,7 +166,19 @@ PACKAGE CPU_PACKAGE IS
 		
 	COMPONENT MEMORY is
 		 port (
-			  ADDRESS  : in  std_logic_vector(ADDR_SIZE-1 downto 0);
+			  ADDRESS  : in  std_logic_vector(15 downto 0);
+			  DATA_IN  : in  std_logic_vector(WORD_SIZE-1 downto 0);
+			  DATA_OUT : out std_logic_vector(WORD_SIZE-1 downto 0) := (others => '0');
+			  READ_MEM : in  std_logic;
+			  WRITE_MEM: in  std_logic;
+			  CLOCK    : in  std_logic
+		 );
+	END COMPONENT;
+	
+			
+	COMPONENT INSTRUCTION_MEMORY is
+		 port (
+			  ADDRESS  : in  std_logic_vector(15 downto 0);
 			  DATA_IN  : in  std_logic_vector(WORD_SIZE-1 downto 0);
 			  DATA_OUT : out std_logic_vector(WORD_SIZE-1 downto 0) := (others => '0');
 			  READ_MEM : in  std_logic;

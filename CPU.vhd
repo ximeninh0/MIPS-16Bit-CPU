@@ -8,9 +8,8 @@ ENTITY CPU IS
 		KEY: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		Clock_50 : IN STD_LOGIC;
 		
-		HEX0,HEX1,HEX2 : OUT STD_LOGIC_VECTOR(0 TO 6); -- Sinais de saída para os displays de 7 segmentos
-		HEX4 : OUT STD_LOGIC_VECTOR(0 TO 6);
-		HEX7 : OUT STD_LOGIC_VECTOR(0 TO 6);
+		HEX0,HEX1,HEX2,HEX3,HEX4 : OUT STD_LOGIC_VECTOR(0 TO 6); -- Sinais de saída para os displays de 7 segmentos
+		HEX5,HEX6,HEX7 : OUT STD_LOGIC_VECTOR(0 TO 6);
 		
 		LEDR : OUT STD_LOGIC_VECTOR(17 DOWNTO 0);		-- Sinais de saída para os LEDS da placa
 		LEDG: OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
@@ -24,12 +23,14 @@ END CPU;
 
 ARCHITECTURE Behavior OF CPU IS
 
-CONSTANT max: INTEGER := 500000;				-- Ciclo do clock (é ajustável)
+CONSTANT max: INTEGER := 500000000;				-- Ciclo do clock (é ajustável)
 CONSTANT half: INTEGER := max/2;				-- Meio Ciclo
 SIGNAL clockticks: INTEGER RANGE 0 TO max;-- Conta cada ciclo do clock de entrada
 SIGNAL CLOCK: STD_LOGIC;						-- Clock instanciado
 
 SIGNAL RESET: STD_LOGIC := '0';				-- Sinal de reset geral
+
+SIGNAL HEX0_AUX, HEX1_AUX, HEX2_AUX, HEX3_AUX, HEX4_AUX,HEX5_AUX,HEX6_AUX, HEX7_AUX : STD_LOGIC_VECTOR(15 DOWNTO 0);
 
 -- Sinais do Estagio IF
 SIGNAL IF_PC_NEXT,IF_PC_CURRENT, IF_PC_MUX,IF_INSTRUCTION : STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -101,17 +102,9 @@ SIGNAL WB_ALU_OUT : STD_LOGIC_VECTOR(15 DOWNTO 0);
 
 BEGIN
 
-	LEDR(17 downto 16) <= ID_PC_SOURCE;
-	LEDR(14) <= ID_ALU_SRC;
-	LEDR(12) <= ID_REG_DST;
-	LEDR(10 downto 9) <= ID_ALU_OP;
-	LEDR(7) <= ID_MEM_WRITE;
-	LEDR(5) <= ID_MEM_READ;
-	LEDR(3 downto 2) <= ID_MEM_TO_REG;
-	LEDR(0) <= ID_REG_WRITE;
-
-	CLOCK <= KEY(0);
-
+--	CLOCK <= SW(0);
+	RESET <= '0';
+	
 	-- Estágio IF
 		WITH ID_PC_SOURCE SELECT
 			-- Lógica para seleção do próximo PC
@@ -139,7 +132,7 @@ BEGIN
 			Z => IF_NEXT_PC
 		); --OK
 
-		INSTRUCTION_MEMORY_INSTANCE: MEMORY PORT MAP( --NOK
+		INSTRUCTION_MEMORY_INSTANCE: INSTRUCTION_MEMORY PORT MAP( --NOK
 			ADDRESS=>IF_PC_CURRENT,
 			DATA_IN=> "0000000000000000", -- Inserção das instruções, nunca acontece 
 			DATA_OUT=>IF_INSTRUCTION,
@@ -216,6 +209,13 @@ BEGIN
 			REG_WRITE => WB_REG_WRITE,
 			DATA_READ1 => ID_REG_DATA1,
 			DATA_READ2 => ID_REG_DATA2,
+			R0_OUT => HEX0_AUX,
+			R1_OUT => HEX1_AUX,
+			R2_OUT => HEX2_AUX,
+			R3_OUT => HEX3_AUX,
+			R4_OUT => HEX4_AUX,
+			R5_OUT => HEX5_AUX,
+
 			CLOCK => CLOCK,
 			RESET => RESET
 		);
@@ -320,15 +320,15 @@ BEGIN
 
 		WITH EX_FOWARD_A SELECT
 			EX_ALU_SRC_A <= 	EX_A WHEN "00",
-								MEM_DATA_FOWARD WHEN "10",
-								WB_DATA_FOWARD WHEN "01",
-								EX_A WHEN OTHERS; -- Default
+									MEM_ALU_OUT WHEN "10",
+									WB_MEM_TO_REG_DATA WHEN "01",
+									EX_A WHEN OTHERS; -- Default
 
 		WITH EX_FOWARD_B SELECT
 			EX_ALU_SRC_B <= 	EX_DATA_FOWARD WHEN "00",
-										MEM_DATA_FOWARD WHEN "10",
-										WB_DATA_FOWARD WHEN "01",
-										EX_DATA_FOWARD WHEN OTHERS; -- Default
+									MEM_ALU_OUT WHEN "10",
+									WB_MEM_TO_REG_DATA WHEN "01",
+									EX_DATA_FOWARD WHEN OTHERS; -- Default
 
 		WITH EX_ALU_SRC SELECT
 			EX_DATA_FOWARD <= 	EX_SIGNAL_EXTENDED WHEN '1',
@@ -424,30 +424,59 @@ BEGIN
 			CLOCK => CLOCK,
 			RESET => RESET
 		);
-
+--==================================================================================================
 	-- Estagio MEM/WB
 
 		WITH WB_MEM_TO_REG SELECT
 			WB_MEM_TO_REG_DATA <= 	WB_MEM_OUT WHEN  "00",
-								WB_IMED_OUT WHEN "01",
-								WB_ALU_OUT WHEN "10",
-								WB_ALU_OUT WHEN OTHERS; -- Default
+											WB_IMED_OUT WHEN "01",
+											WB_ALU_OUT WHEN "10",
+											WB_ALU_OUT WHEN OTHERS; -- Default
+								
+								
+								
+		SEGS0_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX0_AUX,HEX0);
+		SEGS1_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX1_AUX,HEX1);
+		SEGS2_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX2_AUX,HEX2);
+		SEGS3_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX3_AUX,HEX3);
+		SEGS4_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX4_AUX,HEX4);
+		SEGS5_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX5_AUX,HEX5);
+		SEGS6_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(MEM_DATA_OUT,HEX6);
+		SEGS7_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(EX_ALU_OUT,HEX7);
+
+--		LEDR(17 downto 16) <= ID_PC_SOURCE;
+--		LEDR(14) <= ID_ALU_SRC;
+--		LEDR(12) <= ID_REG_DST;
+--		LEDR(10 downto 9) <= ID_ALU_OP;
+--		LEDR(7) <= ID_MEM_WRITE;
+--		LEDR(5) <= ID_MEM_READ;
+--		LEDR(3 downto 2) <= ID_MEM_TO_REG;
+--		LEDR(0) <= ID_REG_WRITE;
+	
+--		LEDG(7 downto 0) <= EX_SIGNAL_EXTENDED(7 downto 0);
+
+	LEDG(1 DOWNTO 0) <= ID_MEM_TO_REG;
+	LEDG(2) <= ID_REG_WRITE;
+	
+	LEDG(5 DOWNTO 4) <= EX_MEM_TO_REG;
+	LEDG(6) <= EX_REG_WRITE;
+	LEDR(17 DOWNTO 2) <= IF_INSTRUCTION;
 
 	-- -- PROCESSOS PARA O DIVISOR DE CLOCK
-    -- ClockDivide: PROCESS
-    --         BEGIN
-    --         WAIT UNTIL CLOCK_50'EVENT and CLOCK_50 = '1'; -- Na subida do clock,
-    --         IF clockticks < max THEN
-    --             clockticks <= clockticks + 1; -- Soma o contador clockticks até o máximo estipulado pelo usuário
-    --         ELSE
-    --             clockticks <= 0;					-- Quando chega no máximo zera
-    --         END IF;
-    --         IF clockticks < half THEN			-- Half representa a metade do ciclo, quando chega liga o clock
-    --             CLOCK <= '0';
-    --         ELSE
-    --             CLOCK <= '1';
-    --         END IF;
-    --     END PROCESS;
+    ClockDivide: PROCESS
+             BEGIN
+             WAIT UNTIL CLOCK_50'EVENT and CLOCK_50 = '1'; -- Na subida do clock,
+             IF clockticks < max THEN
+                 clockticks <= clockticks + 1; -- Soma o contador clockticks até o máximo estipulado pelo usuário
+             ELSE
+                 clockticks <= 0;					-- Quando chega no máximo zera
+             END IF;
+             IF clockticks < half THEN			-- Half representa a metade do ciclo, quando chega liga o clock
+                 CLOCK <= '0';
+             ELSE
+                 CLOCK <= '1';
+             END IF;
+         END PROCESS;
 		  
 -- Basicamente, o ClockDivide é um processo que conta até um certo número e altera o valor do clock com base na
 -- metade desse número, criando um efeito parecido com isso:
