@@ -19,7 +19,7 @@ BEGIN
         IF Reset = '1' THEN
             D_out <= '0';  -- Em caso de RESET, a saída será 0
 
-        ELSIF (Clock'EVENT AND Clock = '1') THEN
+        ELSIF (Clock'EVENT AND Clock = '0') THEN
             IF (R_in = '1') THEN
                 D_out <= D;   -- Caso o sinal de controle R_in seja 1, armazena o valor de D na saída
             END IF;

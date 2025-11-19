@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Tue Nov 18 19:02:35 2025
+Wed Nov 19 15:42:58 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -21,17 +21,17 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  13. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
  14. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE"
  15. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE"
- 16. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:ALU_RESULT_INSTANCE"
- 17. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:MEM_OUT_INSTANCE"
+ 16. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|LOW_WRITE_REG16:ALU_RESULT_INSTANCE"
+ 17. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|LOW_WRITE_REG16:MEM_OUT_INSTANCE"
  18. Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE"
  19. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
  20. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
  21. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE"
  22. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE"
  23. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE"
- 24. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE"
- 25. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:RT_DATA_INSTANCE"
- 26. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:ALU_OUT_INSTANCE"
+ 24. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:IMED_INSTANCE"
+ 25. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:RT_DATA_INSTANCE"
+ 26. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:ALU_OUT_INSTANCE"
  27. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE"
  28. Port Connectivity Checks: "ULA:ALU_INSTANCE"
  29. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
@@ -45,9 +45,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  37. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE"
  38. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE"
  39. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE"
- 40. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE"
- 41. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_B_INSTANCE"
- 42. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_A_INSTANCE"
+ 40. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE"
+ 41. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_B_INSTANCE"
+ 42. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_A_INSTANCE"
  43. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE"
  44. Port Connectivity Checks: "RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE"
  45. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE"
@@ -58,7 +58,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  50. Port Connectivity Checks: "PIPE_IF_ID:PIPE_IF_ID_INSTANCE"
  51. Port Connectivity Checks: "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE"
  52. Port Connectivity Checks: "RIPPLE_CARRY:IF_PC_ADD_INSTANCE"
- 53. Port Connectivity Checks: "REG:IF_PC_INSTANCE"
+ 53. Port Connectivity Checks: "LOW_WRITE_REG16:IF_PC_INSTANCE"
  54. Post-Synthesis Netlist Statistics for Top Partition
  55. Elapsed Time Per Partition
  56. Analysis & Synthesis Messages
@@ -88,15 +88,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 18 19:02:34 2025       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 19 15:42:58 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
 ; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,339                                       ;
-;     Total combinational functions  ; 1,024                                       ;
-;     Dedicated logic registers      ; 586                                         ;
-; Total registers                    ; 586                                         ;
+; Total logic elements               ; 1,610                                       ;
+;     Total combinational functions  ; 1,309                                       ;
+;     Dedicated logic registers      ; 569                                         ;
+; Total registers                    ; 569                                         ;
 ; Total pins                         ; 117                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -243,6 +243,7 @@ https://fpgasoftware.intel.com/eula.
 ; CPU_PACKAGE.vhd                    ; yes             ; User VHDL File  ; C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd                    ;         ;
 ; REG_BANK.vhd                       ; yes             ; User VHDL File  ; C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd                       ;         ;
 ; CONTROL_UNIT.vhd                   ; yes             ; User VHDL File  ; C:/Users/23012419/MIPS-16Bit-CPU/CONTROL_UNIT.vhd                   ;         ;
+; LOW_WRITE_REG16.vhd                ; yes             ; User VHDL File  ; C:/Users/23012419/MIPS-16Bit-CPU/LOW_WRITE_REG16.vhd                ;         ;
 +------------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
 
 
@@ -251,20 +252,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1,339 ;
+; Estimated Total logic elements              ; 1,610 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1024  ;
+; Total combinational functions               ; 1309  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 694   ;
-;     -- 3 input functions                    ; 242   ;
-;     -- <=2 input functions                  ; 88    ;
+;     -- 4 input functions                    ; 922   ;
+;     -- 3 input functions                    ; 283   ;
+;     -- <=2 input functions                  ; 104   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 996   ;
-;     -- arithmetic mode                      ; 28    ;
+;     -- normal mode                          ; 1284  ;
+;     -- arithmetic mode                      ; 25    ;
 ;                                             ;       ;
-; Total registers                             ; 586   ;
-;     -- Dedicated logic registers            ; 586   ;
+; Total registers                             ; 569   ;
+;     -- Dedicated logic registers            ; 569   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 117   ;
@@ -272,363 +273,351 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ;                                             ;       ;
 ; Maximum fan-out node                        ; CLOCK ;
-; Maximum fan-out                             ; 556   ;
-; Total fan-out                               ; 5502  ;
-; Average fan-out                             ; 2.98  ;
+; Maximum fan-out                             ; 543   ;
+; Total fan-out                               ; 6514  ;
+; Average fan-out                             ; 3.08  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                           ;
-+-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name        ; Library Name ;
-+-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------------+--------------+
-; |CPU                                                ; 1024 (93)           ; 586 (30)                  ; 0           ; 0            ; 0       ; 0         ; 117  ; 0            ; |CPU                                                                     ; CPU                ; work         ;
-;    |ALU_CONTROL:ALU_CONTROL_INSTANCE|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU_CONTROL:ALU_CONTROL_INSTANCE                                    ; ALU_CONTROL        ; work         ;
-;    |CONTROL_UNIT:CONTROL_UNIT_INSTANCE|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|CONTROL_UNIT:CONTROL_UNIT_INSTANCE                                  ; CONTROL_UNIT       ; work         ;
-;    |FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE|       ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE                            ; FORWARDING_UNIT    ; work         ;
-;    |INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE| ; 26 (26)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE                      ; INSTRUCTION_MEMORY ; work         ;
-;    |MEMORY:DATA_MEMORY_INSTANCE|                    ; 331 (331)           ; 144 (144)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|MEMORY:DATA_MEMORY_INSTANCE                                         ; MEMORY             ; work         ;
-;    |PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|               ; 0 (0)               ; 45 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE                                    ; PIPE_EX_MEM        ; work         ;
-;       |FOUR_BIT_REG:REG_DST_INSTANCE|               ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE      ; FOUR_BIT_REG       ; work         ;
-;       |ONE_BIT_REG:MEM_READ_INSTANCE|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE      ; ONE_BIT_REG        ; work         ;
-;       |ONE_BIT_REG:MEM_WRITE_INSTANCE|              ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE     ; ONE_BIT_REG        ; work         ;
-;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE  ; ONE_BIT_REG        ; work         ;
-;       |REG:ALU_OUT_INSTANCE|                        ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:ALU_OUT_INSTANCE               ; REG                ; work         ;
-;       |REG:IMED_INSTANCE|                           ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE                  ; REG                ; work         ;
-;       |REG:RT_DATA_INSTANCE|                        ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:RT_DATA_INSTANCE               ; REG                ; work         ;
-;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE ; TWO_BIT_REG        ; work         ;
-;    |PIPE_ID_EX:PIPE_ID_EX_INSTANCE|                 ; 21 (0)              ; 46 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE                                      ; PIPE_ID_EX         ; work         ;
-;       |FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|          ; 0 (0)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE   ; FOUR_BIT_REG       ; work         ;
-;       |FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE|          ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE   ; FOUR_BIT_REG       ; work         ;
-;       |ONE_BIT_REG:EX_ALU_SRC_INSTANCE|             ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE      ; ONE_BIT_REG        ; work         ;
-;       |ONE_BIT_REG:EX_REG_DST_INSTANCE|             ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE      ; ONE_BIT_REG        ; work         ;
-;       |ONE_BIT_REG:MEM_READ_INSTANCE|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE        ; ONE_BIT_REG        ; work         ;
-;       |ONE_BIT_REG:MEM_WRITE_INSTANCE|              ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE       ; ONE_BIT_REG        ; work         ;
-;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE    ; ONE_BIT_REG        ; work         ;
-;       |REG:REG_A_INSTANCE|                          ; 2 (2)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_A_INSTANCE                   ; REG                ; work         ;
-;       |REG:REG_B_INSTANCE|                          ; 19 (19)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_B_INSTANCE                   ; REG                ; work         ;
-;       |REG:SIGNAL_EXT_INSTANCE|                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE              ; REG                ; work         ;
-;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE   ; TWO_BIT_REG        ; work         ;
-;    |PIPE_IF_ID:PIPE_IF_ID_INSTANCE|                 ; 1 (0)               ; 19 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE                                      ; PIPE_IF_ID         ; work         ;
-;       |REG:INSTRUCTION_DATA|                        ; 0 (0)               ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA                 ; REG                ; work         ;
-;       |REG:PC_INSTANCE|                             ; 1 (1)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE                      ; REG                ; work         ;
-;    |PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|               ; 0 (0)               ; 43 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE                                    ; PIPE_MEM_WB        ; work         ;
-;       |FOUR_BIT_REG:REG_DST_INSTANCE|               ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE      ; FOUR_BIT_REG       ; work         ;
-;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE  ; ONE_BIT_REG        ; work         ;
-;       |REG:ALU_RESULT_INSTANCE|                     ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:ALU_RESULT_INSTANCE            ; REG                ; work         ;
-;       |REG:IMED_INSTANCE|                           ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE                  ; REG                ; work         ;
-;       |REG:MEM_OUT_INSTANCE|                        ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:MEM_OUT_INSTANCE               ; REG                ; work         ;
-;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE ; TWO_BIT_REG        ; work         ;
-;    |REG:IF_PC_INSTANCE|                             ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG:IF_PC_INSTANCE                                                  ; REG                ; work         ;
-;    |REG_BANK:IF_ID_REG_BANK_INSTANCE|               ; 209 (209)           ; 240 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE                                    ; REG_BANK           ; work         ;
-;       |REG:REG10_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG10_INSTANCE                 ; REG                ; work         ;
-;       |REG:REG11_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG11_INSTANCE                 ; REG                ; work         ;
-;       |REG:REG12_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG12_INSTANCE                 ; REG                ; work         ;
-;       |REG:REG13_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG13_INSTANCE                 ; REG                ; work         ;
-;       |REG:REG14_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG14_INSTANCE                 ; REG                ; work         ;
-;       |REG:REG15_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG15_INSTANCE                 ; REG                ; work         ;
-;       |REG:REG1_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG1_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG2_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG2_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG3_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG3_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG4_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG4_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG5_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG5_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG6_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG6_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG7_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG7_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG8_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG8_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG9_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG9_INSTANCE                  ; REG                ; work         ;
-;    |RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|      ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE                           ; RIPPLE_CARRY       ; work         ;
-;       |FULLADDER:FADD4|                             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD4           ; FULLADDER          ; work         ;
-;    |RIPPLE_CARRY:IF_PC_ADD_INSTANCE|                ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE                                     ; RIPPLE_CARRY       ; work         ;
-;       |FULLADDER:FADD3|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD3                     ; FULLADDER          ; work         ;
-;       |FULLADDER:FADD4|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD4                     ; FULLADDER          ; work         ;
-;       |FULLADDER:FADD5|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD5                     ; FULLADDER          ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS0_INSTANCE|               ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS0_INSTANCE                                    ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS1_INSTANCE|               ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS1_INSTANCE                                    ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS2_INSTANCE|               ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS2_INSTANCE                                    ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS3_INSTANCE|               ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS3_INSTANCE                                    ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS4_INSTANCE|               ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS4_INSTANCE                                    ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS6_INSTANCE|               ; 40 (40)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS6_INSTANCE                                    ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS7_INSTANCE|               ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS7_INSTANCE                                    ; SEGS_4_TRANSLATOR  ; work         ;
-;    |ULA:ALU_INSTANCE|                               ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE                                                    ; ULA                ; work         ;
-;       |RIPPLE_CARRY:RIPPLE_DECLARATION|             ; 33 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION                    ; RIPPLE_CARRY       ; work         ;
-;          |FULLADDER:FADD10|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD10   ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD11|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD11   ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD12|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD12   ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD13|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD13   ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD14|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD14   ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD15|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD15   ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD16|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD16   ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD1|                          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD1    ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD2|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD2    ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD3|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD3    ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD4|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD4    ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD5|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD5    ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD6|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD6    ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD7|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD7    ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD8|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD8    ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD9|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD9    ; FULLADDER          ; work         ;
-+-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name        ; Library Name ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------------+--------------+
+; |CPU                                                ; 1309 (141)          ; 569 (27)                  ; 0           ; 0            ; 0       ; 0         ; 117  ; 0            ; |CPU                                                                      ; CPU                ; work         ;
+;    |ALU_CONTROL:ALU_CONTROL_INSTANCE|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU_CONTROL:ALU_CONTROL_INSTANCE                                     ; ALU_CONTROL        ; work         ;
+;    |CONTROL_UNIT:CONTROL_UNIT_INSTANCE|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|CONTROL_UNIT:CONTROL_UNIT_INSTANCE                                   ; CONTROL_UNIT       ; work         ;
+;    |FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE|       ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE                             ; FORWARDING_UNIT    ; work         ;
+;    |INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE| ; 26 (26)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE                       ; INSTRUCTION_MEMORY ; work         ;
+;    |LOW_WRITE_REG16:IF_PC_INSTANCE|                 ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|LOW_WRITE_REG16:IF_PC_INSTANCE                                       ; LOW_WRITE_REG16    ; work         ;
+;    |MEMORY:DATA_MEMORY_INSTANCE|                    ; 331 (331)           ; 128 (128)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|MEMORY:DATA_MEMORY_INSTANCE                                          ; MEMORY             ; work         ;
+;    |PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|               ; 0 (0)               ; 44 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE                                     ; PIPE_EX_MEM        ; work         ;
+;       |FOUR_BIT_REG:REG_DST_INSTANCE|               ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE       ; FOUR_BIT_REG       ; work         ;
+;       |LOW_WRITE_REG16:ALU_OUT_INSTANCE|            ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:ALU_OUT_INSTANCE    ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:IMED_INSTANCE|               ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:IMED_INSTANCE       ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:RT_DATA_INSTANCE|            ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:RT_DATA_INSTANCE    ; LOW_WRITE_REG16    ; work         ;
+;       |ONE_BIT_REG:MEM_WRITE_INSTANCE|              ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE      ; ONE_BIT_REG        ; work         ;
+;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE   ; ONE_BIT_REG        ; work         ;
+;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE  ; TWO_BIT_REG        ; work         ;
+;    |PIPE_ID_EX:PIPE_ID_EX_INSTANCE|                 ; 21 (0)              ; 49 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE                                       ; PIPE_ID_EX         ; work         ;
+;       |FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|          ; 0 (0)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE    ; FOUR_BIT_REG       ; work         ;
+;       |FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE|          ; 0 (0)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE    ; FOUR_BIT_REG       ; work         ;
+;       |FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE|          ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE    ; FOUR_BIT_REG       ; work         ;
+;       |LOW_WRITE_REG16:REG_A_INSTANCE|              ; 2 (2)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_A_INSTANCE        ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:REG_B_INSTANCE|              ; 19 (19)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_B_INSTANCE        ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE|         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE   ; LOW_WRITE_REG16    ; work         ;
+;       |ONE_BIT_REG:EX_ALU_SRC_INSTANCE|             ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE       ; ONE_BIT_REG        ; work         ;
+;       |ONE_BIT_REG:EX_REG_DST_INSTANCE|             ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE       ; ONE_BIT_REG        ; work         ;
+;       |ONE_BIT_REG:MEM_WRITE_INSTANCE|              ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE        ; ONE_BIT_REG        ; work         ;
+;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE     ; ONE_BIT_REG        ; work         ;
+;       |TWO_BIT_REG:EX_ALU_OP_INSTANCE|              ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE        ; TWO_BIT_REG        ; work         ;
+;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE    ; TWO_BIT_REG        ; work         ;
+;    |PIPE_IF_ID:PIPE_IF_ID_INSTANCE|                 ; 1 (0)               ; 19 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE                                       ; PIPE_IF_ID         ; work         ;
+;       |LOW_WRITE_REG16:INSTRUCTION_DATA|            ; 0 (0)               ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:INSTRUCTION_DATA      ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:PC_INSTANCE|                 ; 1 (1)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE           ; LOW_WRITE_REG16    ; work         ;
+;    |PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|               ; 0 (0)               ; 43 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE                                     ; PIPE_MEM_WB        ; work         ;
+;       |FOUR_BIT_REG:REG_DST_INSTANCE|               ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE       ; FOUR_BIT_REG       ; work         ;
+;       |LOW_WRITE_REG16:ALU_RESULT_INSTANCE|         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|LOW_WRITE_REG16:ALU_RESULT_INSTANCE ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:MEM_OUT_INSTANCE|            ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|LOW_WRITE_REG16:MEM_OUT_INSTANCE    ; LOW_WRITE_REG16    ; work         ;
+;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE   ; ONE_BIT_REG        ; work         ;
+;       |REG:IMED_INSTANCE|                           ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE                   ; REG                ; work         ;
+;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE  ; TWO_BIT_REG        ; work         ;
+;    |REG_BANK:IF_ID_REG_BANK_INSTANCE|               ; 223 (223)           ; 240 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE                                     ; REG_BANK           ; work         ;
+;       |REG:REG10_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG10_INSTANCE                  ; REG                ; work         ;
+;       |REG:REG11_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG11_INSTANCE                  ; REG                ; work         ;
+;       |REG:REG12_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG12_INSTANCE                  ; REG                ; work         ;
+;       |REG:REG13_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG13_INSTANCE                  ; REG                ; work         ;
+;       |REG:REG14_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG14_INSTANCE                  ; REG                ; work         ;
+;       |REG:REG15_INSTANCE|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG15_INSTANCE                  ; REG                ; work         ;
+;       |REG:REG1_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG1_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG2_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG2_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG3_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG3_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG4_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG4_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG5_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG5_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG6_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG6_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG7_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG7_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG8_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG8_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG9_INSTANCE|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG9_INSTANCE                   ; REG                ; work         ;
+;    |RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|      ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE                            ; RIPPLE_CARRY       ; work         ;
+;       |FULLADDER:FADD4|                             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD4            ; FULLADDER          ; work         ;
+;    |RIPPLE_CARRY:IF_PC_ADD_INSTANCE|                ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE                                      ; RIPPLE_CARRY       ; work         ;
+;       |FULLADDER:FADD3|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD3                      ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD4|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD4                      ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD5|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD5                      ; FULLADDER          ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS0_INSTANCE|               ; 60 (60)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS0_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS1_INSTANCE|               ; 60 (60)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS1_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS2_INSTANCE|               ; 60 (60)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS2_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS3_INSTANCE|               ; 60 (60)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS3_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS4_INSTANCE|               ; 60 (60)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS4_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS5_INSTANCE|               ; 61 (61)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS5_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS6_INSTANCE|               ; 60 (60)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS6_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS7_INSTANCE|               ; 67 (67)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|SEGS_4_TRANSLATOR:SEGS7_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |ULA:ALU_INSTANCE|                               ; 35 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE                                                     ; ULA                ; work         ;
+;       |RIPPLE_CARRY:RIPPLE_DECLARATION|             ; 35 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION                     ; RIPPLE_CARRY       ; work         ;
+;          |FULLADDER:FADD10|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD10    ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD11|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD11    ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD12|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD12    ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD13|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD13    ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD14|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD14    ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD15|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD15    ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD16|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD16    ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD1|                          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD1     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD2|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD2     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD3|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD3     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD4|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD4     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD5|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD5     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD6|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD6     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD7|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD7     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD8|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD8     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD9|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD9     ; FULLADDER          ; work         ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                     ;
-+-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-; Register name                                                                 ; Reason for Removal                                                                     ;
-+-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG0_INSTANCE|D_out[0..15]               ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[25][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[25][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[25][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[25][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[25][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[25][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[25][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[25][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[24][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[24][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[24][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[24][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[24][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[24][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[24][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[24][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][5]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][1]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][2]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][5]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][6]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][2]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][3]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][5]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][7]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][1]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][5]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][7]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][0]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][1]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][2]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][3]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][4]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][5]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][6]                     ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][7]                     ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][0]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][1]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][2]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][3]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][4]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][5]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][6]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][7]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][0]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][1]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][2]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][3]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][4]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][5]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][6]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][7]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][0]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][1]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][2]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][3]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][4]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][5]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][6]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][7]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][0]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][1]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][2]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][3]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][4]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][5]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][6]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][7]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][0]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][1]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][2]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][3]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][4]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][5]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][6]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][7]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][0]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][1]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][2]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][3]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][4]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][5]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][6]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][7]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][0]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][1]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][2]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][3]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][4]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][5]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][6]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][7]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][0]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][1]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][2]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][3]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][4]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][5]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][6]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][7]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][0]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][1]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][2]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][3]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][4]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][5]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][6]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][7]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][0]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][1]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][2]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][3]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][4]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][5]                      ; Stuck at VCC due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][6]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][7]                      ; Stuck at GND due to stuck port clock_enable                                            ;
-; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE|D_out[4..15]           ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[3] ;
-; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE|D_out[3]               ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[2] ;
-; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE|D_out[2]               ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[1] ;
-; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE|D_out[1]               ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[0] ;
-; PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE|D_out[4..14]               ; Merged with PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE|D_out[15]               ;
-; PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE|D_out[4..14]               ; Merged with PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE|D_out[15]               ;
-; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[5..15]                   ; Lost fanout                                                                            ;
-; REG:IF_PC_INSTANCE|D_out[5..15]                                               ; Lost fanout                                                                            ;
-; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|D_out[1]    ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE|D_out       ;
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[4,12]                 ; Stuck at GND due to stuck port data_in                                                 ;
-; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[4,12]               ; Stuck at GND due to stuck port data_in                                                 ;
-; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[3]    ; Stuck at GND due to stuck port data_in                                                 ;
-; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE|D_out[3]    ; Stuck at GND due to stuck port data_in                                                 ;
-; PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE|D_out[15]                  ; Stuck at GND due to stuck port data_in                                                 ;
-; PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE|D_out[15]                  ; Stuck at GND due to stuck port data_in                                                 ;
-; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE|D_out[0..2] ; Lost fanout                                                                            ;
-; Total Number of Removed Registers = 295                                       ;                                                                                        ;
-+-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-
-
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                              ;
-+-----------------------------------------------------------+--------------------------------+-----------------------------------------------------------------------------+
-; Register name                                             ; Reason for Removal             ; Registers Removed due to This Register                                      ;
-+-----------------------------------------------------------+--------------------------------+-----------------------------------------------------------------------------+
-; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[25][4] ; Stuck at GND                   ; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[4],                 ;
-;                                                           ; due to stuck port clock_enable ; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[12],                ;
-;                                                           ;                                ; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[12],              ;
-;                                                           ;                                ; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:INSTRUCTION_DATA|D_out[4],               ;
-;                                                           ;                                ; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[3], ;
-;                                                           ;                                ; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE|D_out[3], ;
-;                                                           ;                                ; PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE|D_out[15],               ;
-;                                                           ;                                ; PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE|D_out[15]                ;
-; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[15]  ; Lost Fanouts                   ; REG:IF_PC_INSTANCE|D_out[15], REG:IF_PC_INSTANCE|D_out[14],                 ;
-;                                                           ;                                ; REG:IF_PC_INSTANCE|D_out[13], REG:IF_PC_INSTANCE|D_out[12],                 ;
-;                                                           ;                                ; REG:IF_PC_INSTANCE|D_out[11]                                                ;
-; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[14]  ; Lost Fanouts                   ; REG:IF_PC_INSTANCE|D_out[10]                                                ;
-; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[13]  ; Lost Fanouts                   ; REG:IF_PC_INSTANCE|D_out[9]                                                 ;
-; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[12]  ; Lost Fanouts                   ; REG:IF_PC_INSTANCE|D_out[8]                                                 ;
-; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[11]  ; Lost Fanouts                   ; REG:IF_PC_INSTANCE|D_out[7]                                                 ;
-; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[10]  ; Lost Fanouts                   ; REG:IF_PC_INSTANCE|D_out[6]                                                 ;
-; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|REG:PC_INSTANCE|D_out[9]   ; Lost Fanouts                   ; REG:IF_PC_INSTANCE|D_out[5]                                                 ;
-+-----------------------------------------------------------+--------------------------------+-----------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                       ;
++---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+; Register name                                                                   ; Reason for Removal                                                                     ;
++---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG0_INSTANCE|D_out[0..15]                 ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][1]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][2]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][5]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][6]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][1]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][2]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][3]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][5]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][6]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[22][7]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][1]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][2]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][5]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][6]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[21][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][1]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][2]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][5]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][6]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[20][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][1]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][2]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][5]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][6]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[19][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][1]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][2]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][5]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][6]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[18][7]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][1]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][2]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][5]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][6]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[17][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][0]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][1]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][2]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][5]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][6]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[16][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][1]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][2]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][5]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][6]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[15][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][1]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][2]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][5]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][6]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[14][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][1]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][2]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][5]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][6]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[13][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][1]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][2]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][5]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][6]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[12][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][1]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][2]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][5]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][6]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[11][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][0]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][1]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][2]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][3]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][4]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][5]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][6]                       ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[10][7]                       ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][0]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][1]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][2]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][3]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][4]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][5]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][6]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[9][7]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][0]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][1]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][2]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][3]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][4]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][5]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][6]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[8][7]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][0]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][1]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][2]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][3]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][4]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][5]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][6]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[7][7]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][0]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][1]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][2]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][3]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][4]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][5]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][6]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[6][7]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][0]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][1]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][2]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][3]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][4]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][5]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][6]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[5][7]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][0]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][1]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][2]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][3]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][4]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][5]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][6]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[4][7]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][0]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][1]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][2]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][3]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][4]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][5]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][6]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[3][7]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][0]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][1]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][2]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][3]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][4]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][5]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][6]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[2][7]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][0]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][1]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][2]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][3]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][4]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][5]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][6]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[1][7]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][0]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][1]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][2]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][3]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][4]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][5]                        ; Stuck at VCC due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][6]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[0][7]                        ; Stuck at GND due to stuck port clock_enable                                            ;
+; PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE|D_out            ; Lost fanout                                                                            ;
+; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE|D_out              ; Lost fanout                                                                            ;
+; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE|D_out[4..15] ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[3] ;
+; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE|D_out[3]     ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[2] ;
+; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE|D_out[2]     ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[1] ;
+; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE|D_out[1]     ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[0] ;
+; PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:IMED_INSTANCE|D_out[4..14]     ; Merged with PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:IMED_INSTANCE|D_out[15]   ;
+; PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE|D_out[4..14]                 ; Merged with PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE|D_out[15]               ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE|D_out[5..15]         ; Lost fanout                                                                            ;
+; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[5..15]                                     ; Lost fanout                                                                            ;
+; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE|D_out[1]          ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE|D_out       ;
+; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|D_out[1]      ; Merged with PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE|D_out       ;
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[4,12]                   ; Stuck at GND due to stuck port data_in                                                 ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:INSTRUCTION_DATA|D_out[4,12]     ; Stuck at GND due to stuck port data_in                                                 ;
+; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[3]      ; Stuck at GND due to stuck port data_in                                                 ;
+; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE|D_out[3]      ; Stuck at GND due to stuck port data_in                                                 ;
+; PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:IMED_INSTANCE|D_out[15]        ; Stuck at GND due to stuck port data_in                                                 ;
+; PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE|D_out[15]                    ; Stuck at GND due to stuck port data_in                                                 ;
+; Total Number of Removed Registers = 279                                         ;                                                                                        ;
++---------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                 ;
++----------------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
+; Register name                                                        ; Reason for Removal             ; Registers Removed due to This Register                                              ;
++----------------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
+; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem[23][4]            ; Stuck at GND                   ; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[4],                         ;
+;                                                                      ; due to stuck port clock_enable ; INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA_OUT[12],                        ;
+;                                                                      ;                                ; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:INSTRUCTION_DATA|D_out[12],          ;
+;                                                                      ;                                ; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:INSTRUCTION_DATA|D_out[4],           ;
+;                                                                      ;                                ; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|D_out[3],         ;
+;                                                                      ;                                ; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE|D_out[3],         ;
+;                                                                      ;                                ; PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:IMED_INSTANCE|D_out[15],           ;
+;                                                                      ;                                ; PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE|D_out[15]                        ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE|D_out[15] ; Lost Fanouts                   ; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[15], LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[14], ;
+;                                                                      ;                                ; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[13], LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[12], ;
+;                                                                      ;                                ; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[11]                                            ;
+; PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE|D_out ; Lost Fanouts                   ; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE|D_out                  ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE|D_out[14] ; Lost Fanouts                   ; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[10]                                            ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE|D_out[13] ; Lost Fanouts                   ; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[9]                                             ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE|D_out[12] ; Lost Fanouts                   ; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[8]                                             ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE|D_out[11] ; Lost Fanouts                   ; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[7]                                             ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE|D_out[10] ; Lost Fanouts                   ; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[6]                                             ;
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE|D_out[9]  ; Lost Fanouts                   ; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[5]                                             ;
++----------------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -636,47 +625,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 586   ;
+; Total registers                              ; 569   ;
 ; Number of registers using Synchronous Clear  ; 45    ;
 ; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 384   ;
+; Number of registers using Clock Enable       ; 368   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[15][6]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[14][6]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[13][6]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[12][3]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[11][4]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[10][5]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[9][2]                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[8][7]                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[7][3]                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[6][7]                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[5][6]                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[4][1]                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[3][1]                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[2][0]                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[1][2]                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[0][3]                      ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |CPU|REG:IF_PC_INSTANCE|D_out[4]                                ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_A_INSTANCE|D_out[7] ;
-; 16:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|DATA_OUT[0]                    ;
-; 16:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|DATA_OUT[15]                   ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; Yes        ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_B_INSTANCE|D_out[5] ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |CPU|Mux40                                                      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU|Mux47                                                      ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |CPU|Mux53                                                      ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU|Mux61                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[15][6]                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[14][6]                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[13][0]                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[12][1]                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[11][0]                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[10][2]                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[9][0]                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[8][3]                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[7][3]                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[6][0]                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[5][3]                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[4][2]                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[3][3]                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[2][0]                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[1][5]                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|mem[0][6]                                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |CPU|LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[2]                                 ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_A_INSTANCE|D_out[5]  ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; Yes        ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_B_INSTANCE|D_out[15] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |CPU|Mux20                                                                   ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |CPU|Mux55                                                                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU|Mux61                                                                   ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |CPU|Mux36                                                                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |CPU|Mux44                                                                   ;
+; 16:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|Mux4                                        ;
+; 16:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |CPU|MEMORY:DATA_MEMORY_INSTANCE|Mux15                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------+
@@ -715,22 +705,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:ALU_RESULT_INSTANCE" ;
-+------+-------+----------+------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                    ;
-+------+-------+----------+------------------------------------------------------------+
-; r_in ; Input ; Info     ; Stuck at VCC                                               ;
-+------+-------+----------+------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|LOW_WRITE_REG16:ALU_RESULT_INSTANCE" ;
++------+-------+----------+------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                ;
++------+-------+----------+------------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                           ;
++------+-------+----------+------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:MEM_OUT_INSTANCE" ;
-+------+-------+----------+---------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                 ;
-+------+-------+----------+---------------------------------------------------------+
-; r_in ; Input ; Info     ; Stuck at VCC                                            ;
-+------+-------+----------+---------------------------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|LOW_WRITE_REG16:MEM_OUT_INSTANCE" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------+
@@ -787,31 +777,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:IMED_INSTANCE" ;
-+------+-------+----------+------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                              ;
-+------+-------+----------+------------------------------------------------------+
-; r_in ; Input ; Info     ; Stuck at VCC                                         ;
-+------+-------+----------+------------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:IMED_INSTANCE" ;
++------+-------+----------+------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                          ;
++------+-------+----------+------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                     ;
++------+-------+----------+------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:RT_DATA_INSTANCE" ;
-+------+-------+----------+---------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                 ;
-+------+-------+----------+---------------------------------------------------------+
-; r_in ; Input ; Info     ; Stuck at VCC                                            ;
-+------+-------+----------+---------------------------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:RT_DATA_INSTANCE" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|REG:ALU_OUT_INSTANCE" ;
-+------+-------+----------+---------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                 ;
-+------+-------+----------+---------------------------------------------------------+
-; r_in ; Input ; Info     ; Stuck at VCC                                            ;
-+------+-------+----------+---------------------------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:ALU_OUT_INSTANCE" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------+
@@ -933,42 +923,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+---------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:SIGNAL_EXT_INSTANCE" ;
-+------+-------+----------+----------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                  ;
-+------+-------+----------+----------------------------------------------------------+
-; r_in ; Input ; Info     ; Stuck at VCC                                             ;
-+------+-------+----------+----------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_B_INSTANCE" ;
-+------+-------+----------+-----------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                             ;
-+------+-------+----------+-----------------------------------------------------+
-; r_in ; Input ; Info     ; Stuck at VCC                                        ;
-+------+-------+----------+-----------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_B_INSTANCE" ;
++------+-------+----------+-----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                         ;
++------+-------+----------+-----------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                    ;
++------+-------+----------+-----------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|REG:REG_A_INSTANCE" ;
-+------+-------+----------+-----------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                             ;
-+------+-------+----------+-----------------------------------------------------+
-; r_in ; Input ; Info     ; Stuck at VCC                                        ;
-+------+-------+----------+-----------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_A_INSTANCE" ;
++------+-------+----------+-----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                         ;
++------+-------+----------+-----------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                    ;
++------+-------+----------+-----------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE"                                                              ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                             ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
-; next_pc_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; ex_alu_op_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; reset         ; Input  ; Info     ; Stuck at GND                                                                        ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE"                                                            ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; next_pc_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; reset       ; Input  ; Info     ; Stuck at GND                                                                        ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -1067,13 +1056,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------+
-; Port Connectivity Checks: "REG:IF_PC_INSTANCE" ;
-+-------+-------+----------+---------------------+
-; Port  ; Type  ; Severity ; Details             ;
-+-------+-------+----------+---------------------+
-; reset ; Input ; Info     ; Stuck at GND        ;
-+-------+-------+----------+---------------------+
++------------------------------------------------------------+
+; Port Connectivity Checks: "LOW_WRITE_REG16:IF_PC_INSTANCE" ;
++-------+-------+----------+---------------------------------+
+; Port  ; Type  ; Severity ; Details                         ;
++-------+-------+----------+---------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                    ;
++-------+-------+----------+---------------------------------+
 
 
 +-----------------------------------------------------+
@@ -1082,23 +1071,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 117                         ;
-; cycloneiii_ff         ; 586                         ;
-;     ENA               ; 384                         ;
+; cycloneiii_ff         ; 569                         ;
+;     ENA               ; 368                         ;
 ;     SCLR              ; 29                          ;
 ;     SCLR SLD          ; 16                          ;
-;     plain             ; 157                         ;
-; cycloneiii_lcell_comb ; 1025                        ;
-;     arith             ; 28                          ;
-;         2 data inputs ; 28                          ;
-;     normal            ; 997                         ;
+;     plain             ; 156                         ;
+; cycloneiii_lcell_comb ; 1310                        ;
+;     arith             ; 25                          ;
+;         2 data inputs ; 25                          ;
+;     normal            ; 1285                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 58                          ;
-;         3 data inputs ; 242                         ;
-;         4 data inputs ; 694                         ;
+;         2 data inputs ; 77                          ;
+;         3 data inputs ; 283                         ;
+;         4 data inputs ; 922                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 23.00                       ;
-; Average LUT depth     ; 5.32                        ;
+; Max LUT depth         ; 31.00                       ;
+; Average LUT depth     ; 9.62                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1117,7 +1106,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 18 19:02:05 2025
+    Info: Processing started: Wed Nov 19 15:42:30 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1164,7 +1153,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file four_bi
     Info (12022): Found design unit 1: FOUR_BIT_REG-Behavior File: C:/Users/23012419/MIPS-16Bit-CPU/FOUR_BIT_REG.vhd Line: 13
     Info (12023): Found entity 1: FOUR_BIT_REG File: C:/Users/23012419/MIPS-16Bit-CPU/FOUR_BIT_REG.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file forwarding_unit.vhd
-    Info (12022): Found design unit 1: FORWARDING_UNIT-Behavior File: C:/Users/23012419/MIPS-16Bit-CPU/FORWARDING_UNIT.vhd Line: 21
+    Info (12022): Found design unit 1: FORWARDING_UNIT-Behavior File: C:/Users/23012419/MIPS-16Bit-CPU/FORWARDING_UNIT.vhd Line: 25
     Info (12023): Found entity 1: FORWARDING_UNIT File: C:/Users/23012419/MIPS-16Bit-CPU/FORWARDING_UNIT.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file constants_package.vhd
     Info (12022): Found design unit 1: CONSTANTS_PACKAGE File: C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd Line: 4
@@ -1215,6 +1204,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file reg_ban
 Info (12021): Found 2 design units, including 1 entities, in source file control_unit.vhd
     Info (12022): Found design unit 1: CONTROL_UNIT-Behavior File: C:/Users/23012419/MIPS-16Bit-CPU/CONTROL_UNIT.vhd Line: 31
     Info (12023): Found entity 1: CONTROL_UNIT File: C:/Users/23012419/MIPS-16Bit-CPU/CONTROL_UNIT.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file low_write_reg16.vhd
+    Info (12022): Found design unit 1: LOW_WRITE_REG16-Behavior File: C:/Users/23012419/MIPS-16Bit-CPU/LOW_WRITE_REG16.vhd Line: 12
+    Info (12023): Found entity 1: LOW_WRITE_REG16 File: C:/Users/23012419/MIPS-16Bit-CPU/LOW_WRITE_REG16.vhd Line: 4
 Info (12127): Elaborating entity "CPU" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at CPU.vhd(17): used implicit default value for signal "LCD_DATA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 17
 Warning (10541): VHDL Signal Declaration warning at CPU.vhd(18): used implicit default value for signal "LCD_RW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 18
@@ -1228,16 +1220,12 @@ Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(57): object "ID_ID_FLUSH
 Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(57): object "ID_EX_FLUSH" assigned a value but never read File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 57
 Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(57): object "ID_WB_FLUSH" assigned a value but never read File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 57
 Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(63): object "EX_NEXT_PC" assigned a value but never read File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 63
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(65): object "EX_ALU_OP" assigned a value but never read File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 65
 Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(74): object "EX_ALU_ZERO" assigned a value but never read File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 74
 Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(74): object "EX_ALU_OVERFLOW" assigned a value but never read File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 74
 Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(74): object "EX_ALU_COUT" assigned a value but never read File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 74
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(80): used implicit default value for signal "MEM_WRITE_REG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 80
-Warning (10541): VHDL Signal Declaration warning at CPU.vhd(93): used implicit default value for signal "WB_WRITE_REG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 93
 Warning (10873): Using initial value X (don't care) for net "LEDR[1..0]" at CPU.vhd(14) File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 14
-Warning (10873): Using initial value X (don't care) for net "LEDG[8..7]" at CPU.vhd(15) File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
-Warning (10873): Using initial value X (don't care) for net "LEDG[3]" at CPU.vhd(15) File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
-Info (12128): Elaborating entity "REG" for hierarchy "REG:IF_PC_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 117
+Warning (10873): Using initial value X (don't care) for net "LEDG[7..0]" at CPU.vhd(15) File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
+Info (12128): Elaborating entity "LOW_WRITE_REG16" for hierarchy "LOW_WRITE_REG16:IF_PC_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 117
 Info (12128): Elaborating entity "RIPPLE_CARRY" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 125
 Info (12128): Elaborating entity "FULLADDER" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD1" File: C:/Users/23012419/MIPS-16Bit-CPU/RIPPLE_CARRY.vhd Line: 40
 Info (12128): Elaborating entity "INSTRUCTION_MEMORY" for hierarchy "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 135
@@ -1249,6 +1237,7 @@ Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(11): used i
 Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(12): used implicit default value for signal "WB_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/23012419/MIPS-16Bit-CPU/CONTROL_UNIT.vhd Line: 12
 Info (12128): Elaborating entity "HAZARD_DETECTION_UNIT" for hierarchy "HAZARD_DETECTION_UNIT:IF_ID_HAZARD_DETECTION_UNIT_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 194
 Info (12128): Elaborating entity "REG_BANK" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 204
+Info (12128): Elaborating entity "REG" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG0_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd Line: 71
 Info (12128): Elaborating entity "BUFFER_TRI" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd Line: 129
 Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:IF_ID_SIGN_EXTEND_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 223
 Info (12128): Elaborating entity "SHIFT_LEFT2" for hierarchy "SHIFT_LEFT2:IF_ID_SHIFT_LEFT_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 228
@@ -1259,15 +1248,33 @@ Info (12128): Elaborating entity "FOUR_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_I
 Info (12128): Elaborating entity "ONE_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/PIPE_ID_EX.vhd Line: 77
 Info (12128): Elaborating entity "TWO_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/PIPE_ID_EX.vhd Line: 79
 Info (12128): Elaborating entity "ALU_CONTROL" for hierarchy "ALU_CONTROL:ALU_CONTROL_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 304
-Warning (10325): VHDL Choice warning at ALU_CONTROL.vhd(22): ignored choice containing meta-value ""00X"" File: C:/Users/23012419/MIPS-16Bit-CPU/ALU_CONTROL.vhd Line: 22
-Warning (10325): VHDL Choice warning at ALU_CONTROL.vhd(23): ignored choice containing meta-value ""01X"" File: C:/Users/23012419/MIPS-16Bit-CPU/ALU_CONTROL.vhd Line: 23
 Info (12128): Elaborating entity "FORWARDING_UNIT" for hierarchy "FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 310
 Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ALU_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 343
 Info (12128): Elaborating entity "PIPE_EX_MEM" for hierarchy "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 353
 Info (12128): Elaborating entity "MEMORY" for hierarchy "MEMORY:DATA_MEMORY_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 394
+Warning (10492): VHDL Process Statement warning at MEMORY.vhd(35): signal "mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/MIPS-16Bit-CPU/MEMORY.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at MEMORY.vhd(35): signal "ADDRESS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/MIPS-16Bit-CPU/MEMORY.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at MEMORY.vhd(36): signal "mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/MIPS-16Bit-CPU/MEMORY.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at MEMORY.vhd(36): signal "ADDRESS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/MIPS-16Bit-CPU/MEMORY.vhd Line: 36
 Info (12128): Elaborating entity "PIPE_MEM_WB" for hierarchy "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 403
 Info (12128): Elaborating entity "SEGS_4_TRANSLATOR" for hierarchy "SEGS_4_TRANSLATOR:SEGS0_INSTANCE" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 438
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[0]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[1]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[2]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[3]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[4]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[5]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[6]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[7]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[8]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[9]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[10]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[11]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[12]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[13]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[14]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[15]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
     Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[0]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
     Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[1]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
     Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[2]" feeding internal logic into a wire File: C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
@@ -1305,9 +1312,14 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 14
     Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 14
     Warning (13410): Pin "LEDR[14]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 14
+    Warning (13410): Pin "LEDG[0]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[1]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[2]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
     Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
     Warning (13410): Pin "LEDG[7]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
     Warning (13410): Pin "LCD_DATA[0]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 17
     Warning (13410): Pin "LCD_DATA[1]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 17
     Warning (13410): Pin "LCD_DATA[2]" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 17
@@ -1320,7 +1332,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LCD_EN" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 19
     Warning (13410): Pin "LCD_RS" is stuck at GND File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 20
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 25 registers lost all their fanouts during netlist optimizations.
+Info (17049): 24 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 407 assignments for entity "DE2_115" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCDAT -entity DE2_115 was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCLRCK -entity DE2_115 was ignored
@@ -1754,14 +1766,14 @@ Warning (21074): Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 8
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 8
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 8
-Info (21057): Implemented 1494 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1779 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 94 output pins
-    Info (21061): Implemented 1377 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 517 warnings
+    Info (21061): Implemented 1662 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 536 warnings
     Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Tue Nov 18 19:02:35 2025
-    Info: Elapsed time: 00:00:30
+    Info: Processing ended: Wed Nov 19 15:42:58 2025
+    Info: Elapsed time: 00:00:28
     Info: Total CPU time (on all processors): 00:00:44
 
 

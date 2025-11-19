@@ -6,5 +6,5 @@ PACKAGE CONSTANTS_PACKAGE IS
 constant WORD_SIZE     : integer := 16;
 constant ADDR_SIZE     : integer := 4;
 constant BYTE_SIZE     : integer := 8;
-CONSTANT INSTRUCT_QTD  : integer := 13;
+CONSTANT INSTRUCT_QTD  : integer := 12;
 END CONSTANTS_PACKAGE;

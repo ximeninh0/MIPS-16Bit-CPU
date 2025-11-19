@@ -23,7 +23,7 @@ END CPU;
 
 ARCHITECTURE Behavior OF CPU IS
 
-CONSTANT max: INTEGER := 500000000;				-- Ciclo do clock (é ajustável)
+CONSTANT max: INTEGER := 50000000;				-- Ciclo do clock (é ajustável)
 CONSTANT half: INTEGER := max/2;				-- Meio Ciclo
 SIGNAL clockticks: INTEGER RANGE 0 TO max;-- Conta cada ciclo do clock de entrada
 SIGNAL CLOCK: STD_LOGIC;						-- Clock instanciado
@@ -114,7 +114,7 @@ BEGIN
 							ID_JUMP_ADDRESS WHEN "11", -- Jump (a implementar) ---
 							"0000000000000000" WHEN OTHERS; -- Default
 
-		IF_PC_INSTANCE: REG PORT MAP(
+		IF_PC_INSTANCE: LOW_WRITE_REG16 PORT MAP(
 			D => IF_PC_MUX,
 			R_in => ID_PC_WRITE,
 			Reset => RESET,
@@ -209,12 +209,12 @@ BEGIN
 			REG_WRITE => WB_REG_WRITE,
 			DATA_READ1 => ID_REG_DATA1,
 			DATA_READ2 => ID_REG_DATA2,
-			R0_OUT => HEX0_AUX,
-			R1_OUT => HEX1_AUX,
-			R2_OUT => HEX2_AUX,
-			R3_OUT => HEX3_AUX,
-			R4_OUT => HEX4_AUX,
-			R5_OUT => HEX5_AUX,
+			R1_OUT => HEX0_AUX,
+			R2_OUT => HEX1_AUX,
+			R3_OUT => HEX2_AUX,
+			R4_OUT => HEX3_AUX,
+			R5_OUT => HEX4_AUX,
+			R6_OUT => HEX5_AUX,
 
 			CLOCK => CLOCK,
 			RESET => RESET
@@ -302,8 +302,8 @@ BEGIN
 	-- Estágio ID/EX
 
 		ALU_CONTROL_INSTANCE : ALU_CONTROL PORT MAP(
-			ALU_OP => ID_ALU_OP,
-			ADD_SUB => ID_SIGNAL_EXTENDED(0), -- ultimo bit do funct
+			ALU_OP => EX_ALU_OP,
+			ADD_SUB => EX_SIGNAL_EXTENDED(0), -- ultimo bit do funct
         	ALU_CONTROL_OUT => EX_ALU_OPERATION
 		);
 
@@ -312,22 +312,22 @@ BEGIN
 			RT => EX_RT_OP,
 			REG_DST_EX_MEM => MEM_REG_DST, ---
 			REG_DST_MEM_WB => WB_REG_DST, ---
-			WRITE_REG_EX_MEM => MEM_WRITE_REG, ---
-			WRITE_REG_MEM_WB => WB_WRITE_REG, ---
+			WRITE_REG_EX_MEM => MEM_REG_WRITE, ---
+			WRITE_REG_MEM_WB => WB_REG_WRITE, ---
 			FOWARD_A => EX_FOWARD_A,
 			FOWARD_B => EX_FOWARD_B
 		);
 
 		WITH EX_FOWARD_A SELECT
 			EX_ALU_SRC_A <= 	EX_A WHEN "00",
-									MEM_ALU_OUT WHEN "10",
 									WB_MEM_TO_REG_DATA WHEN "01",
+									MEM_ALU_OUT WHEN "10",
 									EX_A WHEN OTHERS; -- Default
 
 		WITH EX_FOWARD_B SELECT
 			EX_ALU_SRC_B <= 	EX_DATA_FOWARD WHEN "00",
-									MEM_ALU_OUT WHEN "10",
 									WB_MEM_TO_REG_DATA WHEN "01",
+									MEM_ALU_OUT WHEN "10",
 									EX_DATA_FOWARD WHEN OTHERS; -- Default
 
 		WITH EX_ALU_SRC SELECT
@@ -433,10 +433,11 @@ BEGIN
 											WB_ALU_OUT WHEN "10",
 											WB_ALU_OUT WHEN OTHERS; -- Default
 								
-								
+--==================================================================================================
 								
 		SEGS0_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX0_AUX,HEX0);
 		SEGS1_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX1_AUX,HEX1);
+--		SEGS2_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(IF_PC_CURRENT,HEX2);;
 		SEGS2_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX2_AUX,HEX2);
 		SEGS3_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX3_AUX,HEX3);
 		SEGS4_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX4_AUX,HEX4);
@@ -453,13 +454,14 @@ BEGIN
 --		LEDR(3 downto 2) <= ID_MEM_TO_REG;
 --		LEDR(0) <= ID_REG_WRITE;
 	
---		LEDG(7 downto 0) <= EX_SIGNAL_EXTENDED(7 downto 0);
+			
+		LEDG(8) <= CLOCK;
 
-	LEDG(1 DOWNTO 0) <= ID_MEM_TO_REG;
-	LEDG(2) <= ID_REG_WRITE;
-	
-	LEDG(5 DOWNTO 4) <= EX_MEM_TO_REG;
-	LEDG(6) <= EX_REG_WRITE;
+--	LEDG(1 DOWNTO 0) <= ID_MEM_TO_REG;
+--	LEDG(2) <= ID_REG_WRITE;
+--	
+--	LEDG(5 DOWNTO 4) <= EX_MEM_TO_REG;
+--	LEDG(6) <= EX_REG_WRITE;
 	LEDR(17 DOWNTO 2) <= IF_INSTRUCTION;
 
 	-- -- PROCESSOS PARA O DIVISOR DE CLOCK

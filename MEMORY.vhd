@@ -17,24 +17,25 @@ end MEMORY;
 
 architecture Behavioral of MEMORY is
 
-    type mem_array is array((2**ADDR_SIZE)-1 downto 0) of std_logic_vector(BYTE_SIZE-1 downto 0);
+    type mem_array is array(0 to ((2**ADDR_SIZE)-1)) of std_logic_vector(BYTE_SIZE-1 downto 0);
     signal mem : mem_array :=  (OTHERS=>(OTHERS => '0'));
+	 signal data_out_aux : std_logic_vector(15 downto 0);
 
 begin
 
     process(CLOCK)
     begin
         if rising_edge(CLOCK) then
-            if READ_MEM = '1' then
-                DATA_OUT(7 downto 0)  <= mem(to_integer(unsigned(ADDRESS)));
-                DATA_OUT(15 downto 8) <= mem(to_integer(unsigned(ADDRESS)) + 1);
-            end if;
-
             if WRITE_MEM = '1' then
                 mem(to_integer(unsigned(ADDRESS)))     <= DATA_IN(7 downto 0);
                 mem(to_integer(unsigned(ADDRESS)) + 1) <= DATA_IN(15 downto 8);
             end if;
         end if;
+		 
+		 data_out_aux(7 downto 0)  <= mem(to_integer(unsigned(ADDRESS)));
+		 data_out_aux(15 downto 8) <= mem(to_integer(unsigned(ADDRESS)) + 1);
     end process;
+	 
+	 BUFFER1_INSTANCE: BUFFER_TRI PORT MAP(data_out_aux,READ_MEM,DATA_OUT);
 
 end Behavioral;

@@ -17,7 +17,7 @@ BEGIN
 			D_out <=(OTHERS =>'0'); -- Em caso de RESET zera o valor 
 
 		-- Registrador guarda o valor caso não haja sinal de reset
-		ELSIF (Clock'EVENT AND Clock = '0') THEN
+		ELSIF (Clock'EVENT AND Clock = '1') THEN
 				
 			IF (R_in = '1') THEN
 				D_out <= D;				-- Caso acione o sinal de entrada armazena o novo valor
