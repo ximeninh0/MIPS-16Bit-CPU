@@ -30,7 +30,13 @@ END CONTROL_UNIT;
 
 ARCHITECTURE Behavior OF CONTROL_UNIT IS
 SIGNAL OPCODE : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL BEQ_AUX : STD_LOGIC_VECTOR(1 DOWNTO 0);
 BEGIN
+
+	WITH REG_EQUAL SELECT
+		BEQ_AUX <= "10" WHEN '1',
+						"00" WHEN '0',
+						"00" WHEN OTHERS;
 
 	OPCODE <= INSTRUCTION(15 DOWNTO 13);
 	WITH OPCODE SELECT
@@ -38,7 +44,7 @@ BEGIN
 						"00" WHEN "001", -- LW
 						"00" WHEN "010", -- SW
 						"00" WHEN "011", -- ADD/SUB
-						"10" WHEN "100", -- BEQ
+						BEQ_AUX WHEN "100", -- BEQ
 						"11" WHEN "101", -- JMP
 						"00" WHEN "110", -- LI - LOAD INTEGER
 						"00" WHEN "111", -- EXTRA
@@ -50,7 +56,7 @@ BEGIN
 					'0' WHEN "011", -- ADD/SUB
 					'1' WHEN "100", -- BEQ
 					'0' WHEN "101", -- JMP
-					'0' WHEN "110", -- LI - LOAD INTEGER
+					'1' WHEN "110", -- LI - LOAD INTEGER
 					'0' WHEN "111", -- EXTRA
 					'0' WHEN OTHERS;
 	WITH OPCODE SELECT
@@ -101,7 +107,7 @@ BEGIN
 						"10" WHEN "011", -- ADD/SUB
 						"00" WHEN "100", -- BEQ
 						"00" WHEN "101", -- JMP
-						"01" WHEN "110", -- LI - LOAD INTEGER
+						"10" WHEN "110", -- LI - LOAD INTEGER
 						"00" WHEN "111", -- EXTRA
 						"00" WHEN OTHERS;
 

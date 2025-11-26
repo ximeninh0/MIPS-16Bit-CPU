@@ -10,73 +10,104 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd}
+# vcom -2008 -work work {C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CONSTANTS_PACKAGE.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:36:12 on Nov 18,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity REG
-# -- Compiling architecture Behavior of REG
-# End time: 16:36:12 on Nov 18,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:36:13 on Nov 18,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd 
+# Start time: 13:32:05 on Nov 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CONSTANTS_PACKAGE.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package CONSTANTS_PACKAGE
-# End time: 16:36:13 on Nov 18,2025, Elapsed time: 0:00:00
+# End time: 13:32:05 on Nov 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd}
+# vcom -2008 -work work {C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CPU_PACKAGE.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:36:13 on Nov 18,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity BUFFER_TRI
-# -- Compiling architecture Behavior of BUFFER_TRI
-# End time: 16:36:13 on Nov 18,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:36:13 on Nov 18,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd 
+# Start time: 13:32:05 on Nov 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CPU_PACKAGE.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package CONSTANTS_PACKAGE
 # -- Compiling package CPU_PACKAGE
-# End time: 16:36:14 on Nov 18,2025, Elapsed time: 0:00:01
+# End time: 13:32:05 on Nov 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd}
+# vcom -2008 -work work {C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/FORWARDING_UNIT.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:36:14 on Nov 18,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd 
+# Start time: 13:32:05 on Nov 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/FORWARDING_UNIT.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package CONSTANTS_PACKAGE
 # -- Loading package CPU_PACKAGE
-# -- Compiling entity REG_BANK
-# -- Compiling architecture Behavior of REG_BANK
-# End time: 16:36:14 on Nov 18,2025, Elapsed time: 0:00:00
+# -- Compiling entity FORWARDING_UNIT
+# -- Compiling architecture Behavior of FORWARDING_UNIT
+# End time: 13:32:06 on Nov 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-vsim work.reg_bank
-# vsim work.reg_bank 
-# Start time: 16:36:20 on Nov 18,2025
+vsim work.forwarding_unit
+# vsim work.forwarding_unit 
+# Start time: 13:32:41 on Nov 25,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.constants_package
 # Loading work.cpu_package
-# Loading work.reg_bank(behavior)
-# Loading work.reg(behavior)
-# Loading work.buffer_tri(behavior)
-# End time: 16:36:55 on Nov 18,2025, Elapsed time: 0:00:35
+# Loading work.forwarding_unit(behavior)
+vsim work.forwarding_unit
+# End time: 13:32:49 on Nov 25,2025, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0
+# vsim work.forwarding_unit 
+# Start time: 13:32:49 on Nov 25,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.constants_package
+# Loading work.cpu_package
+# Loading work.forwarding_unit(behavior)
+ls
+# ULA_run_msim_rtl_vhdl.do        ULA_run_msim_rtl_vhdl.do.bak6  
+# ULA_run_msim_rtl_vhdl.do.bak    ULA_run_msim_rtl_vhdl.do.bak7  
+# ULA_run_msim_rtl_vhdl.do.bak1   ULA_run_msim_rtl_vhdl.do.bak8  
+# ULA_run_msim_rtl_vhdl.do.bak10  ULA_run_msim_rtl_vhdl.do.bak9  
+# ULA_run_msim_rtl_vhdl.do.bak11  modelsim.ini                   
+# ULA_run_msim_rtl_vhdl.do.bak2   msim_transcript                
+# ULA_run_msim_rtl_vhdl.do.bak3   rtl_work                       
+# ULA_run_msim_rtl_vhdl.do.bak4   vsim.wlf                       
+# ULA_run_msim_rtl_vhdl.do.bak5                                  
+
+
+do "C:\Users\23012104\Desktop/wave.do"
+# Cannot open macro file: C:Users˜12104Desktop/wave.do
+do "C:/Users/23012104/Desktop/wave.do"
+# .main_pane.wave.interior.cs.body.pw.wf
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# 1
+# 1
+# 1
+# 1
+# 1
+restart
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+restart
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+restart
+add wave -position end  sim:/forwarding_unit/FOWARD_A
+add wave -position end  sim:/forwarding_unit/FOWARD_B
+run -continue
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+restart
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# End time: 13:36:56 on Nov 25,2025, Elapsed time: 0:04:07
 # Errors: 0, Warnings: 0

@@ -1,5 +1,5 @@
 Fitter report for ULA
-Wed Nov 19 15:43:20 2025
+Tue Nov 25 18:39:07 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -39,8 +39,10 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  31. I/O Rules Matrix
  32. Fitter Device Options
  33. Operating Settings and Conditions
- 34. Fitter Messages
- 35. Fitter Suppressed Messages
+ 34. Estimated Delay Added for Hold Timing Summary
+ 35. Estimated Delay Added for Hold Timing Details
+ 36. Fitter Messages
+ 37. Fitter Suppressed Messages
 
 
 
@@ -67,17 +69,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Nov 19 15:43:20 2025       ;
+; Fitter Status                      ; Successful - Tue Nov 25 18:39:07 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
 ; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,439 / 114,480 ( 1 % )                     ;
-;     Total combinational functions  ; 1,309 / 114,480 ( 1 % )                     ;
-;     Dedicated logic registers      ; 569 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 569                                         ;
+; Total logic elements               ; 1,497 / 114,480 ( 1 % )                     ;
+;     Total combinational functions  ; 1,379 / 114,480 ( 1 % )                     ;
+;     Dedicated logic registers      ; 581 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 581                                         ;
 ; Total pins                         ; 117 / 529 ( 22 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
@@ -469,8 +471,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 2125 ) ; 0.00 % ( 0 / 2125 )        ; 0.00 % ( 0 / 2125 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 2125 ) ; 0.00 % ( 0 / 2125 )        ; 0.00 % ( 0 / 2125 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 2207 ) ; 0.00 % ( 0 / 2207 )        ; 0.00 % ( 0 / 2207 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 2207 ) ; 0.00 % ( 0 / 2207 )        ; 0.00 % ( 0 / 2207 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -493,7 +495,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 2115 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 2197 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -501,7 +503,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/23012419/MIPS-16Bit-CPU/output_files/ULA.pin.
+The pin-out file can be found in C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/output_files/ULA.pin.
 
 
 +-----------------------------------------------------------------------+
@@ -509,26 +511,26 @@ The pin-out file can be found in C:/Users/23012419/MIPS-16Bit-CPU/output_files/U
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 1,439 / 114,480 ( 1 % ) ;
-;     -- Combinational with no register       ; 870                     ;
-;     -- Register only                        ; 130                     ;
-;     -- Combinational with a register        ; 439                     ;
+; Total logic elements                        ; 1,497 / 114,480 ( 1 % ) ;
+;     -- Combinational with no register       ; 916                     ;
+;     -- Register only                        ; 118                     ;
+;     -- Combinational with a register        ; 463                     ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 922                     ;
-;     -- 3 input functions                    ; 283                     ;
-;     -- <=2 input functions                  ; 104                     ;
-;     -- Register only                        ; 130                     ;
+;     -- 4 input functions                    ; 934                     ;
+;     -- 3 input functions                    ; 329                     ;
+;     -- <=2 input functions                  ; 116                     ;
+;     -- Register only                        ; 118                     ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 1284                    ;
+;     -- normal mode                          ; 1354                    ;
 ;     -- arithmetic mode                      ; 25                      ;
 ;                                             ;                         ;
-; Total registers*                            ; 569 / 117,053 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 569 / 114,480 ( < 1 % ) ;
+; Total registers*                            ; 581 / 117,053 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 581 / 114,480 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 106 / 7,155 ( 1 % )     ;
+; Total LABs:  partially or completely used   ; 115 / 7,155 ( 2 % )     ;
 ; Virtual pins                                ; 0                       ;
 ; I/O pins                                    ; 117 / 529 ( 22 % )      ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )          ;
@@ -546,12 +548,12 @@ The pin-out file can be found in C:/Users/23012419/MIPS-16Bit-CPU/output_files/U
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )           ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
-; Average interconnect usage (total/H/V)      ; 0.5% / 0.4% / 0.6%      ;
-; Peak interconnect usage (total/H/V)         ; 8.8% / 8.1% / 9.8%      ;
-; Maximum fan-out                             ; 542                     ;
-; Highest non-global fan-out                  ; 76                      ;
-; Total fan-out                               ; 6643                    ;
-; Average fan-out                             ; 2.96                    ;
+; Average interconnect usage (total/H/V)      ; 0.6% / 0.5% / 0.6%      ;
+; Peak interconnect usage (total/H/V)         ; 8.7% / 8.1% / 9.6%      ;
+; Maximum fan-out                             ; 554                     ;
+; Highest non-global fan-out                  ; 77                      ;
+; Total fan-out                               ; 6857                    ;
+; Average fan-out                             ; 2.95                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -564,26 +566,26 @@ The pin-out file can be found in C:/Users/23012419/MIPS-16Bit-CPU/output_files/U
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 1439 / 114480 ( 1 % )  ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 870                    ; 0                              ;
-;     -- Register only                        ; 130                    ; 0                              ;
-;     -- Combinational with a register        ; 439                    ; 0                              ;
+; Total logic elements                        ; 1497 / 114480 ( 1 % )  ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 916                    ; 0                              ;
+;     -- Register only                        ; 118                    ; 0                              ;
+;     -- Combinational with a register        ; 463                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 922                    ; 0                              ;
-;     -- 3 input functions                    ; 283                    ; 0                              ;
-;     -- <=2 input functions                  ; 104                    ; 0                              ;
-;     -- Register only                        ; 130                    ; 0                              ;
+;     -- 4 input functions                    ; 934                    ; 0                              ;
+;     -- 3 input functions                    ; 329                    ; 0                              ;
+;     -- <=2 input functions                  ; 116                    ; 0                              ;
+;     -- Register only                        ; 118                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 1284                   ; 0                              ;
+;     -- normal mode                          ; 1354                   ; 0                              ;
 ;     -- arithmetic mode                      ; 25                     ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total registers                             ; 569                    ; 0                              ;
-;     -- Dedicated logic registers            ; 569 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+; Total registers                             ; 581                    ; 0                              ;
+;     -- Dedicated logic registers            ; 581 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 106 / 7155 ( 1 % )     ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 115 / 7155 ( 2 % )     ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 117                    ; 0                              ;
@@ -599,8 +601,8 @@ The pin-out file can be found in C:/Users/23012419/MIPS-16Bit-CPU/output_files/U
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 6638                   ; 5                              ;
-;     -- Registered Connections               ; 2364                   ; 0                              ;
+;     -- Total Connections                    ; 6852                   ; 5                              ;
+;     -- Registered Connections               ; 2506                   ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 0                      ; 0                              ;
@@ -1716,76 +1718,100 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                          ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                       ; Entity Name        ; Library Name ;
 +-----------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------+--------------------+--------------+
-; |CPU                                                ; 1439 (110)  ; 569 (27)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 117  ; 0            ; 870 (79)     ; 130 (0)           ; 439 (62)         ; |CPU                                                                      ; CPU                ; work         ;
+; |CPU                                                ; 1497 (104)  ; 581 (27)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 117  ; 0            ; 916 (73)     ; 118 (0)           ; 463 (67)         ; |CPU                                                                      ; CPU                ; work         ;
 ;    |ALU_CONTROL:ALU_CONTROL_INSTANCE|               ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|ALU_CONTROL:ALU_CONTROL_INSTANCE                                     ; ALU_CONTROL        ; work         ;
-;    |CONTROL_UNIT:CONTROL_UNIT_INSTANCE|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 7 (7)            ; |CPU|CONTROL_UNIT:CONTROL_UNIT_INSTANCE                                   ; CONTROL_UNIT       ; work         ;
-;    |FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE|       ; 30 (30)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 24 (24)      ; 0 (0)             ; 6 (6)            ; |CPU|FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE                             ; FORWARDING_UNIT    ; work         ;
-;    |INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE| ; 26 (26)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 15 (15)          ; |CPU|INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE                       ; INSTRUCTION_MEMORY ; work         ;
-;    |LOW_WRITE_REG16:IF_PC_INSTANCE|                 ; 5 (5)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; |CPU|LOW_WRITE_REG16:IF_PC_INSTANCE                                       ; LOW_WRITE_REG16    ; work         ;
-;    |MEMORY:DATA_MEMORY_INSTANCE|                    ; 331 (331)   ; 128 (128)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 189 (189)    ; 0 (0)             ; 142 (142)        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE                                          ; MEMORY             ; work         ;
-;    |PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|               ; 44 (0)      ; 44 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 19 (0)            ; 25 (0)           ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE                                     ; PIPE_EX_MEM        ; work         ;
+;    |COMPARATOR16:IF_ID_COMPARATOR_INSTANCE|         ; 11 (11)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 0 (0)            ; |CPU|COMPARATOR16:IF_ID_COMPARATOR_INSTANCE                               ; COMPARATOR16       ; work         ;
+;    |CONTROL_UNIT:CONTROL_UNIT_INSTANCE|             ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 6 (6)            ; |CPU|CONTROL_UNIT:CONTROL_UNIT_INSTANCE                                   ; CONTROL_UNIT       ; work         ;
+;    |FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE|       ; 30 (30)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (18)      ; 0 (0)             ; 12 (12)          ; |CPU|FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE                             ; FORWARDING_UNIT    ; work         ;
+;    |INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE| ; 22 (22)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 14 (14)          ; |CPU|INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE                       ; INSTRUCTION_MEMORY ; work         ;
+;    |LOW_WRITE_REG16:IF_PC_INSTANCE|                 ; 17 (17)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 16 (16)          ; |CPU|LOW_WRITE_REG16:IF_PC_INSTANCE                                       ; LOW_WRITE_REG16    ; work         ;
+;    |MEMORY:DATA_MEMORY_INSTANCE|                    ; 333 (333)   ; 128 (128)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 188 (188)    ; 2 (2)             ; 143 (143)        ; |CPU|MEMORY:DATA_MEMORY_INSTANCE                                          ; MEMORY             ; work         ;
+;    |PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|               ; 39 (0)      ; 39 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 37 (0)           ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE                                     ; PIPE_EX_MEM        ; work         ;
 ;       |FOUR_BIT_REG:REG_DST_INSTANCE|               ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE       ; FOUR_BIT_REG       ; work         ;
-;       |LOW_WRITE_REG16:ALU_OUT_INSTANCE|            ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 15 (15)          ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:ALU_OUT_INSTANCE    ; LOW_WRITE_REG16    ; work         ;
-;       |LOW_WRITE_REG16:IMED_INSTANCE|               ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 2 (2)            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:IMED_INSTANCE       ; LOW_WRITE_REG16    ; work         ;
-;       |LOW_WRITE_REG16:RT_DATA_INSTANCE|            ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 15 (15)           ; 1 (1)            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:RT_DATA_INSTANCE    ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:ALU_OUT_INSTANCE|            ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:ALU_OUT_INSTANCE    ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:RT_DATA_INSTANCE|            ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:RT_DATA_INSTANCE    ; LOW_WRITE_REG16    ; work         ;
 ;       |ONE_BIT_REG:MEM_WRITE_INSTANCE|              ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE      ; ONE_BIT_REG        ; work         ;
 ;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|           ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE   ; ONE_BIT_REG        ; work         ;
-;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE  ; TWO_BIT_REG        ; work         ;
-;    |PIPE_ID_EX:PIPE_ID_EX_INSTANCE|                 ; 54 (0)      ; 49 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 7 (0)             ; 45 (0)           ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE                                       ; PIPE_ID_EX         ; work         ;
-;       |FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|          ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 2 (2)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE    ; FOUR_BIT_REG       ; work         ;
-;       |FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE|          ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 2 (2)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE    ; FOUR_BIT_REG       ; work         ;
-;       |FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE|          ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 1 (1)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE    ; FOUR_BIT_REG       ; work         ;
-;       |LOW_WRITE_REG16:REG_A_INSTANCE|              ; 18 (18)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 17 (17)          ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_A_INSTANCE        ; LOW_WRITE_REG16    ; work         ;
-;       |LOW_WRITE_REG16:REG_B_INSTANCE|              ; 19 (19)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 18 (18)          ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_B_INSTANCE        ; LOW_WRITE_REG16    ; work         ;
-;       |LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE|         ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE   ; LOW_WRITE_REG16    ; work         ;
-;       |ONE_BIT_REG:EX_ALU_SRC_INSTANCE|             ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE       ; ONE_BIT_REG        ; work         ;
+;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE  ; TWO_BIT_REG        ; work         ;
+;    |PIPE_ID_EX:PIPE_ID_EX_INSTANCE|                 ; 49 (0)      ; 49 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (0)             ; 43 (0)           ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE                                       ; PIPE_ID_EX         ; work         ;
+;       |FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|          ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE    ; FOUR_BIT_REG       ; work         ;
+;       |FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE|          ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE    ; FOUR_BIT_REG       ; work         ;
+;       |FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE|          ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 2 (2)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE    ; FOUR_BIT_REG       ; work         ;
+;       |LOW_WRITE_REG16:REG_A_INSTANCE|              ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 14 (14)          ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_A_INSTANCE        ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:REG_B_INSTANCE|              ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 14 (14)          ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_B_INSTANCE        ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE|         ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE   ; LOW_WRITE_REG16    ; work         ;
+;       |ONE_BIT_REG:EX_ALU_SRC_INSTANCE|             ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE       ; ONE_BIT_REG        ; work         ;
 ;       |ONE_BIT_REG:EX_REG_DST_INSTANCE|             ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE       ; ONE_BIT_REG        ; work         ;
 ;       |ONE_BIT_REG:MEM_WRITE_INSTANCE|              ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE        ; ONE_BIT_REG        ; work         ;
 ;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|           ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE     ; ONE_BIT_REG        ; work         ;
 ;       |TWO_BIT_REG:EX_ALU_OP_INSTANCE|              ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE        ; TWO_BIT_REG        ; work         ;
 ;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE    ; TWO_BIT_REG        ; work         ;
-;    |PIPE_IF_ID:PIPE_IF_ID_INSTANCE|                 ; 19 (0)      ; 19 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 9 (0)             ; 10 (0)           ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE                                       ; PIPE_IF_ID         ; work         ;
-;       |LOW_WRITE_REG16:INSTRUCTION_DATA|            ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 9 (9)             ; 5 (5)            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:INSTRUCTION_DATA      ; LOW_WRITE_REG16    ; work         ;
-;       |LOW_WRITE_REG16:PC_INSTANCE|                 ; 5 (5)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE           ; LOW_WRITE_REG16    ; work         ;
-;    |PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|               ; 43 (0)      ; 43 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 7 (0)             ; 36 (0)           ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE                                     ; PIPE_MEM_WB        ; work         ;
+;    |PIPE_IF_ID:PIPE_IF_ID_INSTANCE|                 ; 30 (0)      ; 30 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 9 (0)             ; 21 (0)           ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE                                       ; PIPE_IF_ID         ; work         ;
+;       |LOW_WRITE_REG16:INSTRUCTION_DATA|            ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 6 (6)            ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:INSTRUCTION_DATA      ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:PC_INSTANCE|                 ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 15 (15)          ; |CPU|PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE           ; LOW_WRITE_REG16    ; work         ;
+;    |PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|               ; 38 (0)      ; 38 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 37 (0)           ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE                                     ; PIPE_MEM_WB        ; work         ;
 ;       |FOUR_BIT_REG:REG_DST_INSTANCE|               ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|FOUR_BIT_REG:REG_DST_INSTANCE       ; FOUR_BIT_REG       ; work         ;
-;       |LOW_WRITE_REG16:ALU_RESULT_INSTANCE|         ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 13 (13)          ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|LOW_WRITE_REG16:ALU_RESULT_INSTANCE ; LOW_WRITE_REG16    ; work         ;
-;       |LOW_WRITE_REG16:MEM_OUT_INSTANCE|            ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 13 (13)          ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|LOW_WRITE_REG16:MEM_OUT_INSTANCE    ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:ALU_RESULT_INSTANCE|         ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 15 (15)          ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|LOW_WRITE_REG16:ALU_RESULT_INSTANCE ; LOW_WRITE_REG16    ; work         ;
+;       |LOW_WRITE_REG16:MEM_OUT_INSTANCE|            ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|LOW_WRITE_REG16:MEM_OUT_INSTANCE    ; LOW_WRITE_REG16    ; work         ;
 ;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|           ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE   ; ONE_BIT_REG        ; work         ;
-;       |REG:IMED_INSTANCE|                           ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|REG:IMED_INSTANCE                   ; REG                ; work         ;
-;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE  ; TWO_BIT_REG        ; work         ;
-;    |REG_BANK:IF_ID_REG_BANK_INSTANCE|               ; 326 (87)    ; 240 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 67 (67)      ; 88 (0)            ; 171 (156)        ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE                                     ; REG_BANK           ; work         ;
-;       |REG:REG10_INSTANCE|                          ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG10_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG11_INSTANCE|                          ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG11_INSTANCE                  ; REG                ; work         ;
+;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|          ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE  ; TWO_BIT_REG        ; work         ;
+;    |REG_BANK:IF_ID_REG_BANK_INSTANCE|               ; 365 (125)   ; 240 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 97 (97)      ; 98 (0)            ; 170 (148)        ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE                                     ; REG_BANK           ; work         ;
+;       |REG:REG10_INSTANCE|                          ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG10_INSTANCE                  ; REG                ; work         ;
+;       |REG:REG11_INSTANCE|                          ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 15 (15)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG11_INSTANCE                  ; REG                ; work         ;
 ;       |REG:REG12_INSTANCE|                          ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG12_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG13_INSTANCE|                          ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 13 (13)           ; 3 (3)            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG13_INSTANCE                  ; REG                ; work         ;
+;       |REG:REG13_INSTANCE|                          ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 11 (11)           ; 5 (5)            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG13_INSTANCE                  ; REG                ; work         ;
 ;       |REG:REG14_INSTANCE|                          ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG14_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG15_INSTANCE|                          ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 15 (15)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG15_INSTANCE                  ; REG                ; work         ;
-;       |REG:REG1_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 10 (10)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG1_INSTANCE                   ; REG                ; work         ;
-;       |REG:REG2_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 11 (11)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG2_INSTANCE                   ; REG                ; work         ;
-;       |REG:REG3_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 10 (10)           ; 6 (6)            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG3_INSTANCE                   ; REG                ; work         ;
-;       |REG:REG4_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG4_INSTANCE                   ; REG                ; work         ;
-;       |REG:REG5_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG5_INSTANCE                   ; REG                ; work         ;
-;       |REG:REG6_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 15 (15)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG6_INSTANCE                   ; REG                ; work         ;
-;       |REG:REG7_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 10 (10)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG7_INSTANCE                   ; REG                ; work         ;
-;       |REG:REG8_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG8_INSTANCE                   ; REG                ; work         ;
-;       |REG:REG9_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 14 (14)           ; 2 (2)            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG9_INSTANCE                   ; REG                ; work         ;
-;    |RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|      ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE                            ; RIPPLE_CARRY       ; work         ;
-;       |FULLADDER:FADD4|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD4            ; FULLADDER          ; work         ;
-;    |RIPPLE_CARRY:IF_PC_ADD_INSTANCE|                ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE                                      ; RIPPLE_CARRY       ; work         ;
-;       |FULLADDER:FADD3|                             ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD3                      ; FULLADDER          ; work         ;
+;       |REG:REG15_INSTANCE|                          ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 11 (11)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG15_INSTANCE                  ; REG                ; work         ;
+;       |REG:REG1_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 15 (15)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG1_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG2_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG2_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG3_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG3_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG4_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 8 (8)            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG4_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG5_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 12 (12)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG5_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG6_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 14 (14)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG6_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG7_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 12 (12)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG7_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG8_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 14 (14)          ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG8_INSTANCE                   ; REG                ; work         ;
+;       |REG:REG9_INSTANCE|                           ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 12 (12)           ; 4 (4)            ; |CPU|REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG9_INSTANCE                   ; REG                ; work         ;
+;    |RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|      ; 28 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 23 (0)       ; 0 (0)             ; 5 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE                            ; RIPPLE_CARRY       ; work         ;
+;       |FULLADDER:FADD10|                            ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD10           ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD11|                            ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD11           ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD12|                            ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD12           ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD13|                            ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD13           ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD14|                            ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD14           ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD15|                            ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD15           ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD16|                            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD16           ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD2|                             ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD2            ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD3|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD3            ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD4|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD4            ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD5|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD5            ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD6|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD6            ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD7|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD7            ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD8|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD8            ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD9|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE|FULLADDER:FADD9            ; FULLADDER          ; work         ;
+;    |RIPPLE_CARRY:IF_PC_ADD_INSTANCE|                ; 19 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 13 (0)           ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE                                      ; RIPPLE_CARRY       ; work         ;
+;       |FULLADDER:FADD10|                            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD10                     ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD11|                            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD11                     ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD12|                            ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD12                     ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD13|                            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD13                     ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD14|                            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD14                     ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD15|                            ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD15                     ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD16|                            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD16                     ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD3|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD3                      ; FULLADDER          ; work         ;
 ;       |FULLADDER:FADD4|                             ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD4                      ; FULLADDER          ; work         ;
 ;       |FULLADDER:FADD5|                             ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD5                      ; FULLADDER          ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS0_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 59 (59)      ; 0 (0)             ; 1 (1)            ; |CPU|SEGS_4_TRANSLATOR:SEGS0_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS1_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (57)      ; 0 (0)             ; 3 (3)            ; |CPU|SEGS_4_TRANSLATOR:SEGS1_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS2_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 58 (58)      ; 0 (0)             ; 2 (2)            ; |CPU|SEGS_4_TRANSLATOR:SEGS2_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS3_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 59 (59)      ; 0 (0)             ; 1 (1)            ; |CPU|SEGS_4_TRANSLATOR:SEGS3_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS4_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 59 (59)      ; 0 (0)             ; 1 (1)            ; |CPU|SEGS_4_TRANSLATOR:SEGS4_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS5_INSTANCE|               ; 61 (61)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 59 (59)      ; 0 (0)             ; 2 (2)            ; |CPU|SEGS_4_TRANSLATOR:SEGS5_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS6_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 60 (60)      ; 0 (0)             ; 0 (0)            ; |CPU|SEGS_4_TRANSLATOR:SEGS6_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
-;    |SEGS_4_TRANSLATOR:SEGS7_INSTANCE|               ; 67 (67)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 65 (65)      ; 0 (0)             ; 2 (2)            ; |CPU|SEGS_4_TRANSLATOR:SEGS7_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
-;    |ULA:ALU_INSTANCE|                               ; 35 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 22 (0)       ; 0 (0)             ; 13 (0)           ; |CPU|ULA:ALU_INSTANCE                                                     ; ULA                ; work         ;
-;       |RIPPLE_CARRY:RIPPLE_DECLARATION|             ; 35 (3)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 22 (3)       ; 0 (0)             ; 13 (0)           ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION                     ; RIPPLE_CARRY       ; work         ;
+;       |FULLADDER:FADD6|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD6                      ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD7|                             ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD7                      ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD8|                             ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD8                      ; FULLADDER          ; work         ;
+;       |FULLADDER:FADD9|                             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD9                      ; FULLADDER          ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS0_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 54 (54)      ; 0 (0)             ; 6 (6)            ; |CPU|SEGS_4_TRANSLATOR:SEGS0_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS1_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 59 (59)      ; 0 (0)             ; 1 (1)            ; |CPU|SEGS_4_TRANSLATOR:SEGS1_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS2_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 60 (60)      ; 0 (0)             ; 0 (0)            ; |CPU|SEGS_4_TRANSLATOR:SEGS2_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS3_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 51 (51)      ; 0 (0)             ; 9 (9)            ; |CPU|SEGS_4_TRANSLATOR:SEGS3_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS4_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (56)      ; 0 (0)             ; 4 (4)            ; |CPU|SEGS_4_TRANSLATOR:SEGS4_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS5_INSTANCE|               ; 60 (60)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 59 (59)      ; 0 (0)             ; 1 (1)            ; |CPU|SEGS_4_TRANSLATOR:SEGS5_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS6_INSTANCE|               ; 72 (72)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 72 (72)      ; 0 (0)             ; 0 (0)            ; |CPU|SEGS_4_TRANSLATOR:SEGS6_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |SEGS_4_TRANSLATOR:SEGS7_INSTANCE|               ; 63 (63)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 62 (62)      ; 0 (0)             ; 1 (1)            ; |CPU|SEGS_4_TRANSLATOR:SEGS7_INSTANCE                                     ; SEGS_4_TRANSLATOR  ; work         ;
+;    |ULA:ALU_INSTANCE|                               ; 34 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 18 (0)           ; |CPU|ULA:ALU_INSTANCE                                                     ; ULA                ; work         ;
+;       |RIPPLE_CARRY:RIPPLE_DECLARATION|             ; 34 (1)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 18 (1)           ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION                     ; RIPPLE_CARRY       ; work         ;
 ;          |FULLADDER:FADD10|                         ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD10    ; FULLADDER          ; work         ;
 ;          |FULLADDER:FADD11|                         ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD11    ; FULLADDER          ; work         ;
 ;          |FULLADDER:FADD12|                         ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD12    ; FULLADDER          ; work         ;
@@ -1793,9 +1819,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |FULLADDER:FADD14|                         ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD14    ; FULLADDER          ; work         ;
 ;          |FULLADDER:FADD15|                         ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD15    ; FULLADDER          ; work         ;
 ;          |FULLADDER:FADD16|                         ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD16    ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD1|                          ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD1     ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD2|                          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD2     ; FULLADDER          ; work         ;
-;          |FULLADDER:FADD3|                          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD3     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD1|                          ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 2 (2)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD1     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD2|                          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD2     ; FULLADDER          ; work         ;
+;          |FULLADDER:FADD3|                          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD3     ; FULLADDER          ; work         ;
 ;          |FULLADDER:FADD4|                          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD4     ; FULLADDER          ; work         ;
 ;          |FULLADDER:FADD5|                          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD5     ; FULLADDER          ; work         ;
 ;          |FULLADDER:FADD6|                          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD6     ; FULLADDER          ; work         ;
@@ -1962,60 +1988,59 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                         ;
-+----------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                       ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CLOCK                                                                      ; FF_X58_Y5_N5       ; 542     ; Clock        ; yes    ; Global Clock         ; GCLK15           ; --                        ;
-; Clock_50                                                                   ; PIN_Y2             ; 27      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[3]                                    ; FF_X68_Y44_N29     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[4]                                    ; FF_X68_Y44_N25     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; LessThan0~3                                                                ; LCCOMB_X59_Y5_N30  ; 26      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[0][3]~27                                   ; LCCOMB_X61_Y41_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[10][3]~37                                  ; LCCOMB_X62_Y41_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[12][3]~2                                   ; LCCOMB_X61_Y41_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[14][3]~32                                  ; LCCOMB_X62_Y41_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[1][5]~14                                   ; LCCOMB_X65_Y37_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[1][5]~19                                   ; LCCOMB_X60_Y39_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[1][5]~24                                   ; LCCOMB_X59_Y37_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[1][5]~29                                   ; LCCOMB_X63_Y40_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[1][5]~34                                   ; LCCOMB_X60_Y40_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[1][5]~39                                   ; LCCOMB_X63_Y40_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[1][5]~4                                    ; LCCOMB_X60_Y38_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[1][5]~9                                    ; LCCOMB_X62_Y38_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[2][3]~17                                   ; LCCOMB_X60_Y39_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[4][3]~22                                   ; LCCOMB_X61_Y41_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[6][3]~12                                   ; LCCOMB_X59_Y38_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MEMORY:DATA_MEMORY_INSTANCE|mem[8][3]~7                                    ; LCCOMB_X59_Y38_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_B_INSTANCE|D_out[15]~18 ; LCCOMB_X72_Y41_N28 ; 16      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:INSTRUCTION_DATA|D_out[8]   ; FF_X69_Y44_N23     ; 18      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[10]                                  ; LCCOMB_X72_Y40_N14 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[11]                                  ; LCCOMB_X72_Y40_N26 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[12]                                  ; LCCOMB_X70_Y39_N10 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[13]                                  ; LCCOMB_X72_Y39_N14 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[14]                                  ; LCCOMB_X73_Y40_N14 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[15]                                  ; LCCOMB_X70_Y39_N2  ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[1]                                   ; LCCOMB_X73_Y40_N18 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[2]                                   ; LCCOMB_X73_Y40_N24 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[3]                                   ; LCCOMB_X70_Y39_N14 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[4]                                   ; LCCOMB_X70_Y40_N30 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[5]                                   ; LCCOMB_X73_Y40_N30 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[6]                                   ; LCCOMB_X72_Y39_N4  ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[7]                                   ; LCCOMB_X73_Y40_N20 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[8]                                   ; LCCOMB_X72_Y40_N28 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[9]                                   ; LCCOMB_X72_Y40_N8  ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-+----------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                        ;
++-------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                      ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLOCK                                     ; FF_X56_Y69_N23     ; 554     ; Clock        ; yes    ; Global Clock         ; GCLK11           ; --                        ;
+; CONTROL_UNIT:CONTROL_UNIT_INSTANCE|Mux0~0 ; LCCOMB_X75_Y35_N18 ; 16      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; Clock_50                                  ; PIN_Y2             ; 27      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[0]   ; FF_X75_Y35_N25     ; 26      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; LOW_WRITE_REG16:IF_PC_INSTANCE|D_out[4]   ; FF_X74_Y36_N19     ; 36      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; LessThan0~3                               ; LCCOMB_X55_Y69_N30 ; 26      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[0][7]~27  ; LCCOMB_X75_Y38_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[10][7]~14 ; LCCOMB_X80_Y41_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[12][7]~37 ; LCCOMB_X80_Y41_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[14][7]~34 ; LCCOMB_X79_Y40_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[1][4]~11  ; LCCOMB_X80_Y41_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[1][4]~19  ; LCCOMB_X79_Y40_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[1][4]~21  ; LCCOMB_X80_Y41_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[1][4]~29  ; LCCOMB_X80_Y41_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[1][4]~31  ; LCCOMB_X81_Y42_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[1][4]~39  ; LCCOMB_X76_Y40_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[1][4]~4   ; LCCOMB_X77_Y39_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[1][4]~9   ; LCCOMB_X79_Y39_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[2][7]~24  ; LCCOMB_X75_Y38_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[4][7]~7   ; LCCOMB_X81_Y42_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[6][7]~2   ; LCCOMB_X81_Y42_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MEMORY:DATA_MEMORY_INSTANCE|mem[8][7]~17  ; LCCOMB_X75_Y41_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[10] ; LCCOMB_X81_Y36_N12 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[11] ; LCCOMB_X81_Y35_N30 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[12] ; LCCOMB_X81_Y33_N28 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[13] ; LCCOMB_X82_Y33_N30 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[14] ; LCCOMB_X81_Y33_N26 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[15] ; LCCOMB_X82_Y33_N12 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[1]  ; LCCOMB_X81_Y34_N10 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[2]  ; LCCOMB_X81_Y35_N26 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[3]  ; LCCOMB_X81_Y35_N2  ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[4]  ; LCCOMB_X81_Y35_N14 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[5]  ; LCCOMB_X81_Y35_N10 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[6]  ; LCCOMB_X81_Y36_N26 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[7]  ; LCCOMB_X81_Y34_N24 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[8]  ; LCCOMB_X81_Y36_N8  ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; REG_BANK:IF_ID_REG_BANK_INSTANCE|R_IN[9]  ; LCCOMB_X81_Y36_N24 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
++-------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                    ;
-+----------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name     ; Location     ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLOCK    ; FF_X58_Y5_N5 ; 542     ; 9                                    ; Global Clock         ; GCLK15           ; --                        ;
-; Clock_50 ; PIN_Y2       ; 27      ; 17                                   ; Global Clock         ; GCLK4            ; --                        ;
-+----------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                      ;
++----------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name     ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; CLOCK    ; FF_X56_Y69_N23 ; 554     ; 156                                  ; Global Clock         ; GCLK11           ; --                        ;
+; Clock_50 ; PIN_Y2         ; 27      ; 19                                   ; Global Clock         ; GCLK4            ; --                        ;
++----------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +---------------------------------------------------+
@@ -2023,169 +2048,170 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+---------------------------+
 ; Routing Resource Type ; Usage                     ;
 +-----------------------+---------------------------+
-; Block interconnects   ; 2,037 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 109 / 10,120 ( 1 % )      ;
-; C4 interconnects      ; 1,002 / 209,544 ( < 1 % ) ;
-; Direct links          ; 329 / 342,891 ( < 1 % )   ;
+; Block interconnects   ; 2,206 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 99 / 10,120 ( < 1 % )     ;
+; C4 interconnects      ; 1,153 / 209,544 ( < 1 % ) ;
+; Direct links          ; 382 / 342,891 ( < 1 % )   ;
 ; Global clocks         ; 2 / 20 ( 10 % )           ;
-; Local interconnects   ; 744 / 119,088 ( < 1 % )   ;
-; R24 interconnects     ; 74 / 9,963 ( < 1 % )      ;
-; R4 interconnects      ; 1,068 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 801 / 119,088 ( < 1 % )   ;
+; R24 interconnects     ; 72 / 9,963 ( < 1 % )      ;
+; R4 interconnects      ; 1,239 / 289,782 ( < 1 % ) ;
 +-----------------------+---------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 13.58) ; Number of LABs  (Total = 106) ;
+; Number of Logic Elements  (Average = 13.02) ; Number of LABs  (Total = 115) ;
 +---------------------------------------------+-------------------------------+
 ; 1                                           ; 4                             ;
-; 2                                           ; 3                             ;
-; 3                                           ; 1                             ;
+; 2                                           ; 4                             ;
+; 3                                           ; 0                             ;
 ; 4                                           ; 3                             ;
-; 5                                           ; 2                             ;
-; 6                                           ; 1                             ;
+; 5                                           ; 4                             ;
+; 6                                           ; 2                             ;
 ; 7                                           ; 1                             ;
-; 8                                           ; 1                             ;
-; 9                                           ; 4                             ;
-; 10                                          ; 0                             ;
-; 11                                          ; 0                             ;
-; 12                                          ; 2                             ;
-; 13                                          ; 3                             ;
-; 14                                          ; 4                             ;
-; 15                                          ; 4                             ;
-; 16                                          ; 73                            ;
+; 8                                           ; 2                             ;
+; 9                                           ; 1                             ;
+; 10                                          ; 3                             ;
+; 11                                          ; 2                             ;
+; 12                                          ; 7                             ;
+; 13                                          ; 5                             ;
+; 14                                          ; 9                             ;
+; 15                                          ; 6                             ;
+; 16                                          ; 62                            ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 1.13) ; Number of LABs  (Total = 106) ;
+; LAB-wide Signals  (Average = 1.14) ; Number of LABs  (Total = 115) ;
 +------------------------------------+-------------------------------+
-; 1 Clock                            ; 73                            ;
-; 1 Clock enable                     ; 16                            ;
-; 1 Sync. clear                      ; 4                             ;
+; 1 Clock                            ; 80                            ;
+; 1 Clock enable                     ; 18                            ;
+; 1 Sync. clear                      ; 2                             ;
 ; 1 Sync. load                       ; 3                             ;
-; 2 Clock enables                    ; 24                            ;
+; 2 Clock enables                    ; 28                            ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 18.87) ; Number of LABs  (Total = 106) ;
+; Number of Signals Sourced  (Average = 18.05) ; Number of LABs  (Total = 115) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 3                             ;
-; 2                                            ; 3                             ;
+; 2                                            ; 2                             ;
 ; 3                                            ; 1                             ;
 ; 4                                            ; 2                             ;
-; 5                                            ; 0                             ;
-; 6                                            ; 2                             ;
-; 7                                            ; 1                             ;
-; 8                                            ; 0                             ;
-; 9                                            ; 3                             ;
-; 10                                           ; 0                             ;
-; 11                                           ; 1                             ;
-; 12                                           ; 1                             ;
-; 13                                           ; 3                             ;
-; 14                                           ; 5                             ;
-; 15                                           ; 1                             ;
-; 16                                           ; 19                            ;
-; 17                                           ; 7                             ;
-; 18                                           ; 2                             ;
-; 19                                           ; 5                             ;
-; 20                                           ; 3                             ;
-; 21                                           ; 3                             ;
-; 22                                           ; 6                             ;
-; 23                                           ; 1                             ;
-; 24                                           ; 6                             ;
-; 25                                           ; 4                             ;
-; 26                                           ; 1                             ;
+; 5                                            ; 1                             ;
+; 6                                            ; 4                             ;
+; 7                                            ; 2                             ;
+; 8                                            ; 2                             ;
+; 9                                            ; 1                             ;
+; 10                                           ; 2                             ;
+; 11                                           ; 0                             ;
+; 12                                           ; 3                             ;
+; 13                                           ; 5                             ;
+; 14                                           ; 4                             ;
+; 15                                           ; 4                             ;
+; 16                                           ; 18                            ;
+; 17                                           ; 3                             ;
+; 18                                           ; 6                             ;
+; 19                                           ; 6                             ;
+; 20                                           ; 2                             ;
+; 21                                           ; 2                             ;
+; 22                                           ; 5                             ;
+; 23                                           ; 4                             ;
+; 24                                           ; 10                            ;
+; 25                                           ; 2                             ;
+; 26                                           ; 2                             ;
 ; 27                                           ; 2                             ;
-; 28                                           ; 7                             ;
-; 29                                           ; 3                             ;
-; 30                                           ; 2                             ;
-; 31                                           ; 0                             ;
-; 32                                           ; 9                             ;
+; 28                                           ; 2                             ;
+; 29                                           ; 4                             ;
+; 30                                           ; 5                             ;
+; 31                                           ; 2                             ;
+; 32                                           ; 4                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 9.85) ; Number of LABs  (Total = 106) ;
+; Number of Signals Sourced Out  (Average = 9.22) ; Number of LABs  (Total = 115) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 0                             ;
-; 1                                               ; 5                             ;
-; 2                                               ; 5                             ;
+; 1                                               ; 6                             ;
+; 2                                               ; 8                             ;
 ; 3                                               ; 1                             ;
-; 4                                               ; 2                             ;
-; 5                                               ; 5                             ;
+; 4                                               ; 4                             ;
+; 5                                               ; 7                             ;
 ; 6                                               ; 9                             ;
-; 7                                               ; 5                             ;
+; 7                                               ; 4                             ;
 ; 8                                               ; 10                            ;
 ; 9                                               ; 10                            ;
-; 10                                              ; 9                             ;
-; 11                                              ; 8                             ;
-; 12                                              ; 9                             ;
-; 13                                              ; 7                             ;
-; 14                                              ; 3                             ;
-; 15                                              ; 3                             ;
-; 16                                              ; 5                             ;
-; 17                                              ; 2                             ;
+; 10                                              ; 10                            ;
+; 11                                              ; 10                            ;
+; 12                                              ; 11                            ;
+; 13                                              ; 5                             ;
+; 14                                              ; 7                             ;
+; 15                                              ; 4                             ;
+; 16                                              ; 3                             ;
+; 17                                              ; 1                             ;
 ; 18                                              ; 2                             ;
-; 19                                              ; 2                             ;
-; 20                                              ; 3                             ;
+; 19                                              ; 1                             ;
+; 20                                              ; 0                             ;
 ; 21                                              ; 0                             ;
-; 22                                              ; 1                             ;
+; 22                                              ; 0                             ;
+; 23                                              ; 1                             ;
+; 24                                              ; 1                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 17.60) ; Number of LABs  (Total = 106) ;
+; Number of Distinct Inputs  (Average = 16.98) ; Number of LABs  (Total = 115) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
-; 2                                            ; 1                             ;
-; 3                                            ; 3                             ;
+; 2                                            ; 3                             ;
+; 3                                            ; 0                             ;
 ; 4                                            ; 2                             ;
-; 5                                            ; 2                             ;
+; 5                                            ; 4                             ;
 ; 6                                            ; 3                             ;
-; 7                                            ; 3                             ;
-; 8                                            ; 4                             ;
-; 9                                            ; 0                             ;
-; 10                                           ; 3                             ;
-; 11                                           ; 2                             ;
+; 7                                            ; 5                             ;
+; 8                                            ; 3                             ;
+; 9                                            ; 2                             ;
+; 10                                           ; 4                             ;
+; 11                                           ; 5                             ;
 ; 12                                           ; 6                             ;
-; 13                                           ; 3                             ;
-; 14                                           ; 5                             ;
-; 15                                           ; 6                             ;
-; 16                                           ; 5                             ;
-; 17                                           ; 3                             ;
-; 18                                           ; 3                             ;
-; 19                                           ; 3                             ;
-; 20                                           ; 11                            ;
-; 21                                           ; 6                             ;
-; 22                                           ; 2                             ;
+; 13                                           ; 4                             ;
+; 14                                           ; 6                             ;
+; 15                                           ; 4                             ;
+; 16                                           ; 3                             ;
+; 17                                           ; 6                             ;
+; 18                                           ; 5                             ;
+; 19                                           ; 4                             ;
+; 20                                           ; 6                             ;
+; 21                                           ; 5                             ;
+; 22                                           ; 3                             ;
 ; 23                                           ; 5                             ;
-; 24                                           ; 4                             ;
-; 25                                           ; 3                             ;
-; 26                                           ; 2                             ;
+; 24                                           ; 6                             ;
+; 25                                           ; 4                             ;
+; 26                                           ; 3                             ;
 ; 27                                           ; 4                             ;
-; 28                                           ; 2                             ;
-; 29                                           ; 6                             ;
-; 30                                           ; 0                             ;
+; 28                                           ; 3                             ;
+; 29                                           ; 1                             ;
+; 30                                           ; 3                             ;
 ; 31                                           ; 0                             ;
-; 32                                           ; 2                             ;
+; 32                                           ; 0                             ;
 ; 33                                           ; 0                             ;
 ; 34                                           ; 1                             ;
 ; 35                                           ; 0                             ;
-; 36                                           ; 0                             ;
-; 37                                           ; 1                             ;
+; 36                                           ; 2                             ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -2406,6 +2432,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                        ;
++---------------------------------------------------------------------------+----------------------+-------------------+
+; Source Register                                                           ; Destination Register ; Delay Added in ns ;
++---------------------------------------------------------------------------+----------------------+-------------------+
+; PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:INSTRUCTION_DATA|D_out[14] ; LEDG[3]              ; 0.018             ;
++---------------------------------------------------------------------------+----------------------+-------------------+
+Note: This table only shows the top 1 path(s) that have the largest delay added for hold.
+
+
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
@@ -2438,12 +2483,12 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node Clock_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 9
+Info (176353): Automatically promoted node Clock_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CPU.vhd Line: 9
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
-Info (176353): Automatically promoted node CLOCK  File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 29
+Info (176353): Automatically promoted node CLOCK  File: C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CPU.vhd Line: 29
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node LEDG[8]~output File: C:/Users/23012419/MIPS-16Bit-CPU/CPU.vhd Line: 15
+        Info (176357): Destination node LEDG[8]~output File: C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CPU.vhd Line: 15
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -2747,28 +2792,28 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 7% of the available device resources in the region that extends from location X58_Y37 to location X68_Y48
+    Info (170196): Router estimated peak interconnect usage is 6% of the available device resources in the region that extends from location X69_Y24 to location X80_Y36
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 0.74 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.93 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/Users/23012419/MIPS-16Bit-CPU/output_files/ULA.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/output_files/ULA.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 296 warnings
-    Info: Peak virtual memory: 5758 megabytes
-    Info: Processing ended: Wed Nov 19 15:43:20 2025
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Peak virtual memory: 5760 megabytes
+    Info: Processing ended: Tue Nov 25 18:39:08 2025
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:33
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/23012419/MIPS-16Bit-CPU/output_files/ULA.fit.smsg.
+The suppressed messages can be found in C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/output_files/ULA.fit.smsg.
 
 

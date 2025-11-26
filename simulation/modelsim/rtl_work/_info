@@ -8,176 +8,94 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/23012419/MIPS-16Bit-CPU/simulation/modelsim
-Ebuffer_tri
-Z1 w1763486748
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 2
-R0
-Z4 8C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd
-Z5 FC:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd
-l0
-L4 1
-V0?L0m5<?V9cKgEoYo7E7B0
-!s100 G84oU@B5HbgCj?XiRd?2Z3
-Z6 OV;C;2020.1;71
-33
-Z7 !s110 1763494573
-!i10b 1
-Z8 !s108 1763494573.000000
-Z9 !s90 -reportprogress|300|-2008|-work|work|C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd|
-Z10 !s107 C:/Users/23012419/MIPS-16Bit-CPU/BUFFER_TRI.vhd|
-!i113 1
-Z11 o-2008 -work work
-Z12 tExplicit 1 CvgOpt 0
-Abehavior
-R2
-R3
-DEx4 work 10 buffer_tri 0 22 0?L0m5<?V9cKgEoYo7E7B0
-!i122 2
-l13
-L12 5
-VPMN@9aQI1a2J9dD=Z2^oS2
-!s100 OP0D^B@Q<o>U_TaEaTa4h3
-R6
-33
-R7
-!i10b 1
-R8
-R9
-R10
-!i113 1
-R11
-R12
+Z0 dC:/Users/23012104/Documents/MIPS-16Bit-CPU-main/simulation/modelsim
 Pconstants_package
-R2
-R3
-!i122 1
-R1
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+w1764080530
 R0
-8C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd
-FC:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd
+8C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CONSTANTS_PACKAGE.vhd
+FC:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CONSTANTS_PACKAGE.vhd
 l0
 L4 1
-VnSWlYnH8a?lAC7I9?]<UR0
-!s100 8fSJ<WTGniJz^PA]>6fUU1
-R6
+V1]T904DPPD:Wb2l`:5O5C0
+!s100 D778JFmnl7VFYl>2]1L7k3
+Z3 OV;C;2020.1;71
 33
-R7
+Z4 !s110 1764088325
 !i10b 1
-R8
-!s90 -reportprogress|300|-2008|-work|work|C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd|
-!s107 C:/Users/23012419/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd|
+Z5 !s108 1764088325.000000
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CONSTANTS_PACKAGE.vhd|
+!s107 C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CONSTANTS_PACKAGE.vhd|
 !i113 1
-R11
-R12
+Z6 o-2008 -work work
+Z7 tExplicit 1 CvgOpt 0
 Pcpu_package
-Z13 DPx4 work 17 constants_package 0 22 nSWlYnH8a?lAC7I9?]<UR0
+Z8 DPx4 work 17 constants_package 0 22 1]T904DPPD:Wb2l`:5O5C0
+R1
 R2
-R3
-!i122 3
-w1763488632
+!i122 1
+w1764078346
 R0
-8C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd
-FC:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd
+8C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CPU_PACKAGE.vhd
+FC:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CPU_PACKAGE.vhd
 l0
 L6 1
-V?09EO<fIdEW2=a[hLbJzQ0
-!s100 E:5QEafQW?SU=TNS;:z@c3
-R6
+V@02>SoenWgkE`cD9W[Jo[3
+!s100 AzV0Ln;UM?G]<j:QmQA5;2
+R3
 33
-Z14 !s110 1763494574
+R4
 !i10b 1
-R8
-!s90 -reportprogress|300|-2008|-work|work|C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd|
-!s107 C:/Users/23012419/MIPS-16Bit-CPU/CPU_PACKAGE.vhd|
+R5
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CPU_PACKAGE.vhd|
+!s107 C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/CPU_PACKAGE.vhd|
 !i113 1
-R11
-R12
-Ereg
+R6
+R7
+Eforwarding_unit
+Z9 w1764087825
+R8
+Z10 DPx4 work 11 cpu_package 0 22 @02>SoenWgkE`cD9W[Jo[3
 R1
 R2
-R3
-!i122 0
+!i122 2
 R0
-Z15 8C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd
-Z16 FC:/Users/23012419/MIPS-16Bit-CPU/REG.vhd
-l0
-L4 1
-Vl:nO;e4V9B5119SoWj[J60
-!s100 z2gaWI1hgXiYdGMO]>oRV0
-R6
-33
-Z17 !s110 1763494572
-!i10b 1
-Z18 !s108 1763494572.000000
-Z19 !s90 -reportprogress|300|-2008|-work|work|C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd|
-Z20 !s107 C:/Users/23012419/MIPS-16Bit-CPU/REG.vhd|
-!i113 1
-R11
-R12
-Abehavior
-R2
-R3
-DEx4 work 3 reg 0 22 l:nO;e4V9B5119SoWj[J60
-!i122 0
-l13
-L12 16
-V]R4[>=I`XBm]jm39;GZj]0
-!s100 2W<d[mI@<WmEM]k3d1;hj2
-R6
-33
-R17
-!i10b 1
-R18
-R19
-R20
-!i113 1
-R11
-R12
-Ereg_bank
-Z21 w1763494494
-R13
-Z22 DPx4 work 11 cpu_package 0 22 ?09EO<fIdEW2=a[hLbJzQ0
-R2
-R3
-!i122 4
-R0
-Z23 8C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd
-Z24 FC:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd
+Z11 8C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/FORWARDING_UNIT.vhd
+Z12 FC:/Users/23012104/Documents/MIPS-16Bit-CPU-main/FORWARDING_UNIT.vhd
 l0
 L5 1
-Vk81o29zIG<:1MKW<62@gH2
-!s100 [ZRMYlMHKdPVJEZKCSIUT0
-R6
-33
-R14
-!i10b 1
-Z25 !s108 1763494574.000000
-Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd|
-!s107 C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd|
-!i113 1
-R11
-R12
-Abehavior
-R13
-R22
-R2
+VJ`<ESkz[CT0=cd6?L7z031
+!s100 __QC^EQQScR:S]:JLz4h93
 R3
-DEx4 work 8 reg_bank 0 22 k81o29zIG<:1MKW<62@gH2
-!i122 4
-l30
-L25 112
-VezhTWeN_I:US<j2_05BWL3
-!s100 kU`BR0=USXP2EgGPj4@k>0
-R6
 33
-R14
+Z13 !s110 1764088326
 !i10b 1
-R25
-R26
-Z27 !s107 C:/Users/23012419/MIPS-16Bit-CPU/REG_BANK.vhd|
+R5
+Z14 !s90 -reportprogress|300|-2008|-work|work|C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/FORWARDING_UNIT.vhd|
+!s107 C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/FORWARDING_UNIT.vhd|
 !i113 1
-R11
-R12
+R6
+R7
+Abehavior
+R8
+R10
+R1
+R2
+DEx4 work 15 forwarding_unit 0 22 J`<ESkz[CT0=cd6?L7z031
+!i122 2
+l26
+L25 33
+Vaf>DXkR<gbH6NFN_l1Q3_2
+!s100 BfLKd1IhIzB;BKb_2h:KQ0
+R3
+33
+R13
+!i10b 1
+R5
+R14
+Z15 !s107 C:/Users/23012104/Documents/MIPS-16Bit-CPU-main/FORWARDING_UNIT.vhd|
+!i113 1
+R6
+R7

@@ -30,25 +30,26 @@ ARCHITECTURE Behavior OF FORWARDING_UNIT IS
         FOWARD_B <= "00";
 
         -- EX Hazard
-        IF (WRITE_REG_EX_MEM = '1') AND (REG_DST_EX_MEM /= "0000") THEN
-            IF (REG_DST_EX_MEM = RS) THEN
-                FOWARD_A <= "10";
-            END IF;
+        IF (WRITE_REG_EX_MEM = '1') AND (REG_DST_EX_MEM /= "0000") AND (REG_DST_EX_MEM = RS) THEN
+					FOWARD_A <= "10";
+			END IF;
+			
+			IF (WRITE_REG_EX_MEM = '1') AND (REG_DST_EX_MEM /= "0000") AND (REG_DST_EX_MEM = RT) THEN
+				 FOWARD_B <= "10";
+			END IF;
 
-            IF (REG_DST_EX_MEM = RT) THEN
-                FOWARD_B <= "10";
-            END IF;
-        END IF;
 
         -- MEM Hazard
-        IF ((WRITE_REG_MEM_WB = '1') AND (REG_DST_MEM_WB /= "0000")) AND NOT ((WRITE_REG_EX_MEM = '1') AND (REG_DST_EX_MEM /= "0000")) THEN
-            IF (REG_DST_MEM_WB = RS) AND NOT (REG_DST_EX_MEM = RS) THEN
-                FOWARD_A <= "01";
-            END IF;
 
-            IF (REG_DST_MEM_WB = RT) AND NOT (REG_DST_EX_MEM = RT) THEN
-                FOWARD_B <= "01";
-            END IF;
+        IF ((WRITE_REG_MEM_WB = '1') AND (REG_DST_MEM_WB /= "0000")) 
+						AND NOT ((WRITE_REG_EX_MEM = '1') AND (REG_DST_EX_MEM /= "0000") 
+						AND (REG_DST_EX_MEM = RS)) AND (REG_DST_MEM_WB = RS) THEN
+				 FOWARD_A <= "01";
+		  END IF;
+		  IF ((WRITE_REG_MEM_WB = '1') AND (REG_DST_MEM_WB /= "0000")) 
+				  AND NOT ((WRITE_REG_EX_MEM = '1') AND (REG_DST_EX_MEM /= "0000") 
+				  AND (REG_DST_EX_MEM = RT)) AND (REG_DST_MEM_WB = RT) THEN
+            FOWARD_B <= "01";
         END IF;
 
     END PROCESS;
