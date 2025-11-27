@@ -1,5 +1,5 @@
 Flow report for ULA
-Tue Nov 25 18:39:13 2025
+Wed Nov 26 16:27:47 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 25 18:39:13 2025       ;
+; Flow Status                        ; Successful - Wed Nov 26 16:27:47 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
 ; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,497 / 114,480 ( 1 % )                     ;
-;     Total combinational functions  ; 1,379 / 114,480 ( 1 % )                     ;
-;     Dedicated logic registers      ; 581 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 581                                         ;
+; Total logic elements               ; 1,435 / 114,480 ( 1 % )                     ;
+;     Total combinational functions  ; 1,321 / 114,480 ( 1 % )                     ;
+;     Dedicated logic registers      ; 568 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 568                                         ;
 ; Total pins                         ; 117 / 529 ( 22 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/25/2025 18:38:16 ;
+; Start date & time ; 11/26/2025 16:27:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ULA                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 35490522658201.176410669607600         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 185410951175066.176418523012696        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -104,10 +104,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 4810 MB             ; 00:00:44                           ;
-; Fitter               ; 00:00:21     ; 1.0                     ; 5760 MB             ; 00:00:32                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4704 MB             ; 00:00:03                           ;
-; Total                ; 00:00:54     ; --                      ; --                  ; 00:01:19                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4919 MB             ; 00:00:30                           ;
+; Fitter               ; 00:00:15     ; 1.1                     ; 6459 MB             ; 00:00:39                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4721 MB             ; 00:00:02                           ;
+; Total                ; 00:00:35     ; --                      ; --                  ; 00:01:11                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,9 +116,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; p167261          ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; p167261          ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; p167261          ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; p323394          ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; p323394          ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; p323394          ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

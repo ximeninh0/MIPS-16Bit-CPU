@@ -37,7 +37,7 @@ SIGNAL IF_PC_NEXT,IF_PC_CURRENT, IF_PC_MUX,IF_INSTRUCTION : STD_LOGIC_VECTOR(15 
 SIGNAL IF_PC_ADD_OVERFLOW, IF_PC_ADD_COUT : STD_LOGIC;
 SIGNAL IF_NEXT_PC : STD_LOGIC_VECTOR(15 DOWNTO 0);
 
--- Sinais do Estagio IF/ID
+-- Sinais do Estagio ID
 SIGNAL ID_PC_SOURCE : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL ID_IF_ID_WRITE, ID_PC_WRITE : STD_LOGIC;
 SIGNAL ID_NEXT_PC : STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -54,9 +54,17 @@ SIGNAL ID_ALU_SRC, ID_REG_DST : STD_LOGIC;
 SIGNAL ID_ALU_OP : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL ID_MEM_WRITE, ID_MEM_READ, ID_REG_WRITE : STD_LOGIC;
 SIGNAL ID_MEM_TO_REG: STD_LOGIC_VECTOR(1 DOWNTO 0);
+
+SIGNAL BUBBLE : STD_LOGIC;
+SIGNAL ID_ALU_SRC_AB, ID_REG_DST_AB : STD_LOGIC;
+SIGNAL ID_ALU_OP_AB : STD_LOGIC_VECTOR(1 DOWNTO 0);
+SIGNAL ID_MEM_WRITE_AB, ID_MEM_READ_AB, ID_REG_WRITE_AB : STD_LOGIC;
+SIGNAL ID_MEM_TO_REG_AB: STD_LOGIC_VECTOR(1 DOWNTO 0);
+
+
 SIGNAL ID_IF_FLUSH, ID_ID_FLUSH, ID_EX_FLUSH, ID_WB_FLUSH : STD_LOGIC;
 
--- Sinais do Estagio ID/EX
+-- Sinais do Estagio EX
 SIGNAL EX_A, EX_B : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL EX_SIGNAL_EXTENDED : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL EX_RS_OP, EX_RT_OP, EX_RD_OP : STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -74,7 +82,7 @@ SIGNAL EX_ALU_OUT : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL EX_ALU_OPERATION, EX_ALU_ZERO, EX_ALU_OVERFLOW, EX_ALU_COUT : STD_LOGIC;
 SIGNAL EX_FOWARD_A,EX_FOWARD_B: STD_LOGIC_VECTOR(1 DOWNTO 0);
 
--- Sinais do Estagio EX/MEM
+-- Sinais do Estagio MEM
 SIGNAL MEM_DATA_FOWARD : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL MEM_REG_DST : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL MEM_WRITE_REG : STD_LOGIC;
@@ -87,7 +95,7 @@ SIGNAL MEM_MEM_TO_REG : STD_LOGIC_VECTOR(1 DOWNTO 0);
 
 SIGNAL MEM_DATA_OUT : STD_LOGIC_VECTOR(15 DOWNTO 0);
 
--- Sinais do Estagio MEM/WB
+-- Sinais do Estagio WB
 SIGNAL WB_DATA_FOWARD : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL WB_REG_DST : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL WB_WRITE_REG : STD_LOGIC;
@@ -114,7 +122,7 @@ BEGIN
 							ID_JUMP_ADDRESS WHEN "11", -- Jump (a implementar) ---
 							"0000000000000000" WHEN OTHERS; -- Default
 
-		IF_PC_INSTANCE: LOW_WRITE_REG16 PORT MAP(
+		IF_PC_INSTANCE: REG PORT MAP(
 			D => IF_PC_MUX,
 			R_in => ID_PC_WRITE,
 			Reset => RESET,
@@ -159,7 +167,7 @@ BEGIN
 		);
 
 --===============================================================================
-	-- Estagio IF/ID
+	-- Estagio ID
 
 		ID_RS_OP <= ID_INSTRUCTION_DATA(12 DOWNTO 9); -- Bits de RS
 		ID_RT_OP <= ID_INSTRUCTION_DATA(8 DOWNTO 5);  -- Bits de RT
@@ -192,13 +200,14 @@ BEGIN
 		);
 
 		IF_ID_HAZARD_DETECTION_UNIT_INSTANCE : HAZARD_DETECTION_UNIT PORT MAP( --NOK
-			-- ID_EX_MEM_READ => , -- EX/MEM ---
-			-- ID_EX_RT => , -- EX/MEM ---
-			-- IF_ID_RS => , -- IF/ID ---
-			-- IF_ID_RT => , -- IF/ID ---
-			PC_WRITE => ID_PC_WRITE,
+			ID_EX_MEM_READ => EX_MEM_READ, 
+			ID_EX_RT    => EX_RT_OP,
+			IF_ID_RS    => ID_RS_OP,
+			IF_ID_RT    => ID_RT_OP,
+			
+			BUBBLE 	   => BUBBLE,
+			PC_WRITE    => ID_PC_WRITE,
 			IF_ID_WRITE => ID_IF_ID_WRITE
-			-- IF_FLUSH => 
 		);
 
 		IF_ID_REG_BANK_INSTANCE: REG_BANK PORT MAP( --NOK
@@ -252,7 +261,39 @@ BEGIN
 		);
 		ID_JUMP_ADDRESS(15 DOWNTO 14) <= ID_NEXT_PC(15 DOWNTO 14); -- Concatena os dois bits mais significativos do PC+2
 
-		-- WITH 
+		
+		
+		-- Sinais EX
+		WITH BUBBLE SELECT
+			ID_ALU_SRC_AB <=	ID_ALU_SRC WHEN '0',
+								'0' WHEN '1';
+		
+		WITH BUBBLE SELECT
+			ID_REG_DST_AB <=  ID_REG_DST WHEN '0',
+								'0' WHEN '1';
+		
+		WITH BUBBLE SELECT
+			ID_ALU_OP_AB <=  	ID_ALU_OP WHEN '0',
+								"00" WHEN '1';
+		
+		-- Sinais MEM
+		WITH BUBBLE SELECT
+			ID_MEM_WRITE_AB<= ID_MEM_WRITE WHEN '0',
+								'0' WHEN '1';
+		
+			
+		WITH BUBBLE SELECT
+			ID_MEM_READ_AB <= ID_MEM_READ WHEN '0',
+								'0' WHEN '1';
+			
+		-- Sinais WB
+		WITH BUBBLE SELECT
+			ID_MEM_TO_REG_AB <=ID_MEM_TO_REG WHEN '0',
+								"00" WHEN '1';
+			
+		WITH BUBBLE SELECT
+			ID_REG_WRITE_AB <= ID_REG_WRITE WHEN '0',
+								 '0' WHEN '1';
 
 		PIPE_ID_EX_INSTANCE: PIPE_ID_EX PORT MAP(
 			-- Inputs
@@ -274,22 +315,22 @@ BEGIN
 			NEXT_PC_OUT=>EX_NEXT_PC,
 
 			-- Sinais de controle EX
-			EX_ALU_SRC_IN=>ID_ALU_SRC,
-			EX_REG_DST_IN=>ID_REG_DST,
-			EX_ALU_OP_IN=>ID_ALU_OP,
+			EX_ALU_SRC_IN=>ID_ALU_SRC_AB,
+			EX_REG_DST_IN=>ID_REG_DST_AB,
+			EX_ALU_OP_IN=>ID_ALU_OP_AB,
 			EX_ALU_SRC_OUT=>EX_ALU_SRC,
 			EX_REG_DST_OUT=>EX_REG_DST,
 			EX_ALU_OP_OUT=>EX_ALU_OP,
 
 			-- Sinais de controle MEM
-			MEM_WRITE_IN=>ID_MEM_WRITE,
-			MEM_READ_IN=>ID_MEM_READ,
+			MEM_WRITE_IN=>ID_MEM_WRITE_AB,
+			MEM_READ_IN=>ID_MEM_READ_AB,
 			MEM_WRITE_OUT=>EX_MEM_WRITE,
 			MEM_READ_OUT=>EX_MEM_READ,
 
 			-- Sinais de controle WB
-			WB_MEM_TO_REG_IN=>ID_MEM_TO_REG,
-			WB_REG_WRITE_IN=>ID_REG_WRITE,
+			WB_MEM_TO_REG_IN=>ID_MEM_TO_REG_AB,
+			WB_REG_WRITE_IN=>ID_REG_WRITE_AB,
 			WB_MEM_TO_REG_OUT=>EX_MEM_TO_REG,
 			WB_REG_WRITE_OUT=>EX_REG_WRITE,
 
@@ -299,7 +340,7 @@ BEGIN
 		
 --===============================================================================
 --===============================================================================
-	-- Estágio ID/EX
+	-- Estágio EX
 
 		ALU_CONTROL_INSTANCE : ALU_CONTROL PORT MAP(
 			ALU_OP => EX_ALU_OP,
@@ -389,7 +430,7 @@ BEGIN
 		
 --===============================================================================
 --===============================================================================
-	-- Estagio EX/MEM
+	-- Estagio MEM
 
 		DATA_MEMORY_INSTANCE: MEMORY PORT MAP( --NOK
 			ADDRESS=> MEM_ALU_OUT,
@@ -425,7 +466,7 @@ BEGIN
 			RESET => RESET
 		);
 --==================================================================================================
-	-- Estagio MEM/WB
+	-- Estagio WB
 
 		WITH WB_MEM_TO_REG SELECT
 			WB_MEM_TO_REG_DATA <= 	WB_MEM_OUT WHEN  "00",
@@ -440,55 +481,40 @@ BEGIN
 		SEGS2_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX2_AUX,HEX2);
 		SEGS3_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX3_AUX,HEX3);
 		SEGS4_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX4_AUX,HEX4);
-		SEGS5_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX5_AUX,HEX5);
-		
---		SEGS6_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(MEM_DATA_OUT,HEX6);
---		SEGS7_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(EX_ALU_OUT,HEX7);
+		SEGS5_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(EX_ALU_SRC_B,HEX5);
+		DOUBLE_SEGS_INSTANCE:TWO_DIGITS_7_SEGS PORT MAP(IF_PC_CURRENT,HEX7,HEX6);
 
-		SEGS6_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(ID_BRANCH_RESULT,HEX6);
-		SEGS7_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(IF_PC_CURRENT,HEX7);
---		SEGS6_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(EX_ALU_SRC_A,HEX6);
---		SEGS7_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(EX_ALU_SRC_B,HEX7);
 
-		
---		LEDR(17 downto 16) <= ID_PC_SOURCE;
---		LEDR(14) <= ID_ALU_SRC;
---		LEDR(12) <= ID_REG_DST;
---		LEDR(10 downto 9) <= ID_ALU_OP;
---		LEDR(7) <= ID_MEM_WRITE;
---		LEDR(5) <= ID_MEM_READ;
---		LEDR(3 downto 2) <= ID_MEM_TO_REG;
---		LEDR(0) <= ID_REG_WRITE;
+
+--		SEGS6_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(ID_BRANCH_RESULT,HEX6);
+--		SEGS7_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(IF_PC_CURRENT,HEX7);
+
+
 
 		LEDG(3) <= ID_REG_WRITE;
 		LEDG(2) <= EX_REG_WRITE;
 		LEDG(1) <= MEM_REG_WRITE;
-		LEDG(0) <= ID_REG_EQUAL;
+		LEDG(0) <= WB_REG_WRITE;
 		
 		LEDG(5 DOWNTO 4) <= EX_FOWARD_B;
 		LEDG(7 DOWNTO 6) <= EX_FOWARD_A;
 
-	
-			
+
+		
 		LEDG(8) <= CLOCK;
 
---	LEDG(1 DOWNTO 0) <= ID_MEM_TO_REG;
---	LEDG(2) <= ID_REG_WRITE;
---	
---	LEDG(5 DOWNTO 4) <= EX_MEM_TO_REG;
---	LEDG(6) <= EX_REG_WRITE;
-	LEDR(17 DOWNTO 2) <= IF_INSTRUCTION;
+	LEDR(17 DOWNTO 2) <= ID_INSTRUCTION_DATA;
 
 	-- -- PROCESSOS PARA O DIVISOR DE CLOCK
     ClockDivide: PROCESS
              BEGIN
              WAIT UNTIL CLOCK_50'EVENT and CLOCK_50 = '1'; -- Na subida do clock,
              IF clockticks < max THEN
-                 clockticks <= clockticks + 1; -- Soma o contador clockticks até o máximo estipulado pelo usuário
+                 clockticks <= clockticks + 1; 	-- Soma o contador clockticks até o máximo estipulado pelo usuário
              ELSE
                  clockticks <= 0;					-- Quando chega no máximo zera
              END IF;
-             IF clockticks < half THEN			-- Half representa a metade do ciclo, quando chega liga o clock
+             IF clockticks < half THEN				-- Half representa a metade do ciclo, quando chega liga o clock
                  CLOCK <= '0';
              ELSE
                  CLOCK <= '1';
