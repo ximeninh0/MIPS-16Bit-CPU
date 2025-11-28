@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ULA
-Thu Nov 27 21:16:52 2025
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fri Nov 28 16:41:52 2025
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -36,41 +36,42 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  28. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|LOW_WRITE_REG16:ALU_OUT_INSTANCE"
  29. Port Connectivity Checks: "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE"
  30. Port Connectivity Checks: "ULA:ALU_INSTANCE"
- 31. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
- 32. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
- 33. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE"
- 34. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE"
- 35. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE"
- 36. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE"
- 37. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE"
- 38. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:NEXT_PC_INSTANCE"
- 39. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE"
- 40. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE"
- 41. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE"
- 42. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE"
- 43. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_B_INSTANCE"
- 44. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_A_INSTANCE"
- 45. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE"
- 46. Port Connectivity Checks: "RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE"
- 47. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE"
- 48. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE"
- 49. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG0_INSTANCE"
- 50. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE"
- 51. Port Connectivity Checks: "CONTROL_UNIT:CONTROL_UNIT_INSTANCE"
- 52. Port Connectivity Checks: "PIPE_IF_ID:PIPE_IF_ID_INSTANCE"
- 53. Port Connectivity Checks: "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE"
- 54. Port Connectivity Checks: "RIPPLE_CARRY:IF_PC_ADD_INSTANCE"
- 55. Port Connectivity Checks: "REG:IF_PC_INSTANCE"
- 56. Post-Synthesis Netlist Statistics for Top Partition
- 57. Elapsed Time Per Partition
- 58. Analysis & Synthesis Messages
+ 31. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:LCD_WR_INSTANCE"
+ 32. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE"
+ 33. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE"
+ 34. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE"
+ 35. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE"
+ 36. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE"
+ 37. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE"
+ 38. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE"
+ 39. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:NEXT_PC_INSTANCE"
+ 40. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE"
+ 41. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE"
+ 42. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE"
+ 43. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE"
+ 44. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_B_INSTANCE"
+ 45. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:REG_A_INSTANCE"
+ 46. Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE"
+ 47. Port Connectivity Checks: "RIPPLE_CARRY:IF_ID_RIPPLE_BRANCH_INSTANCE"
+ 48. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE"
+ 49. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE"
+ 50. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE|REG:REG0_INSTANCE"
+ 51. Port Connectivity Checks: "REG_BANK:IF_ID_REG_BANK_INSTANCE"
+ 52. Port Connectivity Checks: "CONTROL_UNIT:CONTROL_UNIT_INSTANCE"
+ 53. Port Connectivity Checks: "PIPE_IF_ID:PIPE_IF_ID_INSTANCE"
+ 54. Port Connectivity Checks: "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE"
+ 55. Port Connectivity Checks: "RIPPLE_CARRY:IF_PC_ADD_INSTANCE"
+ 56. Port Connectivity Checks: "REG:IF_PC_INSTANCE"
+ 57. Post-Synthesis Netlist Statistics for Top Partition
+ 58. Elapsed Time Per Partition
+ 59. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -90,15 +91,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 27 21:16:52 2025       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 28 16:41:52 2025       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
 ; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,146                                       ;
-;     Total combinational functions  ; 1,883                                       ;
-;     Dedicated logic registers      ; 636                                         ;
-; Total registers                    ; 636                                         ;
+; Total logic elements               ; 2,141                                       ;
+;     Total combinational functions  ; 1,878                                       ;
+;     Dedicated logic registers      ; 637                                         ;
+; Total registers                    ; 637                                         ;
 ; Total pins                         ; 117                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -199,56 +200,56 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processors 4-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                            ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                     ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
-; CONTRACT_SIGNAL.vhd              ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/CONTRACT_SIGNAL.vhd       ;         ;
-; INSTRUCTION_MEMORY.vhd           ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd    ;         ;
-; TWO_BIT_REG.vhd                  ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/TWO_BIT_REG.vhd           ;         ;
-; SIGN_EXTEND.vhd                  ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/SIGN_EXTEND.vhd           ;         ;
-; SHIFT_LEFT2.vhd                  ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/SHIFT_LEFT2.vhd           ;         ;
-; SHIFT_LEFT1.vhd                  ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/SHIFT_LEFT1.vhd           ;         ;
-; REG.vhd                          ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/REG.vhd                   ;         ;
-; PIPE_MEM_WB.vhd                  ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_MEM_WB.vhd           ;         ;
-; PIPE_IF_ID.vhd                   ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_IF_ID.vhd            ;         ;
-; PIPE_ID_EX.vhd                   ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_ID_EX.vhd            ;         ;
-; PIPE_EX_MEM.vhd                  ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_EX_MEM.vhd           ;         ;
-; ONE_BIT_REG.vhd                  ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/ONE_BIT_REG.vhd           ;         ;
-; MEMORY.vhd                       ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/MEMORY.vhd                ;         ;
-; HAZARD_DETECTION_UNIT.vhd        ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/HAZARD_DETECTION_UNIT.vhd ;         ;
-; FOUR_BIT_REG.vhd                 ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/FOUR_BIT_REG.vhd          ;         ;
-; FORWARDING_UNIT.vhd              ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/FORWARDING_UNIT.vhd       ;         ;
-; CONSTANTS_PACKAGE.vhd            ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/CONSTANTS_PACKAGE.vhd     ;         ;
-; BUFFER_TRI.vhd                   ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd            ;         ;
-; ALU_CONTROL.vhd                  ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/ALU_CONTROL.vhd           ;         ;
-; RIPPLE_CARRY.vhd                 ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/RIPPLE_CARRY.vhd          ;         ;
-; COMPARATOR.vhd                   ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/COMPARATOR.vhd            ;         ;
-; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/ULA.vhd                   ;         ;
-; FULLADDER.vhd                    ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/FULLADDER.vhd             ;         ;
-; CPU.vhd                          ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd                   ;         ;
-; CPU_PACKAGE.vhd                  ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/CPU_PACKAGE.vhd           ;         ;
-; REG_BANK.vhd                     ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/REG_BANK.vhd              ;         ;
-; CONTROL_UNIT.vhd                 ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/CONTROL_UNIT.vhd          ;         ;
-; LOW_WRITE_REG16.vhd              ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/LOW_WRITE_REG16.vhd       ;         ;
-; TWO_DIGITS_7_SEGS.vhd            ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/TWO_DIGITS_7_SEGS.vhd     ;         ;
-; UC_LCD.vhd                       ; yes             ; User VHDL File  ; C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd                ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; CONTRACT_SIGNAL.vhd              ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONTRACT_SIGNAL.vhd       ;         ;
+; INSTRUCTION_MEMORY.vhd           ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd    ;         ;
+; TWO_BIT_REG.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/TWO_BIT_REG.vhd           ;         ;
+; SIGN_EXTEND.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/SIGN_EXTEND.vhd           ;         ;
+; SHIFT_LEFT2.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/SHIFT_LEFT2.vhd           ;         ;
+; SHIFT_LEFT1.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/SHIFT_LEFT1.vhd           ;         ;
+; REG.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/REG.vhd                   ;         ;
+; PIPE_MEM_WB.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_MEM_WB.vhd           ;         ;
+; PIPE_IF_ID.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_IF_ID.vhd            ;         ;
+; PIPE_ID_EX.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_ID_EX.vhd            ;         ;
+; PIPE_EX_MEM.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_EX_MEM.vhd           ;         ;
+; ONE_BIT_REG.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/ONE_BIT_REG.vhd           ;         ;
+; MEMORY.vhd                       ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/MEMORY.vhd                ;         ;
+; HAZARD_DETECTION_UNIT.vhd        ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/HAZARD_DETECTION_UNIT.vhd ;         ;
+; FOUR_BIT_REG.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/FOUR_BIT_REG.vhd          ;         ;
+; FORWARDING_UNIT.vhd              ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/FORWARDING_UNIT.vhd       ;         ;
+; CONSTANTS_PACKAGE.vhd            ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd     ;         ;
+; BUFFER_TRI.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd            ;         ;
+; ALU_CONTROL.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/ALU_CONTROL.vhd           ;         ;
+; RIPPLE_CARRY.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/RIPPLE_CARRY.vhd          ;         ;
+; COMPARATOR.vhd                   ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/COMPARATOR.vhd            ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/ULA.vhd                   ;         ;
+; FULLADDER.vhd                    ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/FULLADDER.vhd             ;         ;
+; CPU.vhd                          ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd                   ;         ;
+; CPU_PACKAGE.vhd                  ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU_PACKAGE.vhd           ;         ;
+; REG_BANK.vhd                     ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/REG_BANK.vhd              ;         ;
+; CONTROL_UNIT.vhd                 ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONTROL_UNIT.vhd          ;         ;
+; LOW_WRITE_REG16.vhd              ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/LOW_WRITE_REG16.vhd       ;         ;
+; TWO_DIGITS_7_SEGS.vhd            ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/TWO_DIGITS_7_SEGS.vhd     ;         ;
+; UC_LCD.vhd                       ; yes             ; User VHDL File  ; C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd                ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -256,20 +257,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 2,146 ;
+; Estimated Total logic elements              ; 2,141 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1883  ;
+; Total combinational functions               ; 1878  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 1253  ;
-;     -- 3 input functions                    ; 441   ;
+;     -- 4 input functions                    ; 1249  ;
+;     -- 3 input functions                    ; 440   ;
 ;     -- <=2 input functions                  ; 189   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1802  ;
+;     -- normal mode                          ; 1797  ;
 ;     -- arithmetic mode                      ; 81    ;
 ;                                             ;       ;
-; Total registers                             ; 636   ;
-;     -- Dedicated logic registers            ; 636   ;
+; Total registers                             ; 637   ;
+;     -- Dedicated logic registers            ; 637   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 117   ;
@@ -277,8 +278,8 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ;                                             ;       ;
 ; Maximum fan-out node                        ; CLOCK ;
-; Maximum fan-out                             ; 550   ;
-; Total fan-out                               ; 8711  ;
+; Maximum fan-out                             ; 551   ;
+; Total fan-out                               ; 8694  ;
 ; Average fan-out                             ; 3.16  ;
 +---------------------------------------------+-------+
 
@@ -288,11 +289,11 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name           ; Library Name ;
 +-----------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+-----------------------+--------------+
-; |CPU                                                            ; 1883 (194)          ; 636 (54)                  ; 0           ; 0            ; 0       ; 0         ; 117  ; 0            ; |CPU                                                                      ; CPU                   ; work         ;
+; |CPU                                                            ; 1878 (193)          ; 637 (54)                  ; 0           ; 0            ; 0       ; 0         ; 117  ; 0            ; |CPU                                                                      ; CPU                   ; work         ;
 ;    |ALU_CONTROL:ALU_CONTROL_INSTANCE|                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ALU_CONTROL:ALU_CONTROL_INSTANCE                                     ; ALU_CONTROL           ; work         ;
 ;    |CONTROL_UNIT:CONTROL_UNIT_INSTANCE|                         ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|CONTROL_UNIT:CONTROL_UNIT_INSTANCE                                   ; CONTROL_UNIT          ; work         ;
 ;    |FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE|                   ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE                             ; FORWARDING_UNIT       ; work         ;
-;    |HAZARD_DETECTION_UNIT:IF_ID_HAZARD_DETECTION_UNIT_INSTANCE| ; 34 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|HAZARD_DETECTION_UNIT:IF_ID_HAZARD_DETECTION_UNIT_INSTANCE           ; HAZARD_DETECTION_UNIT ; work         ;
+;    |HAZARD_DETECTION_UNIT:IF_ID_HAZARD_DETECTION_UNIT_INSTANCE| ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|HAZARD_DETECTION_UNIT:IF_ID_HAZARD_DETECTION_UNIT_INSTANCE           ; HAZARD_DETECTION_UNIT ; work         ;
 ;    |INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|             ; 60 (60)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE                       ; INSTRUCTION_MEMORY    ; work         ;
 ;    |MEMORY:DATA_MEMORY_INSTANCE|                                ; 331 (331)           ; 128 (128)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|MEMORY:DATA_MEMORY_INSTANCE                                          ; MEMORY                ; work         ;
 ;    |PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|                           ; 0 (0)               ; 39 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE                                     ; PIPE_EX_MEM           ; work         ;
@@ -302,7 +303,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |ONE_BIT_REG:MEM_WRITE_INSTANCE|                          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE      ; ONE_BIT_REG           ; work         ;
 ;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE   ; ONE_BIT_REG           ; work         ;
 ;       |TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE|                      ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE|TWO_BIT_REG:WB_MEM_TO_REG_INSTANCE  ; TWO_BIT_REG           ; work         ;
-;    |PIPE_ID_EX:PIPE_ID_EX_INSTANCE|                             ; 0 (0)               ; 52 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE                                       ; PIPE_ID_EX            ; work         ;
+;    |PIPE_ID_EX:PIPE_ID_EX_INSTANCE|                             ; 0 (0)               ; 53 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE                                       ; PIPE_ID_EX            ; work         ;
 ;       |FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE|                      ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RD_INSTANCE    ; FOUR_BIT_REG          ; work         ;
 ;       |FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE|                      ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE    ; FOUR_BIT_REG          ; work         ;
 ;       |FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE|                      ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RT_INSTANCE    ; FOUR_BIT_REG          ; work         ;
@@ -311,6 +312,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE|                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|LOW_WRITE_REG16:SIGNAL_EXT_INSTANCE   ; LOW_WRITE_REG16       ; work         ;
 ;       |ONE_BIT_REG:EX_ALU_SRC_INSTANCE|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE       ; ONE_BIT_REG           ; work         ;
 ;       |ONE_BIT_REG:EX_REG_DST_INSTANCE|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_REG_DST_INSTANCE       ; ONE_BIT_REG           ; work         ;
+;       |ONE_BIT_REG:LCD_WR_INSTANCE|                             ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:LCD_WR_INSTANCE           ; ONE_BIT_REG           ; work         ;
 ;       |ONE_BIT_REG:MEM_READ_INSTANCE|                           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_READ_INSTANCE         ; ONE_BIT_REG           ; work         ;
 ;       |ONE_BIT_REG:MEM_WRITE_INSTANCE|                          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:MEM_WRITE_INSTANCE        ; ONE_BIT_REG           ; work         ;
 ;       |ONE_BIT_REG:WB_REG_WRITE_INSTANCE|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:WB_REG_WRITE_INSTANCE     ; ONE_BIT_REG           ; work         ;
@@ -374,10 +376,10 @@ https://fpgasoftware.intel.com/eula.
 ;       |FULLADDER:FADD8|                                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD8                      ; FULLADDER             ; work         ;
 ;       |FULLADDER:FADD9|                                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD9                      ; FULLADDER             ; work         ;
 ;    |TWO_DIGITS_7_SEGS:DOUBLE_SEGS_INSTANCE|                     ; 188 (188)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|TWO_DIGITS_7_SEGS:DOUBLE_SEGS_INSTANCE                               ; TWO_DIGITS_7_SEGS     ; work         ;
-;    |TWO_DIGITS_7_SEGS:SEGS1_INSTANCE|                           ; 174 (174)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|TWO_DIGITS_7_SEGS:SEGS1_INSTANCE                                     ; TWO_DIGITS_7_SEGS     ; work         ;
+;    |TWO_DIGITS_7_SEGS:SEGS1_INSTANCE|                           ; 173 (173)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|TWO_DIGITS_7_SEGS:SEGS1_INSTANCE                                     ; TWO_DIGITS_7_SEGS     ; work         ;
 ;    |TWO_DIGITS_7_SEGS:SEGS2_INSTANCE|                           ; 172 (172)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|TWO_DIGITS_7_SEGS:SEGS2_INSTANCE                                     ; TWO_DIGITS_7_SEGS     ; work         ;
-;    |TWO_DIGITS_7_SEGS:SEGS3_INSTANCE|                           ; 177 (177)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|TWO_DIGITS_7_SEGS:SEGS3_INSTANCE                                     ; TWO_DIGITS_7_SEGS     ; work         ;
-;    |UC_LCD:LCD_CONTROL_INSTANCE|                                ; 101 (101)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|UC_LCD:LCD_CONTROL_INSTANCE                                          ; UC_LCD                ; work         ;
+;    |TWO_DIGITS_7_SEGS:SEGS3_INSTANCE|                           ; 174 (174)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|TWO_DIGITS_7_SEGS:SEGS3_INSTANCE                                     ; TWO_DIGITS_7_SEGS     ; work         ;
+;    |UC_LCD:LCD_CONTROL_INSTANCE|                                ; 100 (100)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|UC_LCD:LCD_CONTROL_INSTANCE                                          ; UC_LCD                ; work         ;
 ;    |ULA:ALU_INSTANCE|                                           ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE                                                     ; ULA                   ; work         ;
 ;       |RIPPLE_CARRY:RIPPLE_DECLARATION|                         ; 33 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION                     ; RIPPLE_CARRY          ; work         ;
 ;          |FULLADDER:FADD10|                                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|ULA:ALU_INSTANCE|RIPPLE_CARRY:RIPPLE_DECLARATION|FULLADDER:FADD10    ; FULLADDER             ; work         ;
@@ -849,7 +851,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 636   ;
+; Total registers                              ; 637   ;
 ; Number of registers using Synchronous Clear  ; 52    ;
 ; Number of registers using Synchronous Load   ; 15    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -1044,6 +1046,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:LCD_WR_INSTANCE" ;
++------+-------+----------+--------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                      ;
++------+-------+----------+--------------------------------------------------------------+
+; r_in ; Input ; Info     ; Stuck at VCC                                                 ;
++------+-------+----------+--------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -1297,23 +1308,23 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 117                         ;
-; cycloneiii_ff         ; 636                         ;
+; cycloneiii_ff         ; 637                         ;
 ;     ENA               ; 432                         ;
 ;     ENA SLD           ; 15                          ;
 ;     SCLR              ; 52                          ;
-;     plain             ; 137                         ;
-; cycloneiii_lcell_comb ; 1905                        ;
+;     plain             ; 138                         ;
+; cycloneiii_lcell_comb ; 1900                        ;
 ;     arith             ; 81                          ;
 ;         2 data inputs ; 81                          ;
-;     normal            ; 1824                        ;
+;     normal            ; 1819                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 27                          ;
 ;         2 data inputs ; 102                         ;
-;         3 data inputs ; 441                         ;
-;         4 data inputs ; 1253                        ;
+;         3 data inputs ; 440                         ;
+;         4 data inputs ; 1249                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 20.00                       ;
-; Average LUT depth     ; 8.64                        ;
+; Average LUT depth     ; 8.66                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1322,7 +1333,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -1331,298 +1342,298 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 27 21:16:24 2025
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Fri Nov 28 16:41:32 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file contract_signal.vhd
-    Info (12022): Found design unit 1: CONTRACT_SIGNAL-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/CONTRACT_SIGNAL.vhd Line: 11
-    Info (12023): Found entity 1: CONTRACT_SIGNAL File: C:/Users/23012419/Documents/MIPS-CPUv1/CONTRACT_SIGNAL.vhd Line: 4
+    Info (12022): Found design unit 1: CONTRACT_SIGNAL-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONTRACT_SIGNAL.vhd Line: 11
+    Info (12023): Found entity 1: CONTRACT_SIGNAL File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONTRACT_SIGNAL.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file instruction_memory.vhd
-    Info (12022): Found design unit 1: INSTRUCTION_MEMORY-Behavioral File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 18
-    Info (12023): Found entity 1: INSTRUCTION_MEMORY File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 7
+    Info (12022): Found design unit 1: INSTRUCTION_MEMORY-Behavioral File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 18
+    Info (12023): Found entity 1: INSTRUCTION_MEMORY File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file two_bit_reg.vhd
-    Info (12022): Found design unit 1: TWO_BIT_REG-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/TWO_BIT_REG.vhd Line: 12
-    Info (12023): Found entity 1: TWO_BIT_REG File: C:/Users/23012419/Documents/MIPS-CPUv1/TWO_BIT_REG.vhd Line: 4
+    Info (12022): Found design unit 1: TWO_BIT_REG-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/TWO_BIT_REG.vhd Line: 12
+    Info (12023): Found entity 1: TWO_BIT_REG File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/TWO_BIT_REG.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sign_extend.vhd
-    Info (12022): Found design unit 1: SIGN_EXTEND-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/SIGN_EXTEND.vhd Line: 11
-    Info (12023): Found entity 1: SIGN_EXTEND File: C:/Users/23012419/Documents/MIPS-CPUv1/SIGN_EXTEND.vhd Line: 4
+    Info (12022): Found design unit 1: SIGN_EXTEND-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/SIGN_EXTEND.vhd Line: 11
+    Info (12023): Found entity 1: SIGN_EXTEND File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/SIGN_EXTEND.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file shift_left2.vhd
-    Info (12022): Found design unit 1: SHIFT_LEFT2-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/SHIFT_LEFT2.vhd Line: 11
-    Info (12023): Found entity 1: SHIFT_LEFT2 File: C:/Users/23012419/Documents/MIPS-CPUv1/SHIFT_LEFT2.vhd Line: 4
+    Info (12022): Found design unit 1: SHIFT_LEFT2-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/SHIFT_LEFT2.vhd Line: 11
+    Info (12023): Found entity 1: SHIFT_LEFT2 File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/SHIFT_LEFT2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file shift_left1.vhd
-    Info (12022): Found design unit 1: SHIFT_LEFT1-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/SHIFT_LEFT1.vhd Line: 11
-    Info (12023): Found entity 1: SHIFT_LEFT1 File: C:/Users/23012419/Documents/MIPS-CPUv1/SHIFT_LEFT1.vhd Line: 4
+    Info (12022): Found design unit 1: SHIFT_LEFT1-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/SHIFT_LEFT1.vhd Line: 11
+    Info (12023): Found entity 1: SHIFT_LEFT1 File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/SHIFT_LEFT1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
-    Info (12022): Found design unit 1: REG-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/REG.vhd Line: 12
-    Info (12023): Found entity 1: REG File: C:/Users/23012419/Documents/MIPS-CPUv1/REG.vhd Line: 4
+    Info (12022): Found design unit 1: REG-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/REG.vhd Line: 12
+    Info (12023): Found entity 1: REG File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/REG.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file pipe_mem_wb.vhd
-    Info (12022): Found design unit 1: PIPE_MEM_WB-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_MEM_WB.vhd Line: 33
-    Info (12023): Found entity 1: PIPE_MEM_WB File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_MEM_WB.vhd Line: 4
+    Info (12022): Found design unit 1: PIPE_MEM_WB-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_MEM_WB.vhd Line: 33
+    Info (12023): Found entity 1: PIPE_MEM_WB File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_MEM_WB.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file pipe_if_id.vhd
-    Info (12022): Found design unit 1: PIPE_IF_ID-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_IF_ID.vhd Line: 26
-    Info (12023): Found entity 1: PIPE_IF_ID File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_IF_ID.vhd Line: 5
+    Info (12022): Found design unit 1: PIPE_IF_ID-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_IF_ID.vhd Line: 26
+    Info (12023): Found entity 1: PIPE_IF_ID File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_IF_ID.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pipe_id_ex.vhd
-    Info (12022): Found design unit 1: PIPE_ID_EX-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_ID_EX.vhd Line: 61
-    Info (12023): Found entity 1: PIPE_ID_EX File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_ID_EX.vhd Line: 5
+    Info (12022): Found design unit 1: PIPE_ID_EX-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_ID_EX.vhd Line: 65
+    Info (12023): Found entity 1: PIPE_ID_EX File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_ID_EX.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pipe_ex_mem.vhd
-    Info (12022): Found design unit 1: PIPE_EX_MEM-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_EX_MEM.vhd Line: 45
-    Info (12023): Found entity 1: PIPE_EX_MEM File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_EX_MEM.vhd Line: 5
+    Info (12022): Found design unit 1: PIPE_EX_MEM-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_EX_MEM.vhd Line: 45
+    Info (12023): Found entity 1: PIPE_EX_MEM File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_EX_MEM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file one_bit_reg.vhd
-    Info (12022): Found design unit 1: ONE_BIT_REG-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/ONE_BIT_REG.vhd Line: 15
-    Info (12023): Found entity 1: ONE_BIT_REG File: C:/Users/23012419/Documents/MIPS-CPUv1/ONE_BIT_REG.vhd Line: 5
+    Info (12022): Found design unit 1: ONE_BIT_REG-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/ONE_BIT_REG.vhd Line: 15
+    Info (12023): Found entity 1: ONE_BIT_REG File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/ONE_BIT_REG.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
-    Info (12022): Found design unit 1: MEMORY-Behavioral File: C:/Users/23012419/Documents/MIPS-CPUv1/MEMORY.vhd Line: 18
-    Info (12023): Found entity 1: MEMORY File: C:/Users/23012419/Documents/MIPS-CPUv1/MEMORY.vhd Line: 7
+    Info (12022): Found design unit 1: MEMORY-Behavioral File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/MEMORY.vhd Line: 18
+    Info (12023): Found entity 1: MEMORY File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/MEMORY.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file hazard_detection_unit.vhd
-    Info (12022): Found design unit 1: HAZARD_DETECTION_UNIT-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/HAZARD_DETECTION_UNIT.vhd Line: 26
-    Info (12023): Found entity 1: HAZARD_DETECTION_UNIT File: C:/Users/23012419/Documents/MIPS-CPUv1/HAZARD_DETECTION_UNIT.vhd Line: 5
+    Info (12022): Found design unit 1: HAZARD_DETECTION_UNIT-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/HAZARD_DETECTION_UNIT.vhd Line: 26
+    Info (12023): Found entity 1: HAZARD_DETECTION_UNIT File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/HAZARD_DETECTION_UNIT.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file four_bit_reg.vhd
-    Info (12022): Found design unit 1: FOUR_BIT_REG-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/FOUR_BIT_REG.vhd Line: 13
-    Info (12023): Found entity 1: FOUR_BIT_REG File: C:/Users/23012419/Documents/MIPS-CPUv1/FOUR_BIT_REG.vhd Line: 5
+    Info (12022): Found design unit 1: FOUR_BIT_REG-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/FOUR_BIT_REG.vhd Line: 13
+    Info (12023): Found entity 1: FOUR_BIT_REG File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/FOUR_BIT_REG.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file forwarding_unit.vhd
-    Info (12022): Found design unit 1: FORWARDING_UNIT-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/FORWARDING_UNIT.vhd Line: 25
-    Info (12023): Found entity 1: FORWARDING_UNIT File: C:/Users/23012419/Documents/MIPS-CPUv1/FORWARDING_UNIT.vhd Line: 5
+    Info (12022): Found design unit 1: FORWARDING_UNIT-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/FORWARDING_UNIT.vhd Line: 25
+    Info (12023): Found entity 1: FORWARDING_UNIT File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/FORWARDING_UNIT.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file constants_package.vhd
-    Info (12022): Found design unit 1: CONSTANTS_PACKAGE File: C:/Users/23012419/Documents/MIPS-CPUv1/CONSTANTS_PACKAGE.vhd Line: 4
+    Info (12022): Found design unit 1: CONSTANTS_PACKAGE File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONSTANTS_PACKAGE.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffer_tri.vhd
-    Info (12022): Found design unit 1: BUFFER_TRI-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 12
-    Info (12023): Found entity 1: BUFFER_TRI File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 4
+    Info (12022): Found design unit 1: BUFFER_TRI-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 12
+    Info (12023): Found entity 1: BUFFER_TRI File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file alu_control.vhd
-    Info (12022): Found design unit 1: ALU_CONTROL-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/ALU_CONTROL.vhd Line: 13
-    Info (12023): Found entity 1: ALU_CONTROL File: C:/Users/23012419/Documents/MIPS-CPUv1/ALU_CONTROL.vhd Line: 5
+    Info (12022): Found design unit 1: ALU_CONTROL-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/ALU_CONTROL.vhd Line: 13
+    Info (12023): Found entity 1: ALU_CONTROL File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/ALU_CONTROL.vhd Line: 5
 Warning (12019): Can't analyze file -- file AND_COMPONENT.vhd is missing
 Warning (12019): Can't analyze file -- file OR_COMPONENT.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file ripple_carry.vhd
-    Info (12022): Found design unit 1: RIPPLE_CARRY-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/RIPPLE_CARRY.vhd Line: 16
-    Info (12023): Found entity 1: RIPPLE_CARRY File: C:/Users/23012419/Documents/MIPS-CPUv1/RIPPLE_CARRY.vhd Line: 5
+    Info (12022): Found design unit 1: RIPPLE_CARRY-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/RIPPLE_CARRY.vhd Line: 16
+    Info (12023): Found entity 1: RIPPLE_CARRY File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/RIPPLE_CARRY.vhd Line: 5
 Warning (12019): Can't analyze file -- file MULTI_COMPONENT.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file comparator.vhd
-    Info (12022): Found design unit 1: COMPARATOR16-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/COMPARATOR.vhd Line: 11
-    Info (12023): Found entity 1: COMPARATOR16 File: C:/Users/23012419/Documents/MIPS-CPUv1/COMPARATOR.vhd Line: 4
+    Info (12022): Found design unit 1: COMPARATOR16-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/COMPARATOR.vhd Line: 11
+    Info (12023): Found entity 1: COMPARATOR16 File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/COMPARATOR.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/ULA.vhd Line: 14
-    Info (12023): Found entity 1: ULA File: C:/Users/23012419/Documents/MIPS-CPUv1/ULA.vhd Line: 5
+    Info (12022): Found design unit 1: ULA-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/ULA.vhd Line: 14
+    Info (12023): Found entity 1: ULA File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/ULA.vhd Line: 5
 Warning (12019): Can't analyze file -- file NOT_COMPONENT.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
-    Info (12022): Found design unit 1: FULLADDER-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/FULLADDER.vhd Line: 12
-    Info (12023): Found entity 1: FULLADDER File: C:/Users/23012419/Documents/MIPS-CPUv1/FULLADDER.vhd Line: 4
+    Info (12022): Found design unit 1: FULLADDER-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/FULLADDER.vhd Line: 12
+    Info (12023): Found entity 1: FULLADDER File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/FULLADDER.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/segs_3_translator.vhd
-    Info (12022): Found design unit 1: SEGS_3_TRANSLATOR-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/output_files/SEGS_3_TRANSLATOR.vhd Line: 12
-    Info (12023): Found entity 1: SEGS_3_TRANSLATOR File: C:/Users/23012419/Documents/MIPS-CPUv1/output_files/SEGS_3_TRANSLATOR.vhd Line: 5
+    Info (12022): Found design unit 1: SEGS_3_TRANSLATOR-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/output_files/SEGS_3_TRANSLATOR.vhd Line: 12
+    Info (12023): Found entity 1: SEGS_3_TRANSLATOR File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/output_files/SEGS_3_TRANSLATOR.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/segs_4_translator.vhd
-    Info (12022): Found design unit 1: SEGS_4_TRANSLATOR-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/output_files/SEGS_4_TRANSLATOR.vhd Line: 12
-    Info (12023): Found entity 1: SEGS_4_TRANSLATOR File: C:/Users/23012419/Documents/MIPS-CPUv1/output_files/SEGS_4_TRANSLATOR.vhd Line: 5
+    Info (12022): Found design unit 1: SEGS_4_TRANSLATOR-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/output_files/SEGS_4_TRANSLATOR.vhd Line: 12
+    Info (12023): Found entity 1: SEGS_4_TRANSLATOR File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/output_files/SEGS_4_TRANSLATOR.vhd Line: 5
 Warning (12019): Can't analyze file -- file output_files/BUFFER_TRI.vhd is missing
 Warning (12019): Can't analyze file -- file output_files/REG.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
-    Info (12022): Found design unit 1: CPU-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 24
-    Info (12023): Found entity 1: CPU File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 5
+    Info (12022): Found design unit 1: CPU-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 24
+    Info (12023): Found entity 1: CPU File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file cpu_package.vhd
-    Info (12022): Found design unit 1: CPU_PACKAGE File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU_PACKAGE.vhd Line: 6
+    Info (12022): Found design unit 1: CPU_PACKAGE File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU_PACKAGE.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file reg_bank.vhd
-    Info (12022): Found design unit 1: REG_BANK-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/REG_BANK.vhd Line: 26
-    Info (12023): Found entity 1: REG_BANK File: C:/Users/23012419/Documents/MIPS-CPUv1/REG_BANK.vhd Line: 5
+    Info (12022): Found design unit 1: REG_BANK-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/REG_BANK.vhd Line: 26
+    Info (12023): Found entity 1: REG_BANK File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/REG_BANK.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file control_unit.vhd
-    Info (12022): Found design unit 1: CONTROL_UNIT-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/CONTROL_UNIT.vhd Line: 32
-    Info (12023): Found entity 1: CONTROL_UNIT File: C:/Users/23012419/Documents/MIPS-CPUv1/CONTROL_UNIT.vhd Line: 4
+    Info (12022): Found design unit 1: CONTROL_UNIT-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONTROL_UNIT.vhd Line: 32
+    Info (12023): Found entity 1: CONTROL_UNIT File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONTROL_UNIT.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file low_write_reg16.vhd
-    Info (12022): Found design unit 1: LOW_WRITE_REG16-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/LOW_WRITE_REG16.vhd Line: 12
-    Info (12023): Found entity 1: LOW_WRITE_REG16 File: C:/Users/23012419/Documents/MIPS-CPUv1/LOW_WRITE_REG16.vhd Line: 4
+    Info (12022): Found design unit 1: LOW_WRITE_REG16-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/LOW_WRITE_REG16.vhd Line: 12
+    Info (12023): Found entity 1: LOW_WRITE_REG16 File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/LOW_WRITE_REG16.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file two_digit_first_decod.vhd
-    Info (12022): Found design unit 1: TWO_DIGIT_FIRST_DECOD-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/TWO_DIGIT_FIRST_DECOD.vhd Line: 12
-    Info (12023): Found entity 1: TWO_DIGIT_FIRST_DECOD File: C:/Users/23012419/Documents/MIPS-CPUv1/TWO_DIGIT_FIRST_DECOD.vhd Line: 5
+    Info (12022): Found design unit 1: TWO_DIGIT_FIRST_DECOD-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/TWO_DIGIT_FIRST_DECOD.vhd Line: 12
+    Info (12023): Found entity 1: TWO_DIGIT_FIRST_DECOD File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/TWO_DIGIT_FIRST_DECOD.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file two_digit_second_decod.vhd
-    Info (12022): Found design unit 1: TWO_DIGIT_SECOND_DECOD-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/TWO_DIGIT_SECOND_DECOD.vhd Line: 12
-    Info (12023): Found entity 1: TWO_DIGIT_SECOND_DECOD File: C:/Users/23012419/Documents/MIPS-CPUv1/TWO_DIGIT_SECOND_DECOD.vhd Line: 5
+    Info (12022): Found design unit 1: TWO_DIGIT_SECOND_DECOD-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/TWO_DIGIT_SECOND_DECOD.vhd Line: 12
+    Info (12023): Found entity 1: TWO_DIGIT_SECOND_DECOD File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/TWO_DIGIT_SECOND_DECOD.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file two_digits_7_segs.vhd
-    Info (12022): Found design unit 1: TWO_DIGITS_7_SEGS-Behavior File: C:/Users/23012419/Documents/MIPS-CPUv1/TWO_DIGITS_7_SEGS.vhd Line: 14
-    Info (12023): Found entity 1: TWO_DIGITS_7_SEGS File: C:/Users/23012419/Documents/MIPS-CPUv1/TWO_DIGITS_7_SEGS.vhd Line: 5
+    Info (12022): Found design unit 1: TWO_DIGITS_7_SEGS-Behavior File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/TWO_DIGITS_7_SEGS.vhd Line: 14
+    Info (12023): Found entity 1: TWO_DIGITS_7_SEGS File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/TWO_DIGITS_7_SEGS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file uc_lcd.vhd
-    Info (12022): Found design unit 1: UC_LCD-bhv File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 21
-    Info (12023): Found entity 1: UC_LCD File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 5
+    Info (12022): Found design unit 1: UC_LCD-bhv File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 21
+    Info (12023): Found entity 1: UC_LCD File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 5
 Warning (12019): Can't analyze file -- file output_files/CONTRACT_SIGNAL.vhd is missing
 Warning (12019): Can't analyze file -- file UC.vhd is missing
 Warning (12019): Can't analyze file -- file output_files/UC_CPU.vhd is missing
 Warning (12019): Can't analyze file -- file output_files/UC_LCD.vhd is missing
 Info (12127): Elaborating entity "CPU" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(38): object "HEX2_AUX" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 38
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(38): object "HEX3_AUX" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 38
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(38): object "HEX4_AUX" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 38
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(38): object "HEX5_AUX" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 38
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(44): object "IF_PC_ADD_OVERFLOW" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 44
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(44): object "IF_PC_ADD_COUT" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 44
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(57): object "ID_RIPPLE_BRANCH_OVERFLOW" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 57
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(57): object "ID_RIPPLE_BRANCH_COUT" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 57
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(72): object "ID_ID_FLUSH" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 72
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(72): object "ID_EX_FLUSH" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 72
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(72): object "ID_WB_FLUSH" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 72
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(78): object "EX_NEXT_PC" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 78
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(89): object "EX_ALU_ZERO" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 89
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(89): object "EX_ALU_OVERFLOW" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 89
-Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(89): object "EX_ALU_COUT" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 89
-Warning (10873): Using initial value X (don't care) for net "LEDR[1..0]" at CPU.vhd(14) File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 14
-Warning (10873): Using initial value X (don't care) for net "LEDG[7..3]" at CPU.vhd(15) File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 15
-Info (12128): Elaborating entity "UC_LCD" for hierarchy "UC_LCD:LCD_CONTROL_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 120
-Warning (10036): Verilog HDL or VHDL warning at UC_LCD.vhd(42): object "aux" assigned a value but never read File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 42
-Warning (10492): VHDL Process Statement warning at UC_LCD.vhd(97): signal "conteiro" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 97
-Warning (10492): VHDL Process Statement warning at UC_LCD.vhd(113): signal "RS_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 113
-Warning (10492): VHDL Process Statement warning at UC_LCD.vhd(124): signal "RS_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 124
-Warning (10631): VHDL Process Statement warning at UC_LCD.vhd(93): inferring latch(es) for signal or variable "LCD_DATA", which holds its previous value in one or more paths through the process File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 93
-Info (10041): Inferred latch for "LCD_DATA[0]" at UC_LCD.vhd(93) File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 93
-Info (10041): Inferred latch for "LCD_DATA[1]" at UC_LCD.vhd(93) File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 93
-Info (10041): Inferred latch for "LCD_DATA[2]" at UC_LCD.vhd(93) File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 93
-Info (10041): Inferred latch for "LCD_DATA[3]" at UC_LCD.vhd(93) File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 93
-Info (10041): Inferred latch for "LCD_DATA[4]" at UC_LCD.vhd(93) File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 93
-Info (10041): Inferred latch for "LCD_DATA[5]" at UC_LCD.vhd(93) File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 93
-Info (10041): Inferred latch for "LCD_DATA[6]" at UC_LCD.vhd(93) File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 93
-Info (10041): Inferred latch for "LCD_DATA[7]" at UC_LCD.vhd(93) File: C:/Users/23012419/Documents/MIPS-CPUv1/UC_LCD.vhd Line: 93
-Info (12128): Elaborating entity "CONTRACT_SIGNAL" for hierarchy "CONTRACT_SIGNAL:CONT_SIG_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 132
-Info (12128): Elaborating entity "REG" for hierarchy "REG:IF_PC_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 146
-Info (12128): Elaborating entity "RIPPLE_CARRY" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 154
-Info (12128): Elaborating entity "FULLADDER" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD1" File: C:/Users/23012419/Documents/MIPS-CPUv1/RIPPLE_CARRY.vhd Line: 40
-Info (12128): Elaborating entity "INSTRUCTION_MEMORY" for hierarchy "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 164
-Warning (10631): VHDL Process Statement warning at INSTRUCTION_MEMORY.vhd(72): inferring latch(es) for signal or variable "DATA", which holds its previous value in one or more paths through the process File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[0]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[1]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[2]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[3]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[4]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[5]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[6]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[7]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[8]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[9]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[10]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[11]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[12]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[13]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[14]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (10041): Inferred latch for "DATA[15]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Info (12128): Elaborating entity "BUFFER_TRI" for hierarchy "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 70
-Info (12128): Elaborating entity "PIPE_IF_ID" for hierarchy "PIPE_IF_ID:PIPE_IF_ID_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 173
-Info (12128): Elaborating entity "LOW_WRITE_REG16" for hierarchy "PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_IF_ID.vhd Line: 35
-Info (12128): Elaborating entity "CONTROL_UNIT" for hierarchy "CONTROL_UNIT:CONTROL_UNIT_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 198
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(11): used implicit default value for signal "IF_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/23012419/Documents/MIPS-CPUv1/CONTROL_UNIT.vhd Line: 11
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(12): used implicit default value for signal "ID_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/23012419/Documents/MIPS-CPUv1/CONTROL_UNIT.vhd Line: 12
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(13): used implicit default value for signal "EX_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/23012419/Documents/MIPS-CPUv1/CONTROL_UNIT.vhd Line: 13
-Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(14): used implicit default value for signal "WB_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/23012419/Documents/MIPS-CPUv1/CONTROL_UNIT.vhd Line: 14
-Info (12128): Elaborating entity "HAZARD_DETECTION_UNIT" for hierarchy "HAZARD_DETECTION_UNIT:IF_ID_HAZARD_DETECTION_UNIT_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 224
-Info (12128): Elaborating entity "REG_BANK" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 241
-Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:IF_ID_SIGN_EXTEND_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 260
-Info (12128): Elaborating entity "SHIFT_LEFT2" for hierarchy "SHIFT_LEFT2:IF_ID_SHIFT_LEFT_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 265
-Info (12128): Elaborating entity "COMPARATOR16" for hierarchy "COMPARATOR16:IF_ID_COMPARATOR_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 270
-Info (12128): Elaborating entity "SHIFT_LEFT1" for hierarchy "SHIFT_LEFT1:IF_ID_SHIFT_LEFT1_JUMP_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 286
-Info (12128): Elaborating entity "PIPE_ID_EX" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 326
-Info (12128): Elaborating entity "FOUR_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_ID_EX.vhd Line: 68
-Info (12128): Elaborating entity "ONE_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_ID_EX.vhd Line: 77
-Info (12128): Elaborating entity "TWO_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/PIPE_ID_EX.vhd Line: 79
-Info (12128): Elaborating entity "ALU_CONTROL" for hierarchy "ALU_CONTROL:ALU_CONTROL_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 373
-Info (12128): Elaborating entity "FORWARDING_UNIT" for hierarchy "FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 379
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ALU_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 412
-Info (12128): Elaborating entity "PIPE_EX_MEM" for hierarchy "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 422
-Info (12128): Elaborating entity "MEMORY" for hierarchy "MEMORY:DATA_MEMORY_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 463
-Warning (10492): VHDL Process Statement warning at MEMORY.vhd(35): signal "mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/Documents/MIPS-CPUv1/MEMORY.vhd Line: 35
-Warning (10492): VHDL Process Statement warning at MEMORY.vhd(35): signal "ADDRESS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/Documents/MIPS-CPUv1/MEMORY.vhd Line: 35
-Warning (10492): VHDL Process Statement warning at MEMORY.vhd(36): signal "mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/Documents/MIPS-CPUv1/MEMORY.vhd Line: 36
-Warning (10492): VHDL Process Statement warning at MEMORY.vhd(36): signal "ADDRESS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/23012419/Documents/MIPS-CPUv1/MEMORY.vhd Line: 36
-Info (12128): Elaborating entity "PIPE_MEM_WB" for hierarchy "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 472
-Info (12128): Elaborating entity "TWO_DIGITS_7_SEGS" for hierarchy "TWO_DIGITS_7_SEGS:DOUBLE_SEGS_INSTANCE" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 512
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[2]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[1]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[0]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[4]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[5]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[6]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[7]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[8]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[9]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[10]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[11]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[12]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[13]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[14]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[15]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
-Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[3]" is permanently enabled File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(38): object "HEX2_AUX" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 38
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(38): object "HEX3_AUX" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 38
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(38): object "HEX4_AUX" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 38
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(38): object "HEX5_AUX" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 38
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(44): object "IF_PC_ADD_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 44
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(44): object "IF_PC_ADD_COUT" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 44
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(57): object "ID_RIPPLE_BRANCH_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 57
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(57): object "ID_RIPPLE_BRANCH_COUT" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 57
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(72): object "ID_ID_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 72
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(72): object "ID_EX_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 72
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(72): object "ID_WB_FLUSH" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 72
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(78): object "EX_NEXT_PC" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 78
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(89): object "EX_ALU_ZERO" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 89
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(89): object "EX_ALU_OVERFLOW" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 89
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(89): object "EX_ALU_COUT" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 89
+Warning (10873): Using initial value X (don't care) for net "LEDR[1..0]" at CPU.vhd(14) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 14
+Warning (10873): Using initial value X (don't care) for net "LEDG[7..3]" at CPU.vhd(15) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 15
+Info (12128): Elaborating entity "UC_LCD" for hierarchy "UC_LCD:LCD_CONTROL_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 120
+Warning (10036): Verilog HDL or VHDL warning at UC_LCD.vhd(42): object "aux" assigned a value but never read File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at UC_LCD.vhd(97): signal "conteiro" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 97
+Warning (10492): VHDL Process Statement warning at UC_LCD.vhd(113): signal "RS_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 113
+Warning (10492): VHDL Process Statement warning at UC_LCD.vhd(124): signal "RS_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 124
+Warning (10631): VHDL Process Statement warning at UC_LCD.vhd(93): inferring latch(es) for signal or variable "LCD_DATA", which holds its previous value in one or more paths through the process File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 93
+Info (10041): Inferred latch for "LCD_DATA[0]" at UC_LCD.vhd(93) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 93
+Info (10041): Inferred latch for "LCD_DATA[1]" at UC_LCD.vhd(93) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 93
+Info (10041): Inferred latch for "LCD_DATA[2]" at UC_LCD.vhd(93) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 93
+Info (10041): Inferred latch for "LCD_DATA[3]" at UC_LCD.vhd(93) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 93
+Info (10041): Inferred latch for "LCD_DATA[4]" at UC_LCD.vhd(93) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 93
+Info (10041): Inferred latch for "LCD_DATA[5]" at UC_LCD.vhd(93) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 93
+Info (10041): Inferred latch for "LCD_DATA[6]" at UC_LCD.vhd(93) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 93
+Info (10041): Inferred latch for "LCD_DATA[7]" at UC_LCD.vhd(93) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/UC_LCD.vhd Line: 93
+Info (12128): Elaborating entity "CONTRACT_SIGNAL" for hierarchy "CONTRACT_SIGNAL:CONT_SIG_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 132
+Info (12128): Elaborating entity "REG" for hierarchy "REG:IF_PC_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 146
+Info (12128): Elaborating entity "RIPPLE_CARRY" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 154
+Info (12128): Elaborating entity "FULLADDER" for hierarchy "RIPPLE_CARRY:IF_PC_ADD_INSTANCE|FULLADDER:FADD1" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/RIPPLE_CARRY.vhd Line: 40
+Info (12128): Elaborating entity "INSTRUCTION_MEMORY" for hierarchy "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 164
+Warning (10631): VHDL Process Statement warning at INSTRUCTION_MEMORY.vhd(72): inferring latch(es) for signal or variable "DATA", which holds its previous value in one or more paths through the process File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[0]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[1]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[2]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[3]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[4]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[5]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[6]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[7]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[8]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[9]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[10]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[11]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[12]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[13]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[14]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (10041): Inferred latch for "DATA[15]" at INSTRUCTION_MEMORY.vhd(72) File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Info (12128): Elaborating entity "BUFFER_TRI" for hierarchy "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 70
+Info (12128): Elaborating entity "PIPE_IF_ID" for hierarchy "PIPE_IF_ID:PIPE_IF_ID_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 173
+Info (12128): Elaborating entity "LOW_WRITE_REG16" for hierarchy "PIPE_IF_ID:PIPE_IF_ID_INSTANCE|LOW_WRITE_REG16:PC_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_IF_ID.vhd Line: 35
+Info (12128): Elaborating entity "CONTROL_UNIT" for hierarchy "CONTROL_UNIT:CONTROL_UNIT_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 198
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(11): used implicit default value for signal "IF_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONTROL_UNIT.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(12): used implicit default value for signal "ID_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONTROL_UNIT.vhd Line: 12
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(13): used implicit default value for signal "EX_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONTROL_UNIT.vhd Line: 13
+Warning (10541): VHDL Signal Declaration warning at CONTROL_UNIT.vhd(14): used implicit default value for signal "WB_FLUSH" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CONTROL_UNIT.vhd Line: 14
+Info (12128): Elaborating entity "HAZARD_DETECTION_UNIT" for hierarchy "HAZARD_DETECTION_UNIT:IF_ID_HAZARD_DETECTION_UNIT_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 224
+Info (12128): Elaborating entity "REG_BANK" for hierarchy "REG_BANK:IF_ID_REG_BANK_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 241
+Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:IF_ID_SIGN_EXTEND_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 260
+Info (12128): Elaborating entity "SHIFT_LEFT2" for hierarchy "SHIFT_LEFT2:IF_ID_SHIFT_LEFT_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 265
+Info (12128): Elaborating entity "COMPARATOR16" for hierarchy "COMPARATOR16:IF_ID_COMPARATOR_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 270
+Info (12128): Elaborating entity "SHIFT_LEFT1" for hierarchy "SHIFT_LEFT1:IF_ID_SHIFT_LEFT1_JUMP_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 286
+Info (12128): Elaborating entity "PIPE_ID_EX" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 326
+Info (12128): Elaborating entity "FOUR_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|FOUR_BIT_REG:IF_ID_REG_RS_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_ID_EX.vhd Line: 72
+Info (12128): Elaborating entity "ONE_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|ONE_BIT_REG:EX_ALU_SRC_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_ID_EX.vhd Line: 81
+Info (12128): Elaborating entity "TWO_BIT_REG" for hierarchy "PIPE_ID_EX:PIPE_ID_EX_INSTANCE|TWO_BIT_REG:EX_ALU_OP_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/PIPE_ID_EX.vhd Line: 83
+Info (12128): Elaborating entity "ALU_CONTROL" for hierarchy "ALU_CONTROL:ALU_CONTROL_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 377
+Info (12128): Elaborating entity "FORWARDING_UNIT" for hierarchy "FORWARDING_UNIT:FORWARDING_UNIT_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 383
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ALU_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 416
+Info (12128): Elaborating entity "PIPE_EX_MEM" for hierarchy "PIPE_EX_MEM:PIPE_EX_MEM_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 426
+Info (12128): Elaborating entity "MEMORY" for hierarchy "MEMORY:DATA_MEMORY_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 467
+Warning (10492): VHDL Process Statement warning at MEMORY.vhd(35): signal "mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/MEMORY.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at MEMORY.vhd(35): signal "ADDRESS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/MEMORY.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at MEMORY.vhd(36): signal "mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/MEMORY.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at MEMORY.vhd(36): signal "ADDRESS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/MEMORY.vhd Line: 36
+Info (12128): Elaborating entity "PIPE_MEM_WB" for hierarchy "PIPE_MEM_WB:PIPE_MEM_WB_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 476
+Info (12128): Elaborating entity "TWO_DIGITS_7_SEGS" for hierarchy "TWO_DIGITS_7_SEGS:DOUBLE_SEGS_INSTANCE" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 517
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[2]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[1]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[0]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[4]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[5]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[6]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[7]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[8]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[9]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[10]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[11]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[12]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[13]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[14]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[15]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
+Warning (14026): LATCH primitive "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|DATA[3]" is permanently enabled File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 72
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[0]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[1]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[2]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[3]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[4]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[5]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[6]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[7]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[8]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[9]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[10]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[11]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[12]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[13]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[14]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[15]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[0]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[1]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[2]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[3]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[4]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[5]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[6]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[7]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[8]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[9]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[10]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[11]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[12]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[13]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[14]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[15]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[0]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[1]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[2]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[3]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[4]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[5]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[6]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[7]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[8]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[9]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[10]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[11]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[12]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[13]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[14]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[15]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[0]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[1]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[2]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[3]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[4]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[5]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[6]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[7]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[8]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[9]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[10]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[11]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[12]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[13]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[14]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[15]" feeding internal logic into a wire File: C:/Users/23012419/Documents/MIPS-CPUv1/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[0]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[1]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[2]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[3]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[4]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[5]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[6]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[7]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[8]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[9]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[10]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[11]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[12]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[13]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[14]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "MEMORY:DATA_MEMORY_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[15]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[0]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[1]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[2]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[3]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[4]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[5]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[6]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[7]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[8]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[9]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[10]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[11]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[12]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[13]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[14]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER2_INSTANCE|SAIDA[15]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[0]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[1]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[2]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[3]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[4]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[5]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[6]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[7]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[8]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[9]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[10]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[11]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[12]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[13]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[14]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "REG_BANK:IF_ID_REG_BANK_INSTANCE|BUFFER_TRI:BUFFER1_INSTANCE|SAIDA[15]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[0]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[1]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[2]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[3]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[4]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[5]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[6]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[7]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[8]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[9]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[10]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[11]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[12]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[13]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[14]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|BUFFER_TRI:BUFFER_INSTANCE|SAIDA[15]" feeding internal logic into a wire File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/BUFFER_TRI.vhd Line: 8
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem" is uninferred due to inappropriate RAM size File: C:/Users/23012419/Documents/MIPS-CPUv1/INSTRUCTION_MEMORY.vhd Line: 22
-Warning (113028): 22 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/23012419/Documents/MIPS-CPUv1/db/ULA.ram0_INSTRUCTION_MEMORY_83394122.hdl.mif Line: 1
-    Warning (113027): Addresses ranging from 42 to 63 are not initialized File: C:/Users/23012419/Documents/MIPS-CPUv1/db/ULA.ram0_INSTRUCTION_MEMORY_83394122.hdl.mif Line: 1
+    Info (276004): RAM logic "INSTRUCTION_MEMORY:INSTRUCTION_MEMORY_INSTANCE|mem" is uninferred due to inappropriate RAM size File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/INSTRUCTION_MEMORY.vhd Line: 22
+Warning (113028): 22 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/db/ULA.ram0_INSTRUCTION_MEMORY_83394122.hdl.mif Line: 1
+    Warning (113027): Addresses ranging from 42 to 63 are not initialized File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/db/ULA.ram0_INSTRUCTION_MEMORY_83394122.hdl.mif Line: 1
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 14
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 14
-    Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 15
-    Warning (13410): Pin "LEDG[7]" is stuck at GND File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 15
-    Warning (13410): Pin "LCD_RW" is stuck at GND File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 18
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 14
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 14
+    Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 15
+    Warning (13410): Pin "LEDG[7]" is stuck at GND File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 15
+    Warning (13410): Pin "LCD_RW" is stuck at GND File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 11 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 407 assignments for entity "DE2_115" -- entity does not exist in design
@@ -2036,36 +2047,36 @@ Warning (20013): Ignored 407 assignments for entity "DE2_115" -- entity does not
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 22 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 7
-    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 8
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 8
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 8
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/23012419/Documents/MIPS-CPUv1/CPU.vhd Line: 8
-Info (21057): Implemented 2330 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 7
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 8
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 8
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 8
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/guixi/repositories/MIPS-16Bit-CPU/CPU.vhd Line: 8
+Info (21057): Implemented 2325 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 94 output pins
-    Info (21061): Implemented 2213 logic cells
+    Info (21061): Implemented 2208 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 565 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Thu Nov 27 21:16:52 2025
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:46
+    Info: Peak virtual memory: 4861 megabytes
+    Info: Processing ended: Fri Nov 28 16:41:52 2025
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:31
 
 
