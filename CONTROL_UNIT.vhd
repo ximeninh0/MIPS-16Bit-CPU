@@ -6,6 +6,8 @@ ENTITY CONTROL_UNIT IS
         INSTRUCTION : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
         REG_EQUAL : IN STD_LOGIC; --
 
+		  WRITE_SIGNAL : OUT STD_LOGIC;
+		  
         IF_FLUSH : OUT STD_LOGIC; --
         ID_FLUSH : OUT STD_LOGIC; --
         EX_FLUSH : OUT STD_LOGIC; -- 
@@ -22,9 +24,8 @@ ENTITY CONTROL_UNIT IS
 
         -- Sinais de controle WB
         MEM_TO_REG : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-        REG_WRITE : OUT STD_LOGIC;
+        REG_WRITE : OUT STD_LOGIC
 		  
-		CLOCK : IN STD_LOGIC
     );
 END CONTROL_UNIT;
 
@@ -121,5 +122,9 @@ BEGIN
 						'1' WHEN "110", -- LI - LOAD INTEGER
 						'0' WHEN "111", -- EXTRA
 						'0' WHEN OTHERS;
-
+						
+	WITH OPCODE SELECT
+		WRITE_SIGNAL <= '1' WHEN "111",
+							 '0' WHEN OTHERS;
+ 
 END Behavior;

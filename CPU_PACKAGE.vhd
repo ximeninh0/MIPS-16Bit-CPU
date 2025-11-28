@@ -13,24 +13,29 @@ PACKAGE CPU_PACKAGE IS
 			);
 	END COMPONENT;
 	
-	COMPONENT UC_CPU IS 
-		port(
-			OPCODE : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-			Clock : in std_logic;
-			RESET : IN STD_LOGIC;
-			En : IN STD_LOGIC;
-			R_in : OUT STD_LOGIC_VECTOR(1 TO 3);
-			R_out : OUT STD_LOGIC_VECTOR(1 TO 3);
-			G_in : OUT STD_LOGIC;
-			G_out : OUT STD_LOGIC;
-			A_in : OUT STD_LOGIC;
-			B_in : OUT STD_LOGIC;
-			DONE : OUT STD_LOGIC;
-			EXTERN : OUT STD_LOGIC;
-			OP_ULA: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
-		);
+	COMPONENT UC_LCD is
+	  port(
+		 --Nas entradas ficam todos os sinais que serão observados pela Unidade de controle do display LCD
+		 RS_DATA : IN STD_LOGIC_VECTOR(7 DOWNTO 0);	
+		 WRITE_SIGNAL : STD_LOGIC;
+		 CLOCK : IN STD_LOGIC;
+		 CLOCK_CPU: IN STD_LOGIC;
+
+		 
+		 -- Nas saídas ficam os sinais de manipulação que controlam o fluxo de dados para o display
+		 LCD_DATA : out STD_LOGIC_VECTOR(7 DOWNTO 0); 	-- Palavra de 8-bits para comunicação com o LCD
+		 LCD_RW : OUT STD_LOGIC;								-- Sinal para indicar se é leitura ou escrita
+		 LCD_EN : OUT STD_LOGIC;								-- Sinal de enable que envia o pulso de comunicação
+		 LCD_RS: OUT STD_LOGIC									-- Sinal que indica se é dado ou comando
+	  );
+	end COMPONENT;
+
+	COMPONENT CONTRACT_SIGNAL IS 
+		 PORT (
+			  IN_SIGNAL : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+			  OUT_SIGNAL : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+		 );
 	END COMPONENT;
-	
 	
 	COMPONENT TWO_DIGITS_7_SEGS IS 
 			port(
@@ -38,18 +43,6 @@ PACKAGE CPU_PACKAGE IS
 				TRANSLATED_FIRST_DIGIT: OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
 				TRANSLATED_SECOND_DIGIT: OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
 			);
-	END COMPONENT;
-
-	COMPONENT UC_LCD IS 
-		  port(
-			OPCODE : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-			 CLOCK : IN STD_LOGIC;
-			 EQU,GRT,LST,ENABLE : IN STD_LOGIC;
-			 LCD_DATA : out STD_LOGIC_VECTOR(7 DOWNTO 0);
-			 LCD_RW : OUT STD_LOGIC;
-			 LCD_EN : OUT STD_LOGIC;
-			 LCD_RS: OUT STD_LOGIC
-		  );
 	END COMPONENT;
 	
 	COMPONENT AND_COMPONENT IS 
@@ -390,11 +383,18 @@ END COMPONENT;
 
 COMPONENT HAZARD_DETECTION_UNIT IS 
     port(
+			OPCODE : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 --			INSTRUCTION : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 			ID_EX_MEM_READ : IN STD_LOGIC;
 			ID_EX_RT 	: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
 			IF_ID_RS 	: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
 			IF_ID_RT 	: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
+			
+		  REG_DST_EX_MEM : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  REG_DST_MEM_WB : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+
+		  WRITE_REG_EX_MEM : IN STD_LOGIC;
+		  WRITE_REG_MEM_WB : IN STD_LOGIC;
 			
 			BUBBLE 		: OUT STD_LOGIC;
 			PC_WRITE 	: OUT STD_LOGIC;
@@ -430,6 +430,7 @@ COMPONENT CONTROL_UNIT IS
     PORT(
         INSTRUCTION : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
         REG_EQUAL : IN STD_LOGIC;
+		  WRITE_SIGNAL : OUT STD_LOGIC;
 
         IF_FLUSH : OUT STD_LOGIC;
         ID_FLUSH : OUT STD_LOGIC;
@@ -447,10 +448,8 @@ COMPONENT CONTROL_UNIT IS
 
         -- Sinais de controle WB
         MEM_TO_REG : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-        REG_WRITE : OUT STD_LOGIC;
-		  
-		  CLOCK : IN STD_LOGIC
-    );
+        REG_WRITE : OUT STD_LOGIC
+		      );
 END COMPONENT;
 
 COMPONENT ALU_CONTROL IS 

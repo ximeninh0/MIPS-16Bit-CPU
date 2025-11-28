@@ -28,9 +28,16 @@ CONSTANT half: INTEGER := max/2;				-- Meio Ciclo
 SIGNAL clockticks: INTEGER RANGE 0 TO max;-- Conta cada ciclo do clock de entrada
 SIGNAL CLOCK: STD_LOGIC;						-- Clock instanciado
 
+CONSTANT max2: INTEGER := 5000000;				-- Ciclo do clock (é ajustável)
+CONSTANT half2: INTEGER := max2/2;				-- Meio Ciclo
+SIGNAL clockticks2: INTEGER RANGE 0 TO max;-- Conta cada ciclo do clock de entrada
+SIGNAL LCD_CLOCK: STD_LOGIC;						-- Clock instanciado
+
 SIGNAL RESET: STD_LOGIC := '0';				-- Sinal de reset geral
 
 SIGNAL HEX0_AUX, HEX1_AUX, HEX2_AUX, HEX3_AUX, HEX4_AUX,HEX5_AUX,HEX6_AUX, HEX7_AUX : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL ID_LCD_WR_SIGNAL,EX_LCD_WR_SIGNAL : STD_LOGIC;
+SIGNAL RS_DATA_CONT: STD_LOGIC_VECTOR(7 DOWNTO 0);
 
 -- Sinais do Estagio IF
 SIGNAL IF_PC_NEXT,IF_PC_CURRENT, IF_PC_MUX,IF_INSTRUCTION : STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -110,7 +117,21 @@ SIGNAL WB_ALU_OUT : STD_LOGIC_VECTOR(15 DOWNTO 0);
 
 BEGIN
 
---	CLOCK <= SW(0);
+	LCD_CONTROL_INSTANCE: UC_LCD PORT MAP(
+	
+	 RS_DATA => EX_ALU_SRC_A,
+	 WRITE_SIGNAL => EX_LCD_WR_SIGNAL,
+	 CLOCK => LCD_CLOCK,
+	 CLOCK_CPU => CLOCK,
+	 LCD_DATA => LCD_DATA,
+	 LCD_RW => LCD_RW,
+	 LCD_EN => LCD_EN,
+	 LCD_RS => LCD_RS
+	);
+	
+	CONT_SIG_INSTANCE: CONTRACT_SIGNAL PORT MAP(ID_REG_DATA1, RS_DATA_CONT);
+
+
 	RESET <= '0';
 	
 	-- Estágio IF
@@ -118,8 +139,8 @@ BEGIN
 			-- Lógica para seleção do próximo PC
 			IF_PC_MUX <= 	IF_NEXT_PC 		   WHEN "00", -- PC + 2
 							"0000000000000000" WHEN "01", -- Tratamento de erro
-							ID_BRANCH_RESULT WHEN "10", -- Branch (a implementar) ---
-							ID_JUMP_ADDRESS WHEN "11", -- Jump (a implementar) ---
+							ID_BRANCH_RESULT WHEN "10", -- Branch
+							ID_JUMP_ADDRESS WHEN "11", -- Jump
 							"0000000000000000" WHEN OTHERS; -- Default
 
 		IF_PC_INSTANCE: REG PORT MAP(
@@ -174,10 +195,12 @@ BEGIN
 		ID_RD_OP <= ID_INSTRUCTION_DATA(4 DOWNTO 1);  -- Bits de RD
 
 
-		CONTROL_UNIT_INSTANCE : CONTROL_UNIT PORT MAP( --NOK
+		CONTROL_UNIT_INSTANCE : CONTROL_UNIT PORT MAP(
 			INSTRUCTION => ID_INSTRUCTION_DATA(15 DOWNTO 0),
 			REG_EQUAL => ID_REG_EQUAL,
-
+			
+			WRITE_SIGNAL => LCD_WR_SIGNAL,
+			
 			IF_FLUSH => ID_IF_FLUSH,
 			ID_FLUSH => ID_ID_FLUSH,
 			EX_FLUSH => ID_EX_FLUSH,
@@ -193,17 +216,22 @@ BEGIN
 			MEM_READ=> ID_MEM_READ,
 			-- Sinais de controle WB
 			MEM_TO_REG=> ID_MEM_TO_REG,
-			REG_WRITE=> ID_REG_WRITE,
-			
-			CLOCK => CLOCK
+			REG_WRITE=> ID_REG_WRITE
+
 
 		);
 
 		IF_ID_HAZARD_DETECTION_UNIT_INSTANCE : HAZARD_DETECTION_UNIT PORT MAP( --NOK
+			OPCODE => ID_INSTRUCTION_DATA(15 downto 13),
 			ID_EX_MEM_READ => EX_MEM_READ, 
 			ID_EX_RT    => EX_RT_OP,
 			IF_ID_RS    => ID_RS_OP,
 			IF_ID_RT    => ID_RT_OP,
+			
+			REG_DST_EX_MEM => MEM_REG_DST, ---
+			REG_DST_MEM_WB => WB_REG_DST, ---
+			WRITE_REG_EX_MEM => MEM_REG_WRITE, ---
+			WRITE_REG_MEM_WB => WB_REG_WRITE, ---
 			
 			BUBBLE 	   => BUBBLE,
 			PC_WRITE    => ID_PC_WRITE,
@@ -333,7 +361,11 @@ BEGIN
 			WB_REG_WRITE_IN=>ID_REG_WRITE_AB,
 			WB_MEM_TO_REG_OUT=>EX_MEM_TO_REG,
 			WB_REG_WRITE_OUT=>EX_REG_WRITE,
-
+			
+			-- Sinal de controle da Escrita do LCD
+			ID_LCD_WR_SIGNAL => ID_LCD_WR_SIGNAL,
+			EX_LCD_WR_SIGNAL => EX_LCD_WR_SIGNAL,
+			
 			CLOCK=> CLOCK,
 			RESET=> RESET
 		);
@@ -466,6 +498,7 @@ BEGIN
 			RESET => RESET
 		);
 --==================================================================================================
+--==================================================================================================
 	-- Estagio WB
 
 		WITH WB_MEM_TO_REG SELECT
@@ -476,13 +509,15 @@ BEGIN
 								
 --==================================================================================================
 								
-		SEGS0_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX0_AUX,HEX0);
-		SEGS1_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX1_AUX,HEX1);
-		SEGS2_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX2_AUX,HEX2);
-		SEGS3_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX3_AUX,HEX3);
-		SEGS4_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX4_AUX,HEX4);
-		SEGS5_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(EX_ALU_SRC_B,HEX5);
+--		SEGS0_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX0_AUX,HEX0);
+--		SEGS2_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX2_AUX,HEX2);
+--		SEGS3_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX3_AUX,HEX3);
+--		SEGS4_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX4_AUX,HEX4);
+--		SEGS5_INSTANCE: SEGS_4_TRANSLATOR PORT MAP(HEX5_AUX,HEX5);
 		DOUBLE_SEGS_INSTANCE:TWO_DIGITS_7_SEGS PORT MAP(IF_PC_CURRENT,HEX7,HEX6);
+		SEGS1_INSTANCE: TWO_DIGITS_7_SEGS PORT MAP(HEX0_AUX,HEX1,HEX0);
+		SEGS2_INSTANCE: TWO_DIGITS_7_SEGS PORT MAP(HEX1_AUX,HEX3,HEX2);
+		SEGS3_INSTANCE: TWO_DIGITS_7_SEGS PORT MAP(ID_REG_DATA1,HEX5,HEX4);
 
 
 
@@ -491,22 +526,16 @@ BEGIN
 
 
 
-		LEDG(3) <= ID_REG_WRITE;
-		LEDG(2) <= EX_REG_WRITE;
-		LEDG(1) <= MEM_REG_WRITE;
-		LEDG(0) <= WB_REG_WRITE;
-		
-		LEDG(5 DOWNTO 4) <= EX_FOWARD_B;
-		LEDG(7 DOWNTO 6) <= EX_FOWARD_A;
 
-
-		
+		LEDG(1) <= LCD_CLOCK;
+		LEDG(0) <= CLOCK;
+		LEDG(2) <=LCD_WR_SIGNAL;
 		LEDG(8) <= CLOCK;
 
 	LEDR(17 DOWNTO 2) <= ID_INSTRUCTION_DATA;
 
 	-- -- PROCESSOS PARA O DIVISOR DE CLOCK
-    ClockDivide: PROCESS
+    ClockDivide1: PROCESS
              BEGIN
              WAIT UNTIL CLOCK_50'EVENT and CLOCK_50 = '1'; -- Na subida do clock,
              IF clockticks < max THEN
@@ -529,4 +558,20 @@ BEGIN
 --	CLK- - - -: ___|¯¯¯|___|¯¯¯|___|¯¯¯|...
 ---          -------------t--------------
 -- Com isso, quanto maior for "max", maior será o ciclo de CLK
+
+
+    ClockDivide2: PROCESS
+             BEGIN
+             WAIT UNTIL CLOCK_50'EVENT and CLOCK_50 = '1'; -- Na subida do clock,
+             IF clockticks2 < max2 THEN
+                 clockticks2 <= clockticks2 + 1; 	-- Soma o contador clockticks até o máximo estipulado pelo usuário
+             ELSE
+                 clockticks2 <= 0;					-- Quando chega no máximo zera
+             END IF;
+             IF clockticks2 < half2 THEN				-- Half representa a metade do ciclo, quando chega liga o clock
+                 LCD_CLOCK <= '0';
+             ELSE
+                 LCD_CLOCK <= '1';
+             END IF;
+         END PROCESS;
 END Behavior;

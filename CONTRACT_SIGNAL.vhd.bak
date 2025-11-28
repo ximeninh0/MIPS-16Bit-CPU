@@ -1,0 +1,23 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY SIGN_EXTEND IS 
+    PORT (
+        IN_SIGNAL : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        OUT_SIGNAL : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+    );
+END SIGN_EXTEND;
+
+ARCHITECTURE Behavior OF SIGN_EXTEND IS
+
+SIGNAL AUX1 : STD_LOGIC; 
+
+BEGIN
+    AUX1 <= IN_SIGNAL(4) AND '1';
+
+    OUT_SIGNAL(15 downto 5) <= (OTHERS => AUX1);
+    OUT_SIGNAL(4 downto 0) <= IN_SIGNAL(4 downto 0);
+
+
+
+END Behavior;
