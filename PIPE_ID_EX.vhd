@@ -50,9 +50,9 @@ ENTITY PIPE_ID_EX IS
         WB_MEM_TO_REG_OUT : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
         WB_REG_WRITE_OUT : OUT STD_LOGIC;
 
-		  -- Controle de Escrita do LCD
-		  ID_LCD_WR_SIGNAL : IN STD_LOGIC;
-		  EX_LCD_WR_SIGNAL : OUT STD_LOGIC;
+        -- Controle de Escrita do LCD
+        ID_LCD_WR_SIGNAL : IN STD_LOGIC;
+        EX_LCD_WR_SIGNAL : OUT STD_LOGIC;
 		  
         -- Controle de clock e reset
         CLOCK : IN STD_LOGIC;
